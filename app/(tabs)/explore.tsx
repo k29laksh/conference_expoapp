@@ -1,112 +1,148 @@
-import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
+import { View, Text, ScrollView, StyleSheet, Image, TouchableOpacity, Linking } from 'react-native';
+import { MaterialIcons } from '@expo/vector-icons';
+import Footer from '@/components/Footer';
 
-import { Collapsible } from '@/components/ui/collapsible';
-import { ExternalLink } from '@/components/external-link';
-import ParallaxScrollView from '@/components/parallax-scroll-view';
-import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
-import { IconSymbol } from '@/components/ui/icon-symbol';
-import { Fonts } from '@/constants/theme';
+export default function CallForPaperScreen() {
+  const handleSubmitAbstract = () => {
+    Linking.openURL('https://abstract-submission.example.com');
+  };
 
-export default function TabTwoScreen() {
+  const handleDownloadReference = () => {
+    Linking.openURL('https://reference-body-structure.example.com');
+  };
+
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
-      headerImage={
-        <IconSymbol
-          size={310}
-          color="#808080"
-          name="chevron.left.forwardslash.chevron.right"
-          style={styles.headerImage}
+    <ScrollView style={styles.container}>
+      {/* Social Media Icons */}
+      <View style={styles.socialSection}>
+        <View style={styles.socialIcons}>
+          <TouchableOpacity style={styles.socialIcon}>
+            <MaterialIcons name="smart-display" size={32} color="#FF0000" />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.socialIcon}>
+            <MaterialIcons name="facebook" size={32} color="#1877F2" />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.socialIcon}>
+            <MaterialIcons name="camera-alt" size={32} color="#E4405F" />
+          </TouchableOpacity>
+        </View>
+      </View>
+
+      {/* Click Here to Submit Abstract Button */}
+      <View style={styles.submitSection}>
+        <TouchableOpacity style={styles.submitButton} onPress={handleSubmitAbstract}>
+          <Text style={styles.submitButtonText}>Click Here to Submit Abstract</Text>
+        </TouchableOpacity>
+      </View>
+
+      {/* Reference Abstract Body Structure Button */}
+      <View style={styles.referenceSection}>
+        <TouchableOpacity style={styles.referenceButton} onPress={handleDownloadReference}>
+          <Text style={styles.referenceButtonText}>Reference Abstract Body Structure</Text>
+        </TouchableOpacity>
+      </View>
+
+      {/* Instructions */}
+      <View style={styles.instructionsSection}>
+        <Text style={styles.instructionText}>
+          Click on the above button to open the format in Google Docs.
+        </Text>
+        <Text style={styles.instructionText}>
+          📄 Go to File → Download → Microsoft Word (.docx).
+        </Text>
+        <Text style={styles.instructionText}>
+          ✏️ Edit the file and upload and abstract submission portal (exactly above &quot;Reference Abstract Body structure&quot; button.
+        </Text>
+      </View>
+
+      {/* Call for Paper Image */}
+      <View style={styles.callForPaperImageSection}>
+        <Image 
+          source={require('@/assets/images/callforpaper.png')}
+          style={styles.callForPaperImage}
+          resizeMode="contain"
         />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText
-          type="title"
-          style={{
-            fontFamily: Fonts.rounded,
-          }}>
-          Explore
-        </ThemedText>
-      </ThemedView>
-      <ThemedText>This app includes example code to help you get started.</ThemedText>
-      <Collapsible title="File-based routing">
-        <ThemedText>
-          This app has two screens:{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
-        </ThemedText>
-        <ThemedText>
-          The layout file in <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{' '}
-          sets up the tab navigator.
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/router/introduction">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Android, iOS, and web support">
-        <ThemedText>
-          You can open this project on Android, iOS, and the web. To open the web version, press{' '}
-          <ThemedText type="defaultSemiBold">w</ThemedText> in the terminal running this project.
-        </ThemedText>
-      </Collapsible>
-      <Collapsible title="Images">
-        <ThemedText>
-          For static images, you can use the <ThemedText type="defaultSemiBold">@2x</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
-          different screen densities
-        </ThemedText>
-        <Image
-          source={require('@/assets/images/react-logo.png')}
-          style={{ width: 100, height: 100, alignSelf: 'center' }}
-        />
-        <ExternalLink href="https://reactnative.dev/docs/images">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Light and dark mode components">
-        <ThemedText>
-          This template has light and dark mode support. The{' '}
-          <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
-          what the user&apos;s current color scheme is, and so you can adjust UI colors accordingly.
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Animations">
-        <ThemedText>
-          This template includes an example of an animated component. The{' '}
-          <ThemedText type="defaultSemiBold">components/HelloWave.tsx</ThemedText> component uses
-          the powerful{' '}
-          <ThemedText type="defaultSemiBold" style={{ fontFamily: Fonts.mono }}>
-            react-native-reanimated
-          </ThemedText>{' '}
-          library to create a waving hand animation.
-        </ThemedText>
-        {Platform.select({
-          ios: (
-            <ThemedText>
-              The <ThemedText type="defaultSemiBold">components/ParallaxScrollView.tsx</ThemedText>{' '}
-              component provides a parallax effect for the header image.
-            </ThemedText>
-          ),
-        })}
-      </Collapsible>
-    </ParallaxScrollView>
+      </View>
+
+      <Footer />
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  headerImage: {
-    color: '#808080',
-    bottom: -90,
-    left: -35,
-    position: 'absolute',
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
   },
-  titleContainer: {
+  socialSection: {
+    backgroundColor: '#f0f0f0',
+    padding: 15,
+    alignItems: 'center',
+    borderBottomWidth: 1,
+    borderBottomColor: '#ddd',
+  },
+  socialIcons: {
     flexDirection: 'row',
-    gap: 8,
+    gap: 20,
+  },
+  socialIcon: {
+    width: 50,
+    height: 50,
+    borderRadius: 25,
+    backgroundColor: '#fff',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 2,
+    borderColor: '#ddd',
+  },
+  submitSection: {
+    padding: 20,
+    backgroundColor: '#fff',
+  },
+  submitButton: {
+    backgroundColor: '#2C3E50',
+    padding: 16,
+    borderRadius: 4,
+    alignItems: 'center',
+  },
+  submitButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  referenceSection: {
+    padding: 20,
+    paddingTop: 0,
+    backgroundColor: '#fff',
+  },
+  referenceButton: {
+    backgroundColor: '#2C3E50',
+    padding: 16,
+    borderRadius: 4,
+    alignItems: 'center',
+  },
+  referenceButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  instructionsSection: {
+    padding: 20,
+    backgroundColor: '#f8f9fa',
+  },
+  instructionText: {
+    fontSize: 14,
+    color: '#555',
+    marginBottom: 10,
+    lineHeight: 20,
+  },
+  callForPaperImageSection: {
+    padding: 20,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+  },
+  callForPaperImage: {
+    width: '100%',
+    height: 400,
   },
 });
