@@ -1,29 +1,40 @@
 import { View, Text, ScrollView, StyleSheet, Image, TouchableOpacity, Linking } from 'react-native';
-import { MaterialIcons } from '@expo/vector-icons';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons';
 import Footer from '@/components/Footer';
 
 export default function CallForPaperScreen() {
   const handleSubmitAbstract = () => {
-    Linking.openURL('https://abstract-submission.example.com');
+    Linking.openURL('https://docs.google.com/forms/d/e/1FAIpQLScF_b4LPvYme8HqZiBgfxoOrzCKdFl1Uht-q35wbRcGCkL33A/viewform');
   };
 
   const handleDownloadReference = () => {
-    Linking.openURL('https://reference-body-structure.example.com');
+    Linking.openURL('https://docs.google.com/document/d/1DeMxiG8nQSAboQRyLUP0trAVM_LCm7FtRCRopskE6eo/edit?tab=t.0#heading=h.56hvy77yvf58');
   };
 
   return (
+    <SafeAreaView style={styles.safeArea} edges={[]}>
     <ScrollView style={styles.container}>
       {/* Social Media Icons */}
       <View style={styles.socialSection}>
         <View style={styles.socialIcons}>
-          <TouchableOpacity style={styles.socialIcon}>
+          <TouchableOpacity 
+            style={styles.socialIcon}
+            onPress={() => Linking.openURL('https://www.youtube.com/@metiopnashik1321')}
+          >
             <MaterialIcons name="smart-display" size={32} color="#FF0000" />
           </TouchableOpacity>
-          <TouchableOpacity style={styles.socialIcon}>
+          <TouchableOpacity 
+            style={styles.socialIcon}
+            onPress={() => Linking.openURL('https://www.facebook.com/people/METs-Institute-of-Pharmacy-Bhujbal-Knowledge-City-Adgaon-Nashik/100063790905651/')}
+          >
             <MaterialIcons name="facebook" size={32} color="#1877F2" />
           </TouchableOpacity>
-          <TouchableOpacity style={styles.socialIcon}>
-            <MaterialIcons name="camera-alt" size={32} color="#E4405F" />
+          <TouchableOpacity 
+            style={styles.socialIcon}
+            onPress={() => Linking.openURL('https://www.instagram.com/p/DLgzdSmIIBH/?utm_source=ig_web_copy_link')}
+          >
+            <MaterialCommunityIcons name="instagram" size={32} color="#E4405F" />
           </TouchableOpacity>
         </View>
       </View>
@@ -66,10 +77,15 @@ export default function CallForPaperScreen() {
 
       <Footer />
     </ScrollView>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
   container: {
     flex: 1,
     backgroundColor: '#fff',
@@ -108,7 +124,8 @@ const styles = StyleSheet.create({
   submitButtonText: {
     color: '#fff',
     fontSize: 16,
-    fontWeight: 'bold',
+    fontWeight: '600',
+    letterSpacing: 0.5,
   },
   referenceSection: {
     padding: 20,
@@ -124,7 +141,8 @@ const styles = StyleSheet.create({
   referenceButtonText: {
     color: '#fff',
     fontSize: 16,
-    fontWeight: 'bold',
+    fontWeight: '600',
+    letterSpacing: 0.5,
   },
   instructionsSection: {
     padding: 20,
@@ -143,6 +161,6 @@ const styles = StyleSheet.create({
   },
   callForPaperImage: {
     width: '100%',
-    height: 400,
+    height: 250,
   },
 });

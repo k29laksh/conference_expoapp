@@ -20,18 +20,18 @@ export default function TabLayout() {
         <Tabs
           screenOptions={{
             tabBarActiveTintColor: "#EF4444",
-            tabBarInactiveTintColor: "#9CA3AF",
+            tabBarInactiveTintColor: "#757779ff",
             headerShown: false,
             tabBarButton: HapticTab,
             tabBarStyle: {
               backgroundColor: "#FFFFFF",
               borderTopWidth: 1,
-              borderTopColor: "#F3F4F6",
+              borderTopColor: "#e1e4eaff",
               paddingVertical: 4,
               height: 60,
             },
             tabBarLabelStyle: {
-              fontSize: 10,
+              fontSize: 11,
               fontWeight: "500",
             },
           }}
@@ -45,19 +45,27 @@ export default function TabLayout() {
             }}
           />
           <Tabs.Screen
-            name="about"
+            name="schedule"
             options={{
-              title: "About",
-              tabBarIcon: ({ color }) => <MaterialIcons name="info" size={24} color={color} />,
+              title: "Schedule",
+              tabBarIcon: ({ color }) => <MaterialIcons name="calendar-today" size={24} color={color} />,
             }}
           />
-          <Tabs.Screen
+           <Tabs.Screen
             name="speakers"
             options={{
               title: "Experts", // Renamed to match your website screenshot
               tabBarIcon: ({ color }) => <MaterialIcons name="groups" size={24} color={color} />,
             }}
           />
+          <Tabs.Screen
+            name="about"
+            options={{
+              title: "About",
+              tabBarIcon: ({ color }) => <MaterialIcons name="info" size={24} color={color} />,
+            }}
+          />
+         
           <Tabs.Screen
             name="registration"
             options={{

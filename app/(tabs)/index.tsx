@@ -1,7 +1,7 @@
 import { View, Text, ScrollView, StyleSheet, TouchableOpacity, Dimensions, Animated, Image, Linking } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { MaterialIcons } from '@expo/vector-icons';
 import { useState, useRef } from 'react';
-import HeroBanner from '@/components/home/HeroBanner';
 import EventCarousel from '@/components/home/EventCarousel';
 import MediaPartners from '@/components/home/MediaPartners';
 import PaymentSection from '@/components/home/PaymentSection';
@@ -55,32 +55,31 @@ export default function HomeScreen() {
     outputRange: ['0deg', '180deg'],
   });
 
-  const programsList = [
-    'D. Pharmacy',
-    'B. Pharmacy',
-    'M. Pharmacy (Pharmaceutics, Quality Assurance, Pharmaceutical Chemistry, Pharmacology, Pharmaceutical Regulatory Affairs)',
-    'Ph.D. in Pharmacy'
-  ];
+  // const programsList = [
+  //   'D. Pharmacy',
+  //   'B. Pharmacy',
+  //   'M. Pharmacy (Pharmaceutics, Quality Assurance, Pharmaceutical Chemistry, Pharmacology, Pharmaceutical Regulatory Affairs)',
+  //   'Ph.D. in Pharmacy'
+  // ];
 
   return (
-    <ScrollView style={styles.container}>
-      <HeroBanner />
+    <SafeAreaView style={styles.safeArea} edges={[]}>
+      <ScrollView style={styles.container}>
 
-      {/* Affiliations */}
-      <View style={styles.affiliationsSection}>
-        <Text style={styles.sectionTitle}>Affiliations and Approval</Text>
-        <View style={styles.logosGrid}>
-          {[1, 2, 3, 4].map((item) => (
-            <View key={item} style={styles.logoPlaceholder}>
-              <MaterialIcons name="image" size={40} color="#ccc" />
-            </View>
-          ))}
-        </View>
-      </View>
-
+     
       <EventCarousel />
 
-      {/* Programs Offered */}
+      {/* Register Button */}
+      <View style={styles.registerButtonContainer}>
+        <TouchableOpacity 
+          style={styles.clickToRegisterButton}
+          onPress={() => Linking.openURL('https://docs.google.com/forms/d/e/1FAIpQLSel1sMkCNZ50AU7DXslL-fi6xFOQO3kLB6xBAXaGKS0Gu3Tnw/viewform')}
+        >
+          <Text style={styles.clickToRegisterText}>Click here to register</Text>
+        </TouchableOpacity>
+      </View>
+
+      {/* Programs Offered
       <View style={styles.programsSection}>
         {programsList.map((program, index) => (
           <View key={index} style={styles.programCard}>
@@ -89,14 +88,13 @@ export default function HomeScreen() {
         ))}
       </View>
 
-      {/* Organized By */}
       <View style={styles.organizerSection}>
         <Text style={styles.organizerLabel}>Organized by</Text>
         <Text style={styles.organizerTitle}>INSTITUTE OF PHARMACY</Text>
-      </View>
+      </View> */}
 
       {/* Contact Info */}
-      <View style={styles.contactSection}>
+      {/* <View style={styles.contactSection}>
         <View style={styles.contactCard}>
           <MaterialIcons name="location-on" size={20} color="#E31E24" />
           <View style={styles.contactTextContainer}>
@@ -121,7 +119,7 @@ export default function HomeScreen() {
             <Text style={styles.contactText}>www.metbhujbalknowledgecity.ac.in</Text>
           </View>
         </View>
-      </View>
+      </View> */}
 
       <MediaPartners />
 
@@ -199,41 +197,60 @@ export default function HomeScreen() {
       </View>
 
       <NashikGlimpses />
-
+<View style={styles.programsDetailSection}>
+  <View style={styles.divider} />
+</View>
       {/* Programs Offered Detail */}
       <View style={styles.programsDetailSection}>
         <Text style={styles.sectionTitle}>Programs Offered:</Text>
-        <View style={styles.divider} />
+        
         <Text style={styles.programDetail}>
           D. Pharmacy | B. Pharmacy | M. Pharmacy (Pharmaceutics, Quality Assurance, 
           Pharmaceutical Chemistry, Pharmacology, Pharmaceutical Regulatory Affairs) | 
           Ph.D. in Pharmacy.
         </Text>
       </View>
-
-      {/* Register Now Section with Background */}
-      <View style={styles.registerSection}>
-        <TouchableOpacity 
-          style={styles.registerButton}
-          onPress={() => Linking.openURL('https://docs.google.com/forms/d/e/1FAIpQLSel1sMkCNZ50AU7DXslL-fi6xFOQO3kLB6xBAXaGKS0Gu3Tnw/viewform')}
-        >
-          <Image 
-            source={require('@/assets/images/registernow.png')}
-            style={styles.registerNowImage}
-            resizeMode="contain"
-          />
-        </TouchableOpacity>
-      </View>
+<View style={styles.programsDetailSection}>
+  <View style={styles.divider} />
+</View>
+     
 
       <Footer />
     </ScrollView>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
   container: {
     flex: 1,
     backgroundColor: '#fff',
+  },
+  registerButtonContainer: {
+    paddingHorizontal: 20,
+    paddingVertical: 15,
+    backgroundColor: '#fff',
+  },
+  clickToRegisterButton: {
+    backgroundColor: '#2C3E50',
+    paddingVertical: 14,
+    borderRadius: 8,
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  clickToRegisterText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: '600',
+    letterSpacing: 0.5,
   },
   heroBanner: {
     backgroundColor: '#fff',

@@ -1,12 +1,14 @@
 import { View, Text, ScrollView, StyleSheet, Image } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { MaterialIcons } from '@expo/vector-icons';
+import { WebView } from 'react-native-webview';
 import Footer from '@/components/Footer';
 
 export default function AboutScreen() {
   return (
+    <SafeAreaView style={styles.safeArea} edges={[]}>
     <ScrollView style={styles.container}>
-     
-
+      
       {/* Hero Image */}
       <View style={styles.heroImageContainer}>
         <Image 
@@ -129,7 +131,7 @@ export default function AboutScreen() {
         />
       </View>
 
-      {/* Direction to Venue */}
+    {/* Direction to Venue */}
       <View style={styles.venueSection}>
         <View style={styles.venueContainer}>
           <View style={styles.venueTitleContainer}>
@@ -137,17 +139,33 @@ export default function AboutScreen() {
             <View style={styles.venueDivider} />
           </View>
           <View style={styles.mapContainer}>
-            <View style={styles.mapImageContainer}>
-              <MaterialIcons name="place" size={32} color="#E31E24" />
-              <Text style={styles.mapLabel}>Google</Text>
-              <Text style={styles.mapSubLabel}>Keyboard shortcuts</Text>
-              <Text style={styles.mapSubLabel}>Map data ©2025</Text>
-              <Text style={styles.mapSubLabel}>Terms</Text>
-              <Text style={styles.mapSubLabel}>Report a map error</Text>
-              <View style={styles.viewLargerMapButton}>
-                <Text style={styles.viewLargerMapText}>View larger map</Text>
-              </View>
-            </View>
+            <WebView
+              style={styles.mapWebView}
+              originWhitelist={['*']}
+              source={{
+    html: `
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <style>
+            body { margin: 0; padding: 0; height: 100vh; width: 100vw; overflow: hidden; }
+            iframe { width: 100%; height: 100%; border: 0; }
+          </style>
+        </head>
+        <body>
+          <iframe 
+            src="https://maps.google.com/maps?q=MET+Bhujbal+Knowledge+City+Nashik&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            allowfullscreen="" 
+            loading="lazy"
+          ></iframe>
+        </body>
+      </html>
+    `
+  }}
+              scrollEnabled={false}
+              javaScriptEnabled={true}
+            />
           </View>
         </View>
       </View>
@@ -162,23 +180,23 @@ export default function AboutScreen() {
           />
         </View>
         <View style={styles.datesContent}>
-          <Text style={styles.datesTitle}>IMPORTATNT DATES</Text>
+          <Text style={styles.datesTitle}>IMPORTANT DATES</Text>
           <View style={styles.divider} />
           <View style={styles.datesList}>
             <View style={styles.dateItem}>
-              <MaterialIcons name="arrow-right" size={20} color="#E31E24" />
+              <MaterialIcons name="arrow-right" size={24} color="#E31E24" />
               <Text style={styles.dateText}>Conference Dates: 9th & 10th Jan 2026</Text>
             </View>
             <View style={styles.dateItem}>
-              <MaterialIcons name="arrow-right" size={20} color="#E31E24" />
+              <MaterialIcons name="arrow-right" size={24} color="#E31E24" />
               <Text style={styles.dateText}>Abstract Submission Deadline: TBA</Text>
             </View>
             <View style={styles.dateItem}>
-              <MaterialIcons name="arrow-right" size={20} color="#E31E24" />
+              <MaterialIcons name="arrow-right" size={24} color="#E31E24" />
               <Text style={styles.dateText}>Early Bird Registration: TBA</Text>
             </View>
             <View style={styles.dateItem}>
-              <MaterialIcons name="arrow-right" size={20} color="#E31E24" />
+              <MaterialIcons name="arrow-right" size={24} color="#E31E24" />
               <Text style={styles.dateText}>Final Registration Deadline: TBA</Text>
             </View>
           </View>
@@ -187,30 +205,18 @@ export default function AboutScreen() {
 
       <Footer />
     </ScrollView>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  safeArea: {
     flex: 1,
     backgroundColor: '#fff',
   },
-  headerSection: {
-    backgroundColor: '#2C3E50',
-    padding: 30,
-    alignItems: 'center',
-  },
-  mainTitle: {
-    fontSize: 32,
-    fontWeight: 'bold',
-    color: '#fff',
-    textAlign: 'center',
-  },
-  dateText: {
-    fontSize: 16,
-    color: '#bbb',
-    marginTop: 8,
-    textAlign: 'center',
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
   },
   heroImageContainer: {
     width: '100%',
@@ -233,7 +239,7 @@ const styles = StyleSheet.create({
   paragraph: {
     fontSize: 15,
     lineHeight: 24,
-    color: '#555',
+    color: '#333', // Darker text
     textAlign: 'justify',
   },
   thrustSection: {
@@ -318,12 +324,13 @@ const styles = StyleSheet.create({
     borderColor: '#e0e0e0',
   },
   venueContainer: {
-    flexDirection: 'row',
+    flexDirection: 'column',
     alignItems: 'center',
     gap: 20,
   },
   venueTitleContainer: {
-    flex: 1,
+    width: '100%',
+    alignItems: 'center',
   },
   venueTitle: {
     fontSize: 22,
@@ -337,78 +344,52 @@ const styles = StyleSheet.create({
     backgroundColor: '#2C3E50',
   },
   mapContainer: {
-    flex: 1.2,
+    width: '100%',
+    height: 250,
   },
-  mapImageContainer: {
-    height: 100,
-    backgroundColor: '#f5f5f5',
+  mapWebView: {
+    flex: 1,
     borderRadius: 4,
-    justifyContent: 'center',
-    alignItems: 'center',
     borderWidth: 1,
     borderColor: '#e0e0e0',
-    position: 'relative',
-  },
-  mapLabel: {
-    fontSize: 12,
-    color: '#666',
-    marginTop: 5,
-  },
-  mapSubLabel: {
-    fontSize: 9,
-    color: '#999',
-    marginTop: 2,
-  },
-  viewLargerMapButton: {
-    position: 'absolute',
-    top: 10,
-    right: 10,
-    backgroundColor: '#fff',
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-    borderRadius: 3,
-    borderWidth: 1,
-    borderColor: '#ccc',
-  },
-  viewLargerMapText: {
-    fontSize: 11,
-    color: '#0066cc',
   },
   datesSection: {
-    flexDirection: 'row',
+    flexDirection: 'column',
     padding: 20,
-    gap: 20,
-    alignItems: 'flex-start',
+    alignItems: 'center',
   },
   calendarIcon: {
     width: 120,
     height: 120,
+    marginBottom: 20,
   },
   calendarImage: {
     width: '100%',
     height: '100%',
   },
   datesContent: {
-    flex: 1,
+    width: '100%',
+    alignItems: 'center',
   },
   datesTitle: {
     fontSize: 22,
     fontWeight: 'bold',
     color: '#2C3E50',
     marginBottom: 10,
+    textAlign: 'center',
   },
   datesList: {
     marginTop: 10,
   },
-  dateRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 12,
-    gap: 8,
-  },
   dateItem: {
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'center', // Fix alignment
     marginBottom: 10,
+  },
+  dateText: {
+    fontSize: 16,
+    color: '#333', // Darker text color
+    marginLeft: 5,
+    marginBottom: 2,
   },
 });

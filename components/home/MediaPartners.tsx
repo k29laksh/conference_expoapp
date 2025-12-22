@@ -3,7 +3,10 @@ import { View, Text, Image, TouchableOpacity, StyleSheet, Linking } from 'react-
 export default function MediaPartners() {
   return (
     <View style={styles.mediaSection}>
-      <Text style={styles.sectionTitle}>MEDIA PARTNERS</Text>
+      <View style={styles.titleContainer}>
+        <Text style={styles.sectionTitle}>MEDIA PARTNERS</Text>
+        <View style={styles.titleUnderline} />
+      </View>
       
       <TouchableOpacity 
         style={styles.mediaImageContainer}
@@ -39,10 +42,10 @@ export default function MediaPartners() {
         <Text style={styles.abstractButtonText}>Submit Abstract</Text>
       </TouchableOpacity>
 
-      <View style={styles.mediaImageContainer}>
+      <View style={styles.pharmacyImageContainer}>
         <Image 
           source={require('@/assets/images/pharmacy.png')}
-          style={styles.mediaImage}
+          style={styles.pharmacyImage}
           resizeMode="contain"
         />
       </View>
@@ -72,20 +75,42 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderTopColor: '#e0e0e0',
   },
+  titleContainer: {
+    alignItems: 'center',
+    marginBottom: 20,
+  },
   sectionTitle: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: 'bold',
-    color: '#333',
+    color: '#2C3E50',
     textAlign: 'center',
-    marginBottom: 15,
+    letterSpacing: 1,
+  },
+  titleUnderline: {
+    width: 80,
+    height: 3,
+    backgroundColor: '#2C3E50',
+    marginTop: 8,
   },
   mediaImageContainer: {
     width: '100%',
     marginBottom: 20,
+    marginTop: 20,
     alignItems: 'center',
     paddingHorizontal: 10,
   },
   mediaImage: {
+    width: '100%',
+    height: 130,
+  },
+  pharmacyImageContainer: {
+    width: '100%',
+    marginBottom: 40,
+    marginTop: 40,
+    alignItems: 'center',
+    paddingHorizontal: 10,
+  },
+  pharmacyImage: {
     width: '100%',
     height: 200,
   },
@@ -97,9 +122,10 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   abstractButtonText: {
-    color: '#fff',
-    fontSize: 15,
-    fontWeight: 'bold',
+     color: '#fff',
+    fontSize: 16,
+    fontWeight: '600',
+    letterSpacing: 0.5,
   },
   sbiButton: {
     backgroundColor: '#2C3E50',
@@ -111,8 +137,8 @@ const styles = StyleSheet.create({
   },
   sbiButtonText: {
     color: '#fff',
-    fontSize: 15,
-    fontWeight: 'bold',
-    letterSpacing: 1,
+    fontSize: 16,
+    fontWeight: '600',
+    letterSpacing: 0.5,
   },
 });

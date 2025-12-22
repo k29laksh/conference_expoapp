@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 const eventImages = [
   require('@/assets/images/event1.png'),
   require('@/assets/images/event2.png'),
+  require('@/assets/images/event3.png'),
 ];
 
 export default function EventCarousel() {
@@ -12,14 +13,17 @@ export default function EventCarousel() {
   const [isCarouselModalVisible, setIsCarouselModalVisible] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentEventIndex((prevIndex) => 
-        prevIndex === eventImages.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 4000);
+    // Only auto-slide when modal is not visible
+    if (!isCarouselModalVisible) {
+      const interval = setInterval(() => {
+        setCurrentEventIndex((prevIndex) => 
+          prevIndex === eventImages.length - 1 ? 0 : prevIndex + 1
+        );
+      }, 4000);
 
-    return () => clearInterval(interval);
-  }, []);
+      return () => clearInterval(interval);
+    }
+  }, [isCarouselModalVisible]);
 
   const goToNextEvent = () => {
     setCurrentEventIndex((prevIndex) => 

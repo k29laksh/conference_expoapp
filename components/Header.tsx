@@ -1,14 +1,20 @@
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
+// 1. Import this hook
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 export default function Header() {
-  const handleSearch = () => {
-    console.log('Search pressed');
-    // Add search functionality here
+  // 2. Get the safe area insets (this gives you the height of the status bar)
+  const insets = useSafeAreaInsets();
+
+  const handleNotification = () => {
+    console.log('Notification pressed');
   };
 
   return (
-    <View style={styles.header}>
+    // 3. Add dynamic paddingTop to the style
+    <View style={[styles.header, { paddingTop: insets.top }]}>
+      
       {/* Logo Section */}
       <View style={styles.logoContainer}>
         <View style={styles.logoIcon}>
@@ -24,11 +30,9 @@ export default function Header() {
         </View>
       </View>
 
-      
-
-      {/* Search Icon */}
-      <TouchableOpacity style={styles.searchButton} onPress={handleSearch}>
-        <MaterialIcons name="search" size={28} color="#333" />
+      {/* Notification Icon */}
+      <TouchableOpacity style={styles.searchButton} onPress={handleNotification}>
+        <MaterialIcons name="notifications" size={28} color="#333" />
       </TouchableOpacity>
     </View>
   );
@@ -41,7 +45,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     backgroundColor: '#FFFFFF',
     paddingHorizontal: 15,
-    paddingVertical: 12,
+    // 4. Change paddingVertical to just paddingBottom to avoid double padding the top
+    paddingBottom: 12,
+    paddingTop: 12, // Keep a little native padding + the inset we added above
     borderBottomWidth: 1,
     borderBottomColor: '#E5E7EB',
     elevation: 2,
@@ -50,6 +56,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 2,
   },
+  // ... rest of your styles remain exactly the same ...
   logoContainer: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -107,14 +114,6 @@ const styles = StyleSheet.create({
     fontSize: 6,
     color: '#FFFFFF',
     fontWeight: 'bold',
-  },
-  title: {
-    flex: 1,
-    fontSize: 16,
-    fontWeight: '600',
-    color: '#333',
-    textAlign: 'center',
-    marginHorizontal: 10,
   },
   searchButton: {
     padding: 8,
