@@ -1,18 +1,24 @@
 {
   "expo": {
-    "name": "conference",
-    "slug": "conference",
+    "name": "MET-I-CON",
+    "slug": "met-i-con",
     "version": "1.0.0",
+    "description": "2nd MET-I-CON 2026 - International Conference on Future Trends and Opportunities in Pharmaceutical World, hosted by MET's Institute of Pharmacy, Bhujbal Knowledge City, Adgaon, Nashik",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "conference",
+    "scheme": "met-i-con",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "remote-notification"
+        ]
+      }
     },
     "android": {
-      "package": "com.conference.app",
+      "package": "com.meticon.app",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -23,7 +29,14 @@
       "predictiveBackGestureEnabled": false,
       "enableProguardInReleaseBuilds": true,
       "enableShrinkResourcesInReleaseBuilds": true,
-      "jsEngine": "hermes"
+      "jsEngine": "hermes",
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "SCHEDULE_EXACT_ALARM",
+        "USE_EXACT_ALARM",
+        "POST_NOTIFICATIONS"
+      ],
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "output": "static",
@@ -31,6 +44,15 @@
     },
     "plugins": [
       "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon.png",
+          "color": "#EF4444",
+          "sounds": [],
+          "mode": "production"
+        }
+      ],
       [
         "expo-splash-screen",
         {
@@ -51,7 +73,7 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "b9f3deea-d51a-45f8-b75e-d17107e14329"
+        "projectId": "0e570a85-6fe7-4f1f-b8db-ce769ebb8c87"
       }
     }
   }
