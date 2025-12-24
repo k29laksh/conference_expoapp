@@ -15,6 +15,100 @@ export interface ScheduleItem {
   }[];
 }
 
+export const SCHEDULE_DAY0: ScheduleItem[] = [
+  {
+    id: "day0-1",
+    time: "02:10 - 02:15",
+    title: "Welcome Reception and Registration",
+    venue: "Main Conference Hall",
+    type: "session",
+  },
+  {
+    id: "day0-2",
+    time: "02:15 - 02:20",
+    title: "Introduction to Conference Theme",
+    speaker: "Dr. Sarah Thompson",
+    designation: "Conference Coordinator",
+    type: "session",
+  },
+  {
+    id: "day0-3",
+    time: "02:20 - 02:25",
+    title: "Networking Ice Breaker Session",
+    venue: "Main Conference Hall",
+    type: "session",
+  },
+  {
+    id: "day0-4",
+    time: "02:25 - 02:30",
+    title: "Overview of Latest Research Trends",
+    speaker: "Prof. Michael Chen",
+    designation: "Research Director, Global Pharma Institute",
+    type: "session",
+  },
+  {
+    id: "day0-5",
+    time: "02:30 - 02:35",
+    title: "Industry Updates and Announcements",
+    speaker: "Dr. Priya Sharma",
+    designation: "Industry Relations Officer",
+    type: "session",
+  },
+  {
+    id: "day0-6",
+    time: "02:35 - 02:40",
+    title: "Poster Preview Session",
+    venue: "Exhibition Area",
+    type: "session",
+  },
+  {
+    id: "day0-7",
+    time: "02:40 - 02:45",
+    title: "Innovation Showcase Highlights",
+    speaker: "Dr. James Wilson",
+    designation: "Innovation Lead, Tech Solutions Ltd.",
+    type: "session",
+  },
+  {
+    id: "day0-8",
+    time: "02:45 - 02:50",
+    title: "Sponsor Introduction and Opportunities",
+    speaker: "Ms. Angela Roberts",
+    designation: "Sponsorship Manager",
+    type: "session",
+  },
+  {
+    id: "day0-9",
+    time: "02:50 - 02:55",
+    title: "Quick Workshop Teasers",
+    venue: "Workshop Hall",
+    type: "session",
+  },
+  {
+    id: "day0-10",
+    time: "02:55 - 03:00",
+    title: "Meet the Speakers Session",
+    speaker: "Various Speakers",
+    designation: "Conference Faculty",
+    type: "session",
+  },
+  {
+    id: "day0-11",
+    time: "03:00 - 03:05",
+    title: "Conference App and Digital Resources Guide",
+    speaker: "Mr. David Kumar",
+    designation: "Technology Coordinator",
+    type: "session",
+  },
+  {
+    id: "day0-12",
+    time: "03:05 - 03:10",
+    title: "Closing Remarks and Day 1 Preview",
+    venue: "Main Conference Hall",
+    type: "session",
+  },
+];
+
 export const SCHEDULE_DAY1: ScheduleItem[] = [
   {
     id: "day1-1",
@@ -236,12 +330,12 @@ export const SCHEDULE_DAY2: ScheduleItem[] = [
 
 // Helper function to get all schedule sessions for a speaker
 export const getSessionsForSpeaker = (speakerName: string): ScheduleItem[] => {
-  const allSessions = [...SCHEDULE_DAY1, ...SCHEDULE_DAY2];
+  const allSessions = [...SCHEDULE_DAY0, ...SCHEDULE_DAY1, ...SCHEDULE_DAY2];
   return allSessions
     .filter((session) => session.speaker === speakerName)
     .map((session, index) => ({
       ...session,
-      day: session.id.startsWith("day1-") ? 1 : 2,
+      day: session.id.startsWith("day0-") ? 0 : session.id.startsWith("day1-") ? 1 : 2,
     }));
 };
 

@@ -12,12 +12,18 @@
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
+        "ITSAppUsesNonExemptEncryption": false,
+        "UIBackgroundModes": [
+          "remote-notification"
+        ]
       },
       "bundleIdentifier": "com.meticon.app"
     },
     "android": {
       "package": "com.meticon.app",
+      "permissions": [
+        "android.permission.POST_NOTIFICATIONS"
+      ],
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -48,6 +54,9 @@
             "backgroundColor": "#000000"
           }
         }
+      ],
+      [
+        "expo-notifications"
       ]
     ],
     "experiments": {
@@ -57,15 +66,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "0e570a85-6fe7-4f1f-b8db-ce769ebb8c87"
+        "projectId": "57a74f5b-62cd-434d-8988-9673cb3343b8"
       }
     },
-    "owner": "shubham_asati",
-    "updates": {
-      "url": "https://u.expo.dev/0e570a85-6fe7-4f1f-b8db-ce769ebb8c87"
-    },
-    "runtimeVersion": {
-      "policy": "appVersion"
-    }
+    "owner": "k29laksh"
   }
 }

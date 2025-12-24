@@ -2,11 +2,6 @@ import { View, Text, Image, StyleSheet } from 'react-native';
 
 const patronData = [
   {
-    name: 'Hon. Shri. Pankaj Bhujbal',
-    role: 'Trustee, MET, Bhujbal Knowledge City',
-    image: require('@/assets/images/pankaj.png'),
-  },
-  {
     name: 'Hon. Shri Chhagan Bhujbal',
     role: 'Chairman, MET, Bhujbal Knowledge City',
     image: require('@/assets/images/chaggan.png'),
@@ -16,6 +11,12 @@ const patronData = [
     role: 'Trustee, MET, Bhujbal Knowledge City',
     image: require('@/assets/images/samir.png'),
   },
+  {
+    name: 'Hon. Shri. Pankaj Bhujbal',
+    role: 'Trustee, MET, Bhujbal Knowledge City',
+    image: require('@/assets/images/pankaj.png'),
+  },
+  
   {
     name: 'Hon. Dr. Shefali Bhujbal',
     role: 'Member, MET, Bhujbal Knowledge City',

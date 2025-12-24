@@ -1,10 +1,12 @@
 import Footer from "@/components/Footer";
 import {
+  SCHEDULE_DAY0,
   SCHEDULE_DAY1,
   SCHEDULE_DAY2,
   type ScheduleItem,
 } from "@/constants/scheduleData";
 import { sessionStorage } from "@/utils/sessionStorage";
+import { requestNotificationPermissions } from "@/utils/notificationManager";
 import { MaterialIcons } from "@expo/vector-icons";
 import React, { useEffect, useState } from "react";
 import {
@@ -20,7 +22,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 const TRACKS = ["All", "Sessions", "Breaks"];
 
 export default function ScheduleScreen() {
-  const [selectedDay, setSelectedDay] = useState(1);
+  const [selectedDay, setSelectedDay] = useState(0);
   const [selectedTrack, setSelectedTrack] = useState("All");
   const [currentTime, setCurrentTime] = useState(new Date());
   const [savedSessionIds, setSavedSessionIds] = useState<Set<string>>(
@@ -41,6 +43,9 @@ export default function ScheduleScreen() {
       await sessionStorage.initialize();
       const saved = sessionStorage.getSavedSessions();
       setSavedSessionIds(new Set(saved.map((s) => s.id)));
+      
+      // Request notification permissions on first load
+      await requestNotificationPermissions();
     };
 
     initStorage();
@@ -57,6 +62,7 @@ export default function ScheduleScreen() {
   }, []);
 
   const getCurrentSchedule = () => {
+    if (selectedDay === 0) return SCHEDULE_DAY0;
     return selectedDay === 1 ? SCHEDULE_DAY1 : SCHEDULE_DAY2;
   };
 
@@ -71,13 +77,26 @@ export default function ScheduleScreen() {
   };
 
   const isHappeningNow = (timeSlot: string) => {
-    const confDay = selectedDay === 1 ? 9 : 10;
-    if (
-      currentTime.getDate() !== confDay ||
-      currentTime.getMonth() !== 0 ||
-      currentTime.getFullYear() !== 2026
-    ) {
-      return false;
+    // For Day 0 testing: Check today's date (Dec 25, 2025)
+    if (selectedDay === 0) {
+      const today = new Date();
+      if (
+        currentTime.getDate() !== today.getDate() ||
+        currentTime.getMonth() !== today.getMonth() ||
+        currentTime.getFullYear() !== today.getFullYear()
+      ) {
+        return false;
+      }
+    } else {
+      // Production: Check conference dates (Jan 9-10, 2026)
+      const confDay = selectedDay === 1 ? 9 : 10;
+      if (
+        currentTime.getDate() !== confDay ||
+        currentTime.getMonth() !== 0 ||
+        currentTime.getFullYear() !== 2026
+      ) {
+        return false;
+      }
     }
 
     const [startTime, endTime] = timeSlot.split(" - ");
@@ -118,6 +137,27 @@ export default function ScheduleScreen() {
           <Text style={styles.headerTitle}>Scientific Schedule</Text>
 
           <View style={styles.daySelectorContainer}>
+            <TouchableOpacity
+              style={[
+                styles.dayButton,
+                selectedDay === 0 && styles.dayButtonActive,
+              ]}
+              onPress={() => setSelectedDay(0)}
+            >
+              <MaterialIcons
+                name="calendar-today"
+                size={18}
+                color={selectedDay === 0 ? "#fff" : "#E31E24"}
+              />
+              <Text
+                style={[
+                  styles.dayButtonText,
+                  selectedDay === 0 && styles.dayButtonTextActive,
+                ]}
+              >
+                Day 0 (Jan 8)
+              </Text>
+            </TouchableOpacity>
             <TouchableOpacity
               style={[
                 styles.dayButton,
