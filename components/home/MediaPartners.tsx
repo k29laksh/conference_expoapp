@@ -35,12 +35,6 @@ export default function MediaPartners() {
         />
       </View>
 
-      <TouchableOpacity 
-        style={styles.abstractButton}
-        onPress={() => Linking.openURL('https://docs.google.com/forms/d/e/1FAIpQLScF_b4LPvYme8HqZiBgfxoOrzCKdFl1Uht-q35wbRcGCkL33A/viewform')}
-      >
-        <Text style={styles.abstractButtonText}>Submit Abstract</Text>
-      </TouchableOpacity>
 
       <View style={styles.pharmacyImageContainer}>
         <Image 
@@ -49,21 +43,6 @@ export default function MediaPartners() {
           resizeMode="contain"
         />
       </View>
-
-      <View style={styles.mediaImageContainer}>
-        <Image 
-          source={require('@/assets/images/sbicollect.png')}
-          style={styles.mediaImage}
-          resizeMode="contain"
-        />
-      </View>
-
-      <TouchableOpacity 
-        style={styles.sbiButton}
-        onPress={() => Linking.openURL('https://onlinesbi.sbi.bank.in/sbicollect/icollecthome.htm')}
-      >
-        <Text style={styles.sbiButtonText}>SBI COLLECT</Text>
-      </TouchableOpacity>
     </View>
   );
 }

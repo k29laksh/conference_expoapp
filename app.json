@@ -13,9 +13,12 @@
       "supportsTablet": true,
       "infoPlist": {
         "UIBackgroundModes": [
+          "remote-notification",
           "remote-notification"
-        ]
-      }
+        ],
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "bundleIdentifier": "com.meticon.app"
     },
     "android": {
       "package": "com.meticon.app",
@@ -75,6 +78,7 @@
       "eas": {
         "projectId": "0e570a85-6fe7-4f1f-b8db-ce769ebb8c87"
       }
-    }
+    },
+    "owner": "shubham_asati"
   }
 }

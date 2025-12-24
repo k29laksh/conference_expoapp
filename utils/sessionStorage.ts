@@ -1,5 +1,5 @@
-// Simple in-memory storage for saved sessions
-// Replace with AsyncStorage for persistence across app restarts
+// Persistent storage for saved sessions using AsyncStorage
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 interface ScheduleItem {
   id: string;
@@ -20,12 +20,58 @@ interface SpeakerSession {
   day: string;
 }
 
-// In-memory storage (will persist during app session)
+const SESSIONS_KEY = "@saved_sessions";
+const SPEAKERS_KEY = "@saved_speakers";
+
+// In-memory cache for faster access
 let savedSessions: ScheduleItem[] = [];
 let savedSpeakers: SpeakerSession[] = [];
 let listeners: (() => void)[] = [];
+let isInitialized = false;
+
+// Initialize storage from AsyncStorage
+async function initializeStorage(): Promise<void> {
+  if (isInitialized) return;
+
+  try {
+    const [sessionsData, speakersData] = await Promise.all([
+      AsyncStorage.getItem(SESSIONS_KEY),
+      AsyncStorage.getItem(SPEAKERS_KEY),
+    ]);
+
+    savedSessions = sessionsData ? JSON.parse(sessionsData) : [];
+    savedSpeakers = speakersData ? JSON.parse(speakersData) : [];
+    isInitialized = true;
+  } catch (error) {
+    console.error("Error loading saved data:", error);
+    savedSessions = [];
+    savedSpeakers = [];
+    isInitialized = true;
+  }
+}
+
+// Save sessions to AsyncStorage
+async function saveSessions(): Promise<void> {
+  try {
+    await AsyncStorage.setItem(SESSIONS_KEY, JSON.stringify(savedSessions));
+  } catch (error) {
+    console.error("Error saving sessions:", error);
+  }
+}
+
+// Save speakers to AsyncStorage
+async function saveSpeakers(): Promise<void> {
+  try {
+    await AsyncStorage.setItem(SPEAKERS_KEY, JSON.stringify(savedSpeakers));
+  } catch (error) {
+    console.error("Error saving speakers:", error);
+  }
+}
 
 export const sessionStorage = {
+  // Initialize storage (call on app start)
+  initialize: initializeStorage,
+
   // Get all saved sessions
   getSavedSessions: (): ScheduleItem[] => {
     return [...savedSessions];
@@ -47,30 +93,32 @@ export const sessionStorage = {
   },
 
   // Add session
-  addSession: (session: ScheduleItem): void => {
+  addSession: async (session: ScheduleItem): Promise<void> => {
     if (!sessionStorage.isSessionSaved(session.id)) {
       savedSessions.push(session);
+      await saveSessions();
       notifyListeners();
     }
   },
 
   // Remove session
-  removeSession: (sessionId: string): void => {
+  removeSession: async (sessionId: string): Promise<void> => {
     savedSessions = savedSessions.filter((s) => s.id !== sessionId);
+    await saveSessions();
     notifyListeners();
   },
 
   // Toggle session (add if not saved, remove if saved)
-  toggleSession: (session: ScheduleItem): boolean => {
+  toggleSession: async (session: ScheduleItem): Promise<boolean> => {
     const isSaved = sessionStorage.isSessionSaved(session.id);
     if (isSaved) {
-      sessionStorage.removeSession(session.id);
+      await sessionStorage.removeSession(session.id);
       // Also remove linked speaker if exists
       if (session.speaker) {
-        sessionStorage.removeSpeaker(session.speaker);
+        await sessionStorage.removeSpeaker(session.speaker);
       }
     } else {
-      sessionStorage.addSession(session);
+      await sessionStorage.addSession(session);
       // Also add linked speaker if exists
       if (session.speaker) {
         const speakerSession: SpeakerSession = {
@@ -80,51 +128,53 @@ export const sessionStorage = {
           time: session.time,
           day: session.day === 1 ? "Day-I" : "Day-II",
         };
-        sessionStorage.addSpeaker(speakerSession);
+        await sessionStorage.addSpeaker(speakerSession);
       }
     }
     return !isSaved; // Return new state
   },
 
   // Add speaker session
-  addSpeaker: (speaker: SpeakerSession): void => {
+  addSpeaker: async (speaker: SpeakerSession): Promise<void> => {
     if (!sessionStorage.isSpeakerSaved(speaker.speakerName)) {
       savedSpeakers.push(speaker);
+      await saveSpeakers();
       notifyListeners();
     }
   },
 
   // Remove speaker session
-  removeSpeaker: (speakerName: string): void => {
+  removeSpeaker: async (speakerName: string): Promise<void> => {
     savedSpeakers = savedSpeakers.filter((s) => s.speakerName !== speakerName);
+    await saveSpeakers();
     notifyListeners();
   },
 
   // Toggle speaker (add if not saved, remove if saved)
-  toggleSpeaker: (
+  toggleSpeaker: async (
     speaker: SpeakerSession,
     linkedScheduleSessions?: ScheduleItem[]
-  ): boolean => {
+  ): Promise<boolean> => {
     const isSaved = sessionStorage.isSpeakerSaved(speaker.speakerName);
     if (isSaved) {
-      sessionStorage.removeSpeaker(speaker.speakerName);
+      await sessionStorage.removeSpeaker(speaker.speakerName);
       // Also remove all linked schedule sessions for this speaker
       if (linkedScheduleSessions) {
-        linkedScheduleSessions.forEach((session) => {
+        for (const session of linkedScheduleSessions) {
           if (session.speaker === speaker.speakerName) {
-            sessionStorage.removeSession(session.id);
+            await sessionStorage.removeSession(session.id);
           }
-        });
+        }
       }
     } else {
-      sessionStorage.addSpeaker(speaker);
+      await sessionStorage.addSpeaker(speaker);
       // Also add all linked schedule sessions for this speaker
       if (linkedScheduleSessions) {
-        linkedScheduleSessions.forEach((session) => {
+        for (const session of linkedScheduleSessions) {
           if (session.speaker === speaker.speakerName) {
-            sessionStorage.addSession(session);
+            await sessionStorage.addSession(session);
           }
-        });
+        }
       }
     }
     return !isSaved; // Return new state
@@ -136,9 +186,10 @@ export const sessionStorage = {
   },
 
   // Clear all saved items
-  clearAll: (): void => {
+  clearAll: async (): Promise<void> => {
     savedSessions = [];
     savedSpeakers = [];
+    await Promise.all([saveSessions(), saveSpeakers()]);
     notifyListeners();
   },
 
@@ -156,37 +207,3 @@ export const sessionStorage = {
 function notifyListeners() {
   listeners.forEach((listener) => listener());
 }
-
-// TODO: Replace with AsyncStorage implementation
-// Example implementation with AsyncStorage:
-/*
-import AsyncStorage from '@react-native-async-storage/async-storage';
-
-const SESSIONS_KEY = '@saved_sessions';
-const SPEAKERS_KEY = '@saved_speakers';
-
-export const sessionStorage = {
-  getSavedSessions: async (): Promise<ScheduleItem[]> => {
-    try {
-      const data = await AsyncStorage.getItem(SESSIONS_KEY);
-      return data ? JSON.parse(data) : [];
-    } catch (error) {
-      console.error('Error loading sessions:', error);
-      return [];
-    }
-  },
-
-  addSession: async (session: ScheduleItem): Promise<void> => {
-    try {
-      const sessions = await sessionStorage.getSavedSessions();
-      const updated = [...sessions, session];
-      await AsyncStorage.setItem(SESSIONS_KEY, JSON.stringify(updated));
-      notifyListeners();
-    } catch (error) {
-      console.error('Error saving session:', error);
-    }
-  },
-
-  // ... similar implementations for other methods
-};
-*/

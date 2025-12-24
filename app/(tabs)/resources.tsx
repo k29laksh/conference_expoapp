@@ -12,11 +12,6 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function ResourcesScreen() {
-  const handleCallForPaper = () => {
-    Linking.openURL(
-      "https://docs.google.com/forms/d/e/1FAIpQLScF_b4LPvYme8HqZiBgfxoOrzCKdFl1Uht-q35wbRcGCkL33A/viewform"
-    );
-  };
 
   const handleSouvenir = () => {
     // Check if user is logged in (implement your auth logic)
@@ -97,22 +92,6 @@ export default function ResourcesScreen() {
 
         {/* Resource Cards */}
         <View style={styles.resourcesContainer}>
-          {/* Call for Paper */}
-          <TouchableOpacity
-            style={styles.resourceCard}
-            onPress={handleCallForPaper}
-          >
-            <View style={styles.cardIcon}>
-              <MaterialIcons name="article" size={36} color="#EF4444" />
-            </View>
-            <View style={styles.cardContent}>
-              <Text style={styles.cardTitle}>Call for Paper</Text>
-              <Text style={styles.cardDescription}>
-                Submit your abstract for the conference
-              </Text>
-            </View>
-            <MaterialIcons name="arrow-forward" size={24} color="#666" />
-          </TouchableOpacity>
 
           {/* Souvenir */}
           <TouchableOpacity

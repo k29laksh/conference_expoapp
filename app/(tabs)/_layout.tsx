@@ -125,19 +125,18 @@ export default function TabLayout() {
             }}
           />
           <Tabs.Screen
-            name="basket"
+            name="networking"
             options={{
-              title: "My Schedule",
+              title: "Network",
               tabBarIcon: ({ color }) => (
-                <MaterialIcons name="bookmark" size={24} color={color} />
+                <MaterialIcons name="people" size={24} color={color} />
               ),
-              tabBarBadge: badgeCount > 0 ? badgeCount : undefined,
             }}
           />
           <Tabs.Screen
-            name="registration"
+            name="basket"
             options={{
-              href: null, // Hide from tab bar
+              href: null, // Hide from tab bar - accessible via header button
             }}
           />
           <Tabs.Screen

@@ -203,19 +203,27 @@ export default function SpeakersScreen() {
   const [savedSpeakers, setSavedSpeakers] = useState<Set<string>>(new Set());
 
   useEffect(() => {
+    // Initialize storage
+    const initStorage = async () => {
+      await sessionStorage.initialize();
+      const saved = sessionStorage.getSavedSpeakers();
+      setSavedSpeakers(new Set(saved.map((s) => s.speakerName)));
+    };
+
+    initStorage();
+
     // Subscribe to session storage changes
     const updateSavedSpeakers = () => {
       const saved = sessionStorage.getSavedSpeakers();
       setSavedSpeakers(new Set(saved.map((s) => s.speakerName)));
     };
 
-    updateSavedSpeakers();
     const unsubscribe = sessionStorage.subscribe(updateSavedSpeakers);
 
     return () => unsubscribe();
   }, []);
 
-  const handleToggleBookmark = (speaker: Speaker) => {
+  const handleToggleBookmark = async (speaker: Speaker) => {
     const speakerSession = {
       id: `speaker-${speaker.name}`,
       speakerName: speaker.name,
@@ -231,7 +239,7 @@ export default function SpeakersScreen() {
       day: session.id.startsWith("day1-") ? 1 : 2,
     }));
 
-    const isSaved = sessionStorage.toggleSpeaker(
+    const isSaved = await sessionStorage.toggleSpeaker(
       speakerSession,
       linkedSessionsWithDay
     );

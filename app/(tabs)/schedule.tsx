@@ -37,13 +37,21 @@ export default function ScheduleScreen() {
   }, []);
 
   useEffect(() => {
+    // Initialize storage
+    const initStorage = async () => {
+      await sessionStorage.initialize();
+      const saved = sessionStorage.getSavedSessions();
+      setSavedSessionIds(new Set(saved.map((s) => s.id)));
+    };
+
+    initStorage();
+
     // Subscribe to session storage changes
     const updateSavedSessions = () => {
       const saved = sessionStorage.getSavedSessions();
       setSavedSessionIds(new Set(saved.map((s) => s.id)));
     };
 
-    updateSavedSessions();
     const unsubscribe = sessionStorage.subscribe(updateSavedSessions);
 
     return () => unsubscribe();
@@ -94,14 +102,14 @@ export default function ScheduleScreen() {
     );
   };
 
-  const handleToggleBookmark = (item: ScheduleItem) => {
+  const handleToggleBookmark = async (item: ScheduleItem) => {
     if (item.type === "break") {
       // Don't allow saving breaks
       return;
     }
 
     const session = { ...item, day: selectedDay };
-    const isSaved = sessionStorage.toggleSession(session);
+    const isSaved = await sessionStorage.toggleSession(session);
 
     if (isSaved) {
       // Send notification when session is added with scheduling

@@ -313,8 +313,12 @@ export default function BasketScreen() {
             <MaterialIcons name="event-available" size={64} color="#D1D5DB" />
             <Text style={styles.emptyTitle}>No Sessions Added</Text>
             <Text style={styles.emptyText}>
-              Go to the Schedule tab and tap the bookmark icon to add sessions
-              to your personalized agenda.
+              Build your personalized conference schedule by selecting sessions
+              that interest you.
+            </Text>
+            <Text style={styles.emptySubtext}>
+              💡 Go to the Schedule tab and tap the bookmark icon to save
+              sessions
             </Text>
 
             {/* Test Notification Button */}
@@ -645,6 +649,14 @@ const styles = StyleSheet.create({
     color: "#6b7280",
     textAlign: "center",
     lineHeight: 20,
+    marginBottom: 8,
+  },
+  emptySubtext: {
+    fontSize: 13,
+    color: "#9CA3AF",
+    textAlign: "center",
+    fontStyle: "italic",
+    lineHeight: 18,
   },
   testNotificationButton: {
     flexDirection: "row",

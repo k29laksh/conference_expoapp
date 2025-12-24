@@ -4,7 +4,6 @@ import { MaterialIcons } from '@expo/vector-icons';
 import { useState, useRef } from 'react';
 import EventCarousel from '@/components/home/EventCarousel';
 import MediaPartners from '@/components/home/MediaPartners';
-import PaymentSection from '@/components/home/PaymentSection';
 import NashikGlimpses from '@/components/home/NashikGlimpses';
 import PatronSection from '@/components/home/PatronSection';
 import Footer from '@/components/Footer';
@@ -16,34 +15,6 @@ export default function HomeScreen() {
   const animationHeight = useRef(new Animated.Value(0)).current;
   const rotateAnim = useRef(new Animated.Value(0)).current;
 
-  const thrustAreaTopics = [
-    'Pharmaceutical Technology, Biotechnology & Nanotechnology',
-    'Natural Products & Herbal Technology',
-    'Computer Aided Drug Design & Pharmaceutical Chemistry',
-    'Pharmacology, Clinical Pharmacy, Pharmacovigilance & Pharmacy Practice',
-    'Pharmaceutical Analysis & Quality Assurance',
-    'Regulatory Affairs & Intellectual Property Rights',
-    'Medical Devices and related technology'
-  ];
-
-  const toggleThrustArea = () => {
-    const toValue = isThrustAreaExpanded ? 0 : 1;
-    
-    Animated.parallel([
-      Animated.timing(animationHeight, {
-        toValue,
-        duration: 300,
-        useNativeDriver: false,
-      }),
-      Animated.timing(rotateAnim, {
-        toValue,
-        duration: 300,
-        useNativeDriver: true,
-      })
-    ]).start();
-
-    setIsThrustAreaExpanded(!isThrustAreaExpanded);
-  };
 
   const heightInterpolate = animationHeight.interpolate({
     inputRange: [0, 1],
@@ -68,16 +39,6 @@ export default function HomeScreen() {
 
      
       <EventCarousel />
-
-      {/* Register Button */}
-      <View style={styles.registerButtonContainer}>
-        <TouchableOpacity 
-          style={styles.clickToRegisterButton}
-          onPress={() => Linking.openURL('https://docs.google.com/forms/d/e/1FAIpQLSel1sMkCNZ50AU7DXslL-fi6xFOQO3kLB6xBAXaGKS0Gu3Tnw/viewform')}
-        >
-          <Text style={styles.clickToRegisterText}>Click here to register</Text>
-        </TouchableOpacity>
-      </View>
 
       {/* Programs Offered
       <View style={styles.programsSection}>
@@ -123,7 +84,6 @@ export default function HomeScreen() {
 
       <MediaPartners />
 
-      <PaymentSection />
 
       {/* At a Glance Image */}
       <View style={styles.glanceSection}>
@@ -135,42 +95,7 @@ export default function HomeScreen() {
       </View>
 
       {/* Thrust Area */}
-      <View style={styles.thrustSection}>
-        <TouchableOpacity 
-          style={styles.thrustHeader}
-          onPress={toggleThrustArea}
-          activeOpacity={0.7}
-        >
-          <Text style={styles.sectionTitle}>THRUST AREA</Text>
-          <Animated.View style={{ transform: [{ rotate: rotateInterpolate }] }}>
-            <MaterialIcons 
-              name="keyboard-arrow-down" 
-              size={28} 
-              color="#333" 
-            />
-          </Animated.View>
-        </TouchableOpacity>
-        <View style={styles.divider} />
-        
-        <Animated.View 
-          style={[
-            styles.thrustTopicsContainer,
-            { 
-              maxHeight: heightInterpolate,
-              opacity: animationHeight,
-            }
-          ]}
-        >
-          <View style={styles.thrustTopicsList}>
-            {thrustAreaTopics.map((topic, index) => (
-              <View key={index} style={styles.thrustTopicItem}>
-                <Text style={styles.thrustBullet}>■</Text>
-                <Text style={styles.thrustTopicText}>{topic}</Text>
-              </View>
-            ))}
-          </View>
-        </Animated.View>
-        
+      <View style={styles.thrustSection}>        
         <PatronSection />
 
         {/* Convener */}

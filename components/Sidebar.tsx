@@ -13,7 +13,6 @@ const menuItems: MenuItem[] = [
   { title: 'About', path: '/(tabs)/about', icon: 'info.circle.fill' },
   { title: 'Speakers', path: '/(tabs)/speakers', icon: 'person.3.fill' },
   { title: 'Schedule', path: '/(tabs)/schedule', icon: 'calendar' },
-  { title: 'Registration', path: '/(tabs)/registration', icon: 'doc.text.fill' },
   { title: 'Contact', path: '/(tabs)/explore', icon: 'envelope.fill' },
 ];
 
