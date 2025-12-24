@@ -2,7 +2,7 @@ import { sessionStorage } from "@/utils/sessionStorage";
 import { MaterialIcons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import { useEffect, useState } from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function Header() {
@@ -31,17 +31,11 @@ export default function Header() {
     <View style={[styles.header, { paddingTop: insets.top }]}>
       {/* Logo Section */}
       <View style={styles.logoContainer}>
-        <View style={styles.logoIcon}>
-          <View style={styles.triangleTop} />
-          <View style={styles.triangleBottom} />
-        </View>
-        <View style={styles.logoTextContainer}>
-          <Text style={styles.logoTextMain}>BHUJBAL</Text>
-          <Text style={styles.logoTextSub}>KNOWLEDGE CITY</Text>
-          <View style={styles.trustBadge}>
-            <Text style={styles.trustText}>Mumbai Educational Trust</Text>
-          </View>
-        </View>
+        <Image
+          source={require("@/assets/images/icon.png")}
+          style={styles.logoIcon}
+          resizeMode="contain"
+        />
       </View>
 
       {/* My Schedule Button */}
@@ -91,30 +85,8 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   logoIcon: {
-    width: 35,
-    height: 40,
-    position: "relative",
-  },
-  triangleTop: {
-    width: 0,
-    height: 0,
-    borderLeftWidth: 17.5,
-    borderRightWidth: 17.5,
-    borderBottomWidth: 20,
-    borderLeftColor: "transparent",
-    borderRightColor: "transparent",
-    borderBottomColor: "#E31E24",
-  },
-  triangleBottom: {
-    width: 0,
-    height: 0,
-    borderLeftWidth: 17.5,
-    borderRightWidth: 17.5,
-    borderTopWidth: 20,
-    borderLeftColor: "transparent",
-    borderRightColor: "transparent",
-    borderTopColor: "#E31E24",
-    marginTop: -2,
+    width: 60,
+    height: 60,
   },
   logoTextContainer: {
     alignItems: "flex-start",

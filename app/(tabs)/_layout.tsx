@@ -1,7 +1,8 @@
 import { MaterialIcons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 import { useEffect, useState } from "react";
-import { StyleSheet, useWindowDimensions, View } from "react-native";
+import { Platform, StyleSheet, useWindowDimensions, View } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { HapticTab } from "@/components/haptic-tab";
 import Header from "@/components/Header";
@@ -12,6 +13,7 @@ export default function TabLayout() {
   const { width } = useWindowDimensions();
   const isLargeScreen = width >= 1024;
   const [badgeCount, setBadgeCount] = useState(0);
+  const insets = useSafeAreaInsets();
 
   useEffect(() => {
     // Subscribe to session storage changes to update badge
@@ -44,7 +46,14 @@ export default function TabLayout() {
               borderTopWidth: 1,
               borderTopColor: "#e1e4eaff",
               paddingVertical: 4,
-              height: 60,
+              paddingBottom:
+                Platform.OS === "android"
+                  ? Math.max(insets.bottom, 4)
+                  : insets.bottom + 4,
+              height:
+                Platform.OS === "android"
+                  ? 60 + Math.max(insets.bottom, 0)
+                  : 60 + insets.bottom,
             },
             tabBarLabelStyle: {
               fontSize: 11,
