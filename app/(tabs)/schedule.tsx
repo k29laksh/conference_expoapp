@@ -4,7 +4,6 @@ import {
   SCHEDULE_DAY2,
   type ScheduleItem,
 } from "@/constants/scheduleData";
-import { notificationManager } from "@/utils/notificationManager";
 import { sessionStorage } from "@/utils/sessionStorage";
 import { MaterialIcons } from "@expo/vector-icons";
 import React, { useEffect, useState } from "react";
@@ -94,14 +93,6 @@ export default function ScheduleScreen() {
     return currentMinutes >= startMinutes && currentMinutes < endMinutes;
   };
 
-  const handleExportCalendar = () => {
-    Alert.alert(
-      "Export to Calendar",
-      "This will create calendar events for all sessions. Feature coming soon!",
-      [{ text: "OK" }]
-    );
-  };
-
   const handleToggleBookmark = async (item: ScheduleItem) => {
     if (item.type === "break") {
       // Don't allow saving breaks
@@ -111,24 +102,10 @@ export default function ScheduleScreen() {
     const session = { ...item, day: selectedDay };
     const isSaved = await sessionStorage.toggleSession(session);
 
-    if (isSaved) {
-      // Send notification when session is added with scheduling
-      notificationManager.notifySessionStart(
-        item.title,
-        item.time,
-        item.venue,
-        item.id,
-        selectedDay
-      );
-    } else {
-      // Cancel scheduled notification when removed
-      notificationManager.cancelSessionNotification(item.id);
-    }
-
     Alert.alert(
       isSaved ? "Added to My Schedule" : "Removed from My Schedule",
       isSaved
-        ? `"${item.title}" has been added to your personal schedule. You'll receive a reminder 15 minutes before it starts.`
+        ? `"${item.title}" has been added to your personal schedule.`
         : `"${item.title}" has been removed from your personal schedule.`,
       [{ text: "OK" }]
     );
@@ -184,14 +161,6 @@ export default function ScheduleScreen() {
               </Text>
             </TouchableOpacity>
           </View>
-
-          <TouchableOpacity
-            style={styles.exportButton}
-            onPress={handleExportCalendar}
-          >
-            <MaterialIcons name="file-download" size={20} color="#fff" />
-            <Text style={styles.exportButtonText}>Export to Calendar</Text>
-          </TouchableOpacity>
         </View>
 
         <View style={styles.filterContainer}>
@@ -373,20 +342,6 @@ const styles = StyleSheet.create({
   },
   dayButtonTextActive: {
     color: "#fff",
-  },
-  exportButton: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: "rgba(0,0,0,0.2)",
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-    borderRadius: 20,
-    gap: 8,
-  },
-  exportButtonText: {
-    color: "#fff",
-    fontWeight: "600",
-    fontSize: 14,
   },
   filterContainer: {
     backgroundColor: "#fff",

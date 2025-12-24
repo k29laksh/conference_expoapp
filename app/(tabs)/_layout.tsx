@@ -6,38 +6,12 @@ import { StyleSheet, useWindowDimensions, View } from "react-native";
 import { HapticTab } from "@/components/haptic-tab";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
-import {
-  requestNotificationPermissions,
-  setupNotificationReceivedListener,
-} from "@/utils/notificationSetup";
 import { sessionStorage } from "@/utils/sessionStorage";
 
 export default function TabLayout() {
   const { width } = useWindowDimensions();
   const isLargeScreen = width >= 1024;
   const [badgeCount, setBadgeCount] = useState(0);
-
-  useEffect(() => {
-    // Request notification permissions on app mount
-    requestNotificationPermissions().then((granted) => {
-      if (granted) {
-        console.log("Notification permissions granted");
-      } else {
-        console.log("Notification permissions denied");
-      }
-    });
-
-    // Set up notification listener for foreground notifications
-    const unsubscribeNotifications = setupNotificationReceivedListener(
-      (notification) => {
-        console.log("Notification received in foreground:", notification);
-      }
-    );
-
-    return () => {
-      unsubscribeNotifications();
-    };
-  }, []);
 
   useEffect(() => {
     // Subscribe to session storage changes to update badge

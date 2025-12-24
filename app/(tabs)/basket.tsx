@@ -1,18 +1,12 @@
 import Footer from "@/components/Footer";
-import {
-  notificationManager,
-  NotificationPreferences,
-} from "@/utils/notificationManager";
 import { sessionStorage } from "@/utils/sessionStorage";
 import { MaterialIcons } from "@expo/vector-icons";
 import React, { useEffect, useState } from "react";
 import {
   Alert,
-  Modal,
   ScrollView,
   Share,
   StyleSheet,
-  Switch,
   Text,
   TouchableOpacity,
   View,
@@ -34,10 +28,6 @@ export default function BasketScreen() {
   const [savedSessions, setSavedSessions] = useState<ScheduleItem[]>([]);
   const [viewMode, setViewMode] = useState<"all" | "day1" | "day2">("all");
   const [conflicts, setConflicts] = useState<string[]>([]);
-  const [showNotificationSettings, setShowNotificationSettings] =
-    useState(false);
-  const [notificationPreferences, setNotificationPreferences] =
-    useState<NotificationPreferences>(notificationManager.getPreferences());
 
   useEffect(() => {
     // Subscribe to session storage changes
@@ -131,71 +121,6 @@ export default function BasketScreen() {
     );
   };
 
-  const handleToggleNotification = (key: keyof NotificationPreferences) => {
-    const updated = {
-      ...notificationPreferences,
-      [key]: !notificationPreferences[key],
-    };
-    setNotificationPreferences(updated);
-    notificationManager.updatePreferences(updated);
-  };
-
-  const handleOpenNotificationSettings = () => {
-    setShowNotificationSettings(true);
-  };
-
-  const handleTestNotification = () => {
-    // Demo different types of notifications
-    Alert.alert("Test Notifications", "Choose a notification type to test:", [
-      {
-        text: "Session Start",
-        onPress: () => {
-          notificationManager.notifySessionStart(
-            "Natural non-antibiotic antimicrobials",
-            "11:00 - 12:00",
-            "Main Hall"
-          );
-          Alert.alert(
-            "Notification Sent",
-            "Check your notification preferences!"
-          );
-        },
-      },
-      {
-        text: "Session Change",
-        onPress: () => {
-          notificationManager.notifySessionChange(
-            "Panel Discussion",
-            "Time changed to 2:00 PM"
-          );
-          Alert.alert("Notification Sent", "Session update notification sent!");
-        },
-      },
-      {
-        text: "Venue Update",
-        onPress: () => {
-          notificationManager.notifyVenueUpdate(
-            "Expert Session",
-            "Room A",
-            "Main Auditorium"
-          );
-          Alert.alert("Notification Sent", "Venue change notification sent!");
-        },
-      },
-      {
-        text: "Announcement",
-        onPress: () => {
-          notificationManager.notifyAnnouncement(
-            "Welcome to MET-I-CON 2026",
-            "Conference starts tomorrow at 9:00 AM. Don't forget to check in!"
-          );
-          Alert.alert("Notification Sent", "General announcement sent!");
-        },
-      },
-      { text: "Cancel", style: "cancel" },
-    ]);
-  };
-
   const filteredSessions = savedSessions.filter((session) => {
     if (viewMode === "all") return true;
     if (viewMode === "day1") return session.day === 1;
@@ -223,12 +148,6 @@ export default function BasketScreen() {
               </Text>
             </View>
             <View style={styles.headerActions}>
-              <TouchableOpacity
-                style={styles.actionButton}
-                onPress={handleOpenNotificationSettings}
-              >
-                <MaterialIcons name="notifications" size={24} color="#EF4444" />
-              </TouchableOpacity>
               <TouchableOpacity
                 style={styles.actionButton}
                 onPress={handleShare}
@@ -320,21 +239,6 @@ export default function BasketScreen() {
               💡 Go to the Schedule tab and tap the bookmark icon to save
               sessions
             </Text>
-
-            {/* Test Notification Button */}
-            <TouchableOpacity
-              style={styles.testNotificationButton}
-              onPress={handleTestNotification}
-            >
-              <MaterialIcons
-                name="notifications-active"
-                size={20}
-                color="#EF4444"
-              />
-              <Text style={styles.testNotificationText}>
-                Test Notifications
-              </Text>
-            </TouchableOpacity>
           </View>
         ) : (
           <View style={styles.sessionsContainer}>
@@ -399,146 +303,6 @@ export default function BasketScreen() {
             ))}
           </View>
         )}
-
-        {/* Notification Settings Modal */}
-        <Modal
-          visible={showNotificationSettings}
-          animationType="slide"
-          transparent={true}
-          onRequestClose={() => setShowNotificationSettings(false)}
-        >
-          <View style={styles.modalOverlay}>
-            <View style={styles.modalContent}>
-              <View style={styles.modalHeader}>
-                <Text style={styles.modalTitle}>Notification Preferences</Text>
-                <TouchableOpacity
-                  onPress={() => setShowNotificationSettings(false)}
-                  style={styles.modalCloseButton}
-                >
-                  <MaterialIcons name="close" size={24} color="#666" />
-                </TouchableOpacity>
-              </View>
-
-              <View style={styles.modalBody}>
-                <Text style={styles.modalDescription}>
-                  Choose which notifications you want to receive for your saved
-                  sessions
-                </Text>
-
-                <View style={styles.preferenceItem}>
-                  <View style={styles.preferenceInfo}>
-                    <MaterialIcons name="schedule" size={24} color="#EF4444" />
-                    <View style={styles.preferenceText}>
-                      <Text style={styles.preferenceTitle}>Session Starts</Text>
-                      <Text style={styles.preferenceDescription}>
-                        Get notified 15 minutes before your saved sessions start
-                      </Text>
-                    </View>
-                  </View>
-                  <Switch
-                    value={notificationPreferences.sessionStarts}
-                    onValueChange={() =>
-                      handleToggleNotification("sessionStarts")
-                    }
-                    trackColor={{ false: "#d1d5db", true: "#fca5a5" }}
-                    thumbColor={
-                      notificationPreferences.sessionStarts
-                        ? "#EF4444"
-                        : "#f4f4f5"
-                    }
-                  />
-                </View>
-
-                <View style={styles.preferenceItem}>
-                  <View style={styles.preferenceInfo}>
-                    <MaterialIcons name="update" size={24} color="#EF4444" />
-                    <View style={styles.preferenceText}>
-                      <Text style={styles.preferenceTitle}>
-                        Session Changes
-                      </Text>
-                      <Text style={styles.preferenceDescription}>
-                        Get notified when session details are updated
-                      </Text>
-                    </View>
-                  </View>
-                  <Switch
-                    value={notificationPreferences.sessionChanges}
-                    onValueChange={() =>
-                      handleToggleNotification("sessionChanges")
-                    }
-                    trackColor={{ false: "#d1d5db", true: "#fca5a5" }}
-                    thumbColor={
-                      notificationPreferences.sessionChanges
-                        ? "#EF4444"
-                        : "#f4f4f5"
-                    }
-                  />
-                </View>
-
-                <View style={styles.preferenceItem}>
-                  <View style={styles.preferenceInfo}>
-                    <MaterialIcons
-                      name="location-on"
-                      size={24}
-                      color="#EF4444"
-                    />
-                    <View style={styles.preferenceText}>
-                      <Text style={styles.preferenceTitle}>Venue Updates</Text>
-                      <Text style={styles.preferenceDescription}>
-                        Get notified when session venues change
-                      </Text>
-                    </View>
-                  </View>
-                  <Switch
-                    value={notificationPreferences.venueUpdates}
-                    onValueChange={() =>
-                      handleToggleNotification("venueUpdates")
-                    }
-                    trackColor={{ false: "#d1d5db", true: "#fca5a5" }}
-                    thumbColor={
-                      notificationPreferences.venueUpdates
-                        ? "#EF4444"
-                        : "#f4f4f5"
-                    }
-                  />
-                </View>
-
-                <View style={styles.preferenceItem}>
-                  <View style={styles.preferenceInfo}>
-                    <MaterialIcons name="campaign" size={24} color="#EF4444" />
-                    <View style={styles.preferenceText}>
-                      <Text style={styles.preferenceTitle}>
-                        General Announcements
-                      </Text>
-                      <Text style={styles.preferenceDescription}>
-                        Get notified about important conference updates
-                      </Text>
-                    </View>
-                  </View>
-                  <Switch
-                    value={notificationPreferences.generalAnnouncements}
-                    onValueChange={() =>
-                      handleToggleNotification("generalAnnouncements")
-                    }
-                    trackColor={{ false: "#d1d5db", true: "#fca5a5" }}
-                    thumbColor={
-                      notificationPreferences.generalAnnouncements
-                        ? "#EF4444"
-                        : "#f4f4f5"
-                    }
-                  />
-                </View>
-              </View>
-
-              <TouchableOpacity
-                style={styles.modalButton}
-                onPress={() => setShowNotificationSettings(false)}
-              >
-                <Text style={styles.modalButtonText}>Done</Text>
-              </TouchableOpacity>
-            </View>
-          </View>
-        </Modal>
 
         <Footer />
       </ScrollView>
@@ -657,23 +421,6 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontStyle: "italic",
     lineHeight: 18,
-  },
-  testNotificationButton: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 8,
-    marginTop: 20,
-    paddingVertical: 12,
-    paddingHorizontal: 20,
-    backgroundColor: "#FEE2E2",
-    borderRadius: 8,
-    borderWidth: 1,
-    borderColor: "#EF4444",
-  },
-  testNotificationText: {
-    fontSize: 14,
-    fontWeight: "600",
-    color: "#EF4444",
   },
   sessionsContainer: {
     padding: 16,

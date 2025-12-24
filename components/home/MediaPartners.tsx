@@ -27,15 +27,6 @@ export default function MediaPartners() {
         />
       </View>
 
-      <View style={styles.mediaImageContainer}>
-        <Image 
-          source={require('@/assets/images/books.png')}
-          style={styles.mediaImage}
-          resizeMode="contain"
-        />
-      </View>
-
-
       <View style={styles.pharmacyImageContainer}>
         <Image 
           source={require('@/assets/images/pharmacy.png')}

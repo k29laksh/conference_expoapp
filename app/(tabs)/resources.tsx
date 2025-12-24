@@ -35,7 +35,7 @@ export default function ResourcesScreen() {
       // GitHub raw URL for the PDF
       // Replace with your actual GitHub raw URL after uploading
       const brochureUrl =
-        "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/MET-ICON-Brochure.pdf";
+        "https://drive.google.com/file/d/10-VudCZuqVpshShvPQR_oPrNDg99WGiA/view?usp=sharing";
 
       await WebBrowser.openBrowserAsync(brochureUrl);
     } catch (error) {
@@ -183,6 +183,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderBottomWidth: 1,
     borderBottomColor: "#ddd",
+    justifyContent: "center",
   },
   socialIcons: {
     flexDirection: "row",

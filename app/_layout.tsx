@@ -9,7 +9,6 @@ import { useEffect } from "react";
 import "react-native-reanimated";
 
 import { useColorScheme } from "@/hooks/use-color-scheme";
-import { requestNotificationPermissions } from "@/utils/notificationSetup";
 import { sessionStorage } from "@/utils/sessionStorage";
 import { checkAndDownloadUpdateSilently } from "@/utils/updateManager";
 
@@ -27,14 +26,6 @@ export default function RootLayout() {
         // Initialize persistent storage
         await sessionStorage.initialize();
         console.log("Session storage initialized");
-
-        // Request notification permissions
-        const hasPermission = await requestNotificationPermissions();
-        if (hasPermission) {
-          console.log("Notification permissions granted");
-        } else {
-          console.log("Notification permissions denied");
-        }
 
         // Check for OTA updates silently in background
         await checkAndDownloadUpdateSilently();

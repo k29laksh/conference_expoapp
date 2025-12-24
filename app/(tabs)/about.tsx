@@ -196,13 +196,66 @@ export default function AboutScreen() {
           </View>
         </View>
 
-        {/* Objectives Image */}
-        <View style={styles.objectivesImageContainer}>
-          <Image
-            source={require("@/assets/images/about2.png")}
-            style={styles.objectivesImage}
-            resizeMode="cover"
-          />
+        {/* Objectives Section */}
+        <View style={styles.thrustSection}>
+          <Text style={styles.thrustTitle}>OBJECTIVES</Text>
+          <View style={styles.divider} />
+
+          <View style={styles.bulletPoint}>
+            <Text style={styles.bullet}>■</Text>
+            <Text style={styles.bulletText}>
+              To provide a dynamic platform for advancing pharmaceutical
+              knowledge and innovation.
+            </Text>
+          </View>
+
+          <View style={styles.bulletPoint}>
+            <Text style={styles.bullet}>■</Text>
+            <Text style={styles.bulletText}>
+              To bridge the innovation gap by addressing rapid technological
+              advancements in the pharmaceutical sector.
+            </Text>
+          </View>
+
+          <View style={styles.bulletPoint}>
+            <Text style={styles.bullet}>■</Text>
+            <Text style={styles.bulletText}>
+              To foster future-ready skills by providing insights into emerging
+              trends and opportunities.
+            </Text>
+          </View>
+
+          <View style={styles.bulletPoint}>
+            <Text style={styles.bullet}>■</Text>
+            <Text style={styles.bulletText}>
+              To promote digital health integration by exploring new avenues for
+              improving healthcare through innovative digital technologies.
+            </Text>
+          </View>
+
+          <View style={styles.bulletPoint}>
+            <Text style={styles.bullet}>■</Text>
+            <Text style={styles.bulletText}>
+              To facilitate collaborative exchange among academicians,
+              industrialists, clinical practitioners, and young pharmacists.
+            </Text>
+          </View>
+
+          <View style={styles.bulletPoint}>
+            <Text style={styles.bullet}>■</Text>
+            <Text style={styles.bulletText}>
+              To catalyze new conceptions and innovative approaches within the
+              pharmaceutical field.
+            </Text>
+          </View>
+
+          <View style={styles.bulletPoint}>
+            <Text style={styles.bullet}>■</Text>
+            <Text style={styles.bulletText}>
+              To showcase leading-edge research through plenary sessions and
+              presentations by scientists and research scholars.
+            </Text>
+          </View>
         </View>
 
         {/* Direction to Venue */}
@@ -266,19 +319,32 @@ export default function AboutScreen() {
               <View style={styles.dateItem}>
                 <MaterialIcons name="arrow-right" size={24} color="#E31E24" />
                 <Text style={styles.dateText}>
-                  Abstract Submission Deadline: TBA
+                  Abstract Submission: December 25th, 2025
                 </Text>
               </View>
               <View style={styles.dateItem}>
                 <MaterialIcons name="arrow-right" size={24} color="#E31E24" />
                 <Text style={styles.dateText}>
-                  Early Bird Registration: TBA
+                  Intimation of Acceptance: December 28th, 2025
                 </Text>
               </View>
               <View style={styles.dateItem}>
                 <MaterialIcons name="arrow-right" size={24} color="#E31E24" />
                 <Text style={styles.dateText}>
-                  Final Registration Deadline: TBA
+                  Final Registration for Paper Presenter: December 31st, 2025
+                </Text>
+              </View>
+              <View style={styles.dateItem}>
+                <MaterialIcons name="arrow-right" size={24} color="#E31E24" />
+                <Text style={styles.dateText}>
+                  Delegate Registration: December 31st, 2025
+                </Text>
+              </View>
+              <View style={styles.dateItem}>
+                <MaterialIcons name="arrow-right" size={24} color="#E31E24" />
+                <Text style={styles.dateText}>
+                  On the spot Registration (Subject to Availability): After
+                  January 5th, 2026
                 </Text>
               </View>
             </View>
@@ -416,17 +482,6 @@ const styles = StyleSheet.create({
     marginTop: 15,
     textDecorationLine: "underline",
   },
-  objectivesImageContainer: {
-    width: "100%",
-    height: 250,
-    marginVertical: 20,
-    paddingHorizontal: 20,
-  },
-  objectivesImage: {
-    width: "100%",
-    height: "100%",
-    borderRadius: 8,
-  },
   venueSection: {
     padding: 20,
     backgroundColor: "#fff",
@@ -481,6 +536,7 @@ const styles = StyleSheet.create({
   datesContent: {
     width: "100%",
     alignItems: "center",
+    padding: 8,
   },
   datesTitle: {
     fontSize: 22,

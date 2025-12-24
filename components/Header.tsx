@@ -1,13 +1,26 @@
+import { sessionStorage } from "@/utils/sessionStorage";
 import { MaterialIcons } from "@expo/vector-icons";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
-// 1. Import this hook
 import { useRouter } from "expo-router";
+import { useEffect, useState } from "react";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function Header() {
-  // 2. Get the safe area insets (this gives you the height of the status bar)
   const insets = useSafeAreaInsets();
   const router = useRouter();
+  const [badgeCount, setBadgeCount] = useState(0);
+
+  useEffect(() => {
+    const updateBadgeCount = () => {
+      const count = sessionStorage.getSavedSessions().length;
+      setBadgeCount(count);
+    };
+
+    updateBadgeCount();
+    const unsubscribe = sessionStorage.subscribe(updateBadgeCount);
+
+    return () => unsubscribe();
+  }, []);
 
   const handleMySchedule = () => {
     router.push("/(tabs)/basket");
@@ -40,7 +53,14 @@ export default function Header() {
         accessibilityHint="Navigate to your schedule"
         accessibilityRole="button"
       >
-        <MaterialIcons name="event-note" size={28} color="#E31E24" />
+        <View>
+          <MaterialIcons name="event-note" size={28} color="#E31E24" />
+          {badgeCount > 0 && (
+            <View style={styles.badge}>
+              <Text style={styles.badgeText}>{badgeCount}</Text>
+            </View>
+          )}
+        </View>
       </TouchableOpacity>
     </View>
   );
@@ -133,5 +153,23 @@ const styles = StyleSheet.create({
     color: "#E31E24",
     fontWeight: "600",
     textTransform: "lowercase",
+  },
+  badge: {
+    position: "absolute",
+    top: -6,
+    right: -8,
+    backgroundColor: "#EF4444",
+    borderRadius: 10,
+    minWidth: 20,
+    height: 20,
+    justifyContent: "center",
+    alignItems: "center",
+    borderWidth: 2,
+    borderColor: "#FFFFFF",
+  },
+  badgeText: {
+    color: "#FFFFFF",
+    fontSize: 11,
+    fontWeight: "bold",
   },
 });

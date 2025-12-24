@@ -1,6 +1,5 @@
 import Footer from "@/components/Footer";
 import { getSessionsForSpeaker } from "@/constants/scheduleData";
-import { notificationManager } from "@/utils/notificationManager";
 import { sessionStorage } from "@/utils/sessionStorage";
 import { MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons";
 import { useEffect, useState } from "react";
@@ -199,7 +198,6 @@ const speakers: Speaker[] = [
 
 export default function SpeakersScreen() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedTopic, setSelectedTopic] = useState("All");
   const [savedSpeakers, setSavedSpeakers] = useState<Set<string>>(new Set());
 
   useEffect(() => {
@@ -244,34 +242,16 @@ export default function SpeakersScreen() {
       linkedSessionsWithDay
     );
 
-    if (isSaved) {
-      // Send notification when speaker session is added
-      const dayNumber = speaker.day === "Day-I" ? 1 : 2;
-      notificationManager.notifySessionStart(
-        speaker.sessionTitle,
-        speaker.time,
-        speaker.organization,
-        speakerSession.id,
-        dayNumber
-      );
-    } else {
-      // Cancel scheduled notification when removed
-      notificationManager.cancelSessionNotification(speakerSession.id);
-    }
-
     Alert.alert(
       isSaved ? "Added to My Schedule" : "Removed from My Schedule",
       isSaved
-        ? `${speaker.name}'s session has been added to your personal schedule. You'll receive a reminder 15 minutes before it starts.`
+        ? `${speaker.name}'s session has been added to your personal schedule.`
         : `${speaker.name}'s session has been removed from your personal schedule.`,
       [{ text: "OK" }]
     );
   };
 
-  // Extract all unique topics
-  const allTopics = ["All", ...new Set(speakers.flatMap((s) => s.topics))];
-
-  // Filter speakers based on search and topic
+  // Filter speakers based on search
   const filteredSpeakers = speakers.filter((speaker) => {
     const matchesSearch =
       searchQuery === "" ||
@@ -282,10 +262,7 @@ export default function SpeakersScreen() {
         topic.toLowerCase().includes(searchQuery.toLowerCase())
       );
 
-    const matchesTopic =
-      selectedTopic === "All" || speaker.topics.includes(selectedTopic);
-
-    return matchesSearch && matchesTopic;
+    return matchesSearch;
   });
 
   const openLinkedIn = (url?: string) => {
@@ -320,36 +297,6 @@ export default function SpeakersScreen() {
               </TouchableOpacity>
             )}
           </View>
-        </View>
-
-        {/* Topic Filter */}
-        <View style={styles.filterSection}>
-          <Text style={styles.filterLabel}>Filter by Topic:</Text>
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            style={styles.topicFilters}
-          >
-            {allTopics.map((topic, index) => (
-              <TouchableOpacity
-                key={index}
-                style={[
-                  styles.topicFilter,
-                  selectedTopic === topic && styles.topicFilterActive,
-                ]}
-                onPress={() => setSelectedTopic(topic)}
-              >
-                <Text
-                  style={[
-                    styles.topicFilterText,
-                    selectedTopic === topic && styles.topicFilterTextActive,
-                  ]}
-                >
-                  {topic}
-                </Text>
-              </TouchableOpacity>
-            ))}
-          </ScrollView>
         </View>
 
         {/* Results Count */}
@@ -437,7 +384,7 @@ export default function SpeakersScreen() {
             <MaterialIcons name="search-off" size={64} color="#ccc" />
             <Text style={styles.noResultsText}>No experts found</Text>
             <Text style={styles.noResultsSubtext}>
-              Try adjusting your search or filter
+              Try adjusting your search
             </Text>
           </View>
         )}
@@ -515,42 +462,6 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 15,
     color: "#333",
-  },
-  filterSection: {
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-    backgroundColor: "#fff",
-  },
-  filterLabel: {
-    fontSize: 14,
-    fontWeight: "600",
-    color: "#333",
-    marginBottom: 10,
-  },
-  topicFilters: {
-    flexDirection: "row",
-  },
-  topicFilter: {
-    paddingHorizontal: 16,
-    paddingVertical: 8,
-    borderRadius: 20,
-    backgroundColor: "#f0f0f0",
-    marginRight: 10,
-    borderWidth: 1,
-    borderColor: "#e0e0e0",
-  },
-  topicFilterActive: {
-    backgroundColor: "#E31E24",
-    borderColor: "#E31E24",
-  },
-  topicFilterText: {
-    fontSize: 13,
-    color: "#666",
-    fontWeight: "500",
-  },
-  topicFilterTextActive: {
-    color: "#fff",
-    fontWeight: "600",
   },
   resultsSection: {
     paddingHorizontal: 20,

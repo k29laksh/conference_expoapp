@@ -12,7 +12,6 @@
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
-        "UIBackgroundModes": ["remote-notification", "remote-notification"],
         "ITSAppUsesNonExemptEncryption": false
       },
       "bundleIdentifier": "com.meticon.app"
@@ -30,12 +29,6 @@
       "enableProguardInReleaseBuilds": true,
       "enableShrinkResourcesInReleaseBuilds": true,
       "jsEngine": "hermes",
-      "permissions": [
-        "RECEIVE_BOOT_COMPLETED",
-        "SCHEDULE_EXACT_ALARM",
-        "USE_EXACT_ALARM",
-        "POST_NOTIFICATIONS"
-      ],
       "googleServicesFile": "./google-services.json"
     },
     "web": {
@@ -44,15 +37,6 @@
     },
     "plugins": [
       "expo-router",
-      [
-        "expo-notifications",
-        {
-          "icon": "./assets/images/icon.png",
-          "color": "#EF4444",
-          "sounds": [],
-          "mode": "production"
-        }
-      ],
       [
         "expo-splash-screen",
         {
