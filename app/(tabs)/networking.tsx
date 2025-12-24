@@ -1,6 +1,7 @@
+import candidatesData from "@/assets/registeredCandidates.json";
 import Footer from "@/components/Footer";
 import { MaterialIcons } from "@expo/vector-icons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Alert,
   Linking,
@@ -16,68 +17,27 @@ import { SafeAreaView } from "react-native-safe-area-context";
 interface Candidate {
   id: string;
   name: string;
-  designation: string;
-  organization: string;
+  institute: string;
+  email: string;
   phone: string;
-  interests: string[];
 }
-
-// Sample registered candidates data
-const registeredCandidates: Candidate[] = [
-  {
-    id: "1",
-    name: "Dr. Rajesh Kumar",
-    designation: "Professor",
-    organization: "IIT Mumbai",
-    phone: "919876543210",
-    interests: ["Pharmaceutical Chemistry", "Drug Development"],
-  },
-  {
-    id: "2",
-    name: "Dr. Priya Sharma",
-    designation: "Research Scientist",
-    organization: "CSIR-NCL Pune",
-    phone: "919876543211",
-    interests: ["Quality Assurance", "Regulatory Affairs"],
-  },
-  {
-    id: "3",
-    name: "Dr. Amit Patel",
-    designation: "Associate Professor",
-    organization: "NIPER Ahmedabad",
-    phone: "919876543212",
-    interests: ["Pharmacology", "Clinical Research"],
-  },
-  {
-    id: "4",
-    name: "Dr. Sneha Desai",
-    designation: "Head of Department",
-    organization: "Mumbai University",
-    phone: "919876543213",
-    interests: ["Pharmaceutics", "Novel Drug Delivery"],
-  },
-  {
-    id: "5",
-    name: "Dr. Vikram Singh",
-    designation: "Senior Scientist",
-    organization: "Sun Pharma",
-    phone: "919876543214",
-    interests: ["Process Development", "Manufacturing"],
-  },
-  {
-    id: "6",
-    name: "Dr. Anjali Mehta",
-    designation: "Assistant Professor",
-    organization: "Delhi Pharmaceutical Sciences",
-    phone: "919876543215",
-    interests: ["Herbal Medicine", "Natural Products"],
-  },
-];
 
 export default function NetworkingScreen() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [filteredCandidates, setFilteredCandidates] =
-    useState(registeredCandidates);
+  const [registeredCandidates, setRegisteredCandidates] = useState<Candidate[]>(
+    []
+  );
+  const [filteredCandidates, setFilteredCandidates] = useState<Candidate[]>([]);
+
+  // Load and auto-generate IDs for candidates
+  useEffect(() => {
+    const candidatesWithIds = candidatesData.map((candidate, index) => ({
+      ...candidate,
+      id: `METICON-${String(index + 1).padStart(4, "0")}`,
+    }));
+    setRegisteredCandidates(candidatesWithIds);
+    setFilteredCandidates(candidatesWithIds);
+  }, []);
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
@@ -87,11 +47,8 @@ export default function NetworkingScreen() {
       const filtered = registeredCandidates.filter(
         (candidate) =>
           candidate.name.toLowerCase().includes(query.toLowerCase()) ||
-          candidate.designation.toLowerCase().includes(query.toLowerCase()) ||
-          candidate.organization.toLowerCase().includes(query.toLowerCase()) ||
-          candidate.interests.some((interest) =>
-            interest.toLowerCase().includes(query.toLowerCase())
-          )
+          candidate.institute.toLowerCase().includes(query.toLowerCase()) ||
+          candidate.email.toLowerCase().includes(query.toLowerCase())
       );
       setFilteredCandidates(filtered);
     }
@@ -99,7 +56,7 @@ export default function NetworkingScreen() {
 
   const openWhatsApp = async (phone: string, name: string) => {
     const message = encodeURIComponent(
-      `Hello ${name}, I am attending MET-I-CON 2025. I would like to connect with you for networking.`
+      `Hello ${name}, I am attending MET-I-CON 2026. I would like to connect with you for networking.`
     );
     const whatsappUrl = `https://wa.me/${phone}?text=${message}`;
 
@@ -119,7 +76,7 @@ export default function NetworkingScreen() {
   const createWhatsAppGroup = async () => {
     Alert.alert(
       "WhatsApp Group",
-      "Join our MET-I-CON 2025 networking group to connect with all participants!",
+      "Join our MET-I-CON 2026 networking group to connect with all participants!",
       [
         {
           text: "Cancel",
@@ -179,7 +136,7 @@ export default function NetworkingScreen() {
           />
           <TextInput
             style={styles.searchInput}
-            placeholder="Search by name, organization, or interests..."
+            placeholder="Search by name, institute, or email..."
             value={searchQuery}
             onChangeText={handleSearch}
             placeholderTextColor="#999"
@@ -210,20 +167,10 @@ export default function NetworkingScreen() {
 
                 <View style={styles.candidateDetails}>
                   <Text style={styles.candidateName}>{candidate.name}</Text>
-                  <Text style={styles.candidateDesignation}>
-                    {candidate.designation}
+                  <Text style={styles.candidateInstitute}>
+                    {candidate.institute}
                   </Text>
-                  <Text style={styles.candidateOrganization}>
-                    {candidate.organization}
-                  </Text>
-
-                  <View style={styles.interestsContainer}>
-                    {candidate.interests.map((interest, index) => (
-                      <View key={index} style={styles.interestTag}>
-                        <Text style={styles.interestText}>{interest}</Text>
-                      </View>
-                    ))}
-                  </View>
+                  <Text style={styles.candidateEmail}>{candidate.email}</Text>
                 </View>
               </View>
 
@@ -372,15 +319,16 @@ const styles = StyleSheet.create({
     color: "#1F2937",
     marginBottom: 4,
   },
-  candidateDesignation: {
+  candidateInstitute: {
     fontSize: 14,
     color: "#4B5563",
     marginBottom: 2,
   },
-  candidateOrganization: {
-    fontSize: 14,
+  candidateEmail: {
+    fontSize: 13,
     color: "#6B7280",
     marginBottom: 8,
+    fontStyle: "italic",
   },
   interestsContainer: {
     flexDirection: "row",

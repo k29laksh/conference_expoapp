@@ -11,6 +11,7 @@ import "react-native-reanimated";
 import { useColorScheme } from "@/hooks/use-color-scheme";
 import { requestNotificationPermissions } from "@/utils/notificationSetup";
 import { sessionStorage } from "@/utils/sessionStorage";
+import { checkAndDownloadUpdateSilently } from "@/utils/updateManager";
 
 export const unstable_settings = {
   anchor: "(tabs)",
@@ -34,6 +35,9 @@ export default function RootLayout() {
         } else {
           console.log("Notification permissions denied");
         }
+
+        // Check for OTA updates silently in background
+        await checkAndDownloadUpdateSilently();
       } catch (error) {
         console.error("Error initializing app:", error);
       }

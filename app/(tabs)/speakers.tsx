@@ -397,10 +397,6 @@ export default function SpeakersScreen() {
                   <Text style={styles.speakerName}>{speaker.name}</Text>
                   <Text style={styles.speakerTitle}>{speaker.title}</Text>
                   <Text style={styles.speakerOrg}>{speaker.organization}</Text>
-                  <View style={styles.countryBadge}>
-                    <MaterialIcons name="place" size={14} color="#E31E24" />
-                    <Text style={styles.countryText}>{speaker.country}</Text>
-                  </View>
                   {speaker.linkedIn && (
                     <TouchableOpacity
                       style={styles.linkedInButton}
@@ -430,24 +426,6 @@ export default function SpeakersScreen() {
                   </Text>
                 </View>
                 <Text style={styles.sessionTitle}>{speaker.sessionTitle}</Text>
-              </View>
-
-              {/* Bio */}
-              <View style={styles.bioSection}>
-                <Text style={styles.bioLabel}>About:</Text>
-                <Text style={styles.bioText}>{speaker.bio}</Text>
-              </View>
-
-              {/* Topics */}
-              <View style={styles.topicsSection}>
-                <Text style={styles.topicsLabel}>Expertise:</Text>
-                <View style={styles.topicsContainer}>
-                  {speaker.topics.map((topic, topicIndex) => (
-                    <View key={topicIndex} style={styles.topicBadge}>
-                      <Text style={styles.topicBadgeText}>{topic}</Text>
-                    </View>
-                  ))}
-                </View>
               </View>
             </View>
           ))}

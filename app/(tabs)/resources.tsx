@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import { MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons";
+import * as WebBrowser from "expo-web-browser";
 import {
   Alert,
   Linking,
@@ -12,7 +13,6 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function ResourcesScreen() {
-
   const handleSouvenir = () => {
     // Check if user is logged in (implement your auth logic)
     const isLoggedIn = false; // Replace with actual auth check
@@ -30,9 +30,18 @@ export default function ResourcesScreen() {
     Linking.openURL("https://example.com/souvenir.pdf");
   };
 
-  const handleBrochure = () => {
-    // Replace with actual brochure PDF URL
-    Linking.openURL("https://example.com/brochure.pdf");
+  const handleBrochure = async () => {
+    try {
+      // GitHub raw URL for the PDF
+      // Replace with your actual GitHub raw URL after uploading
+      const brochureUrl =
+        "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/MET-ICON-Brochure.pdf";
+
+      await WebBrowser.openBrowserAsync(brochureUrl);
+    } catch (error) {
+      console.error("Error opening brochure:", error);
+      Alert.alert("Error", "Unable to open brochure. Please try again.");
+    }
   };
 
   const handleBooklet = () => {
@@ -92,7 +101,6 @@ export default function ResourcesScreen() {
 
         {/* Resource Cards */}
         <View style={styles.resourcesContainer}>
-
           {/* Souvenir */}
           <TouchableOpacity
             style={styles.resourceCard}

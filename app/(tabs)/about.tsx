@@ -1,10 +1,32 @@
 import Footer from "@/components/Footer";
+import { checkAndPromptForUpdate } from "@/utils/updateManager";
 import { MaterialIcons } from "@expo/vector-icons";
-import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
+import { useState } from "react";
+import {
+  Image,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { WebView } from "react-native-webview";
 
 export default function AboutScreen() {
+  const [checking, setChecking] = useState(false);
+
+  const handleCheckForUpdates = async () => {
+    setChecking(true);
+    try {
+      await checkAndPromptForUpdate();
+    } catch (error) {
+      console.error("Error checking for updates:", error);
+    } finally {
+      setChecking(false);
+    }
+  };
+
   return (
     <SafeAreaView style={styles.safeArea} edges={[]}>
       <ScrollView style={styles.container}>
@@ -263,6 +285,29 @@ export default function AboutScreen() {
           </View>
         </View>
 
+        {/* Check for Updates Button */}
+        <View style={styles.updateSection}>
+          <TouchableOpacity
+            style={[
+              styles.updateButton,
+              checking && styles.updateButtonDisabled,
+            ]}
+            onPress={handleCheckForUpdates}
+            disabled={checking}
+          >
+            <MaterialIcons
+              name="system-update"
+              size={20}
+              color="#FFFFFF"
+              style={styles.updateIcon}
+            />
+            <Text style={styles.updateButtonText}>
+              {checking ? "Checking for Updates..." : "Check for Updates"}
+            </Text>
+          </TouchableOpacity>
+          <Text style={styles.updateNote}>App Version 1.0.0</Text>
+        </View>
+
         {/* Developer Credit */}
         <View style={styles.developerSection}>
           <Text style={styles.developerText}>Developed by</Text>
@@ -457,6 +502,46 @@ const styles = StyleSheet.create({
     color: "#333", // Darker text color
     marginLeft: 5,
     marginBottom: 2,
+  },
+  updateSection: {
+    padding: 20,
+    alignItems: "center",
+    marginTop: 10,
+  },
+  updateButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#E31E24",
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+    borderRadius: 8,
+    minWidth: 200,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+  },
+  updateButtonDisabled: {
+    opacity: 0.6,
+  },
+  updateIcon: {
+    marginRight: 8,
+  },
+  updateButtonText: {
+    color: "#FFFFFF",
+    fontSize: 16,
+    fontWeight: "600",
+  },
+  updateNote: {
+    fontSize: 12,
+    color: "#6B7280",
+    marginTop: 10,
+    textAlign: "center",
   },
   developerSection: {
     alignItems: "center",
