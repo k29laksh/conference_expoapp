@@ -12,18 +12,12 @@
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false,
-        "UIBackgroundModes": [
-          "remote-notification"
-        ]
+        "ITSAppUsesNonExemptEncryption": false
       },
       "bundleIdentifier": "com.meticon.app"
     },
     "android": {
       "package": "com.meticon.app",
-      "permissions": [
-        "android.permission.POST_NOTIFICATIONS"
-      ],
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -32,8 +26,6 @@
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "enableProguardInReleaseBuilds": true,
-      "enableShrinkResourcesInReleaseBuilds": true,
       "jsEngine": "hermes",
       "googleServicesFile": "./google-services.json"
     },
@@ -55,9 +47,7 @@
           }
         }
       ],
-      [
-        "expo-notifications"
-      ]
+      "expo-notifications"
     ],
     "experiments": {
       "typedRoutes": true,
@@ -66,9 +56,15 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "57a74f5b-62cd-434d-8988-9673cb3343b8"
+        "projectId": "0e570a85-6fe7-4f1f-b8db-ce769ebb8c87"
       }
     },
-    "owner": "k29laksh"
+    "owner": "shubham_asati",
+    "updates": {
+      "url": "https://u.expo.dev/0e570a85-6fe7-4f1f-b8db-ce769ebb8c87"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    }
   }
 }

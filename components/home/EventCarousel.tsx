@@ -6,6 +6,9 @@ const eventImages = [
   require("@/assets/images/event1.png"),
   require("@/assets/images/event2.png"),
   require("@/assets/images/event3.png"),
+  require("@/assets/images/college1.jpeg"),
+  require("@/assets/images/college2.jpeg"),
+  require("@/assets/images/college3.jpeg"),
 ];
 
 export default function EventCarousel() {
@@ -48,7 +51,7 @@ export default function EventCarousel() {
           <Image
             source={eventImages[currentEventIndex]}
             style={styles.eventCarouselImage}
-            resizeMode="cover"
+            resizeMode="contain"
           />
 
           <TouchableOpacity

@@ -4,8 +4,8 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { useEffect, useState } from "react";
 import {
   Alert,
+  FlatList,
   Linking,
-  ScrollView,
   StyleSheet,
   Text,
   TextInput,
@@ -20,7 +20,30 @@ interface Candidate {
   institute: string;
   email: string;
   phone: string;
+  country: string;
+  university: string;
+  areaOfResearch: string;
 }
+
+const VALID_AREAS_OF_RESEARCH = [
+  "Pharmaceutics",
+  "Pharmaceutical Chemistry",
+  "Pharmacology",
+  "Pharmacognosy",
+  "Pharmaceutical Analysis",
+  "Pharmaceutical regulatory affairs",
+];
+
+const normalizeAreaOfResearch = (area: string): string => {
+  if (!area) return "Other";
+  
+  // Check if the area exactly matches one of the valid areas (case-insensitive)
+  const normalizedArea = VALID_AREAS_OF_RESEARCH.find(
+    validArea => validArea.toLowerCase() === area.toLowerCase()
+  );
+  
+  return normalizedArea || "Other";
+};
 
 export default function NetworkingScreen() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -34,24 +57,40 @@ export default function NetworkingScreen() {
     const candidatesWithIds = candidatesData.map((candidate, index) => ({
       ...candidate,
       id: `METICON-${String(index + 1).padStart(4, "0")}`,
+      areaOfResearch: normalizeAreaOfResearch(candidate.areaOfResearch),
     }));
     setRegisteredCandidates(candidatesWithIds);
     setFilteredCandidates(candidatesWithIds);
   }, []);
 
+  // Filter candidates whenever search query or registered candidates change
+  useEffect(() => {
+    const trimmedQuery = searchQuery.trim();
+
+    if (trimmedQuery === "") {
+      setFilteredCandidates(registeredCandidates);
+      return;
+    }
+
+    const searchLower = trimmedQuery.toLowerCase();
+    const filtered = registeredCandidates.filter((candidate) => {
+      return (
+        candidate.name?.toLowerCase().includes(searchLower) ||
+        candidate.institute?.toLowerCase().includes(searchLower) ||
+        candidate.email?.toLowerCase().includes(searchLower) ||
+        candidate.university?.toLowerCase().includes(searchLower) ||
+        candidate.areaOfResearch?.toLowerCase().includes(searchLower) ||
+        candidate.country?.toLowerCase().includes(searchLower) ||
+        candidate.phone?.includes(trimmedQuery) ||
+        candidate.id?.toLowerCase().includes(searchLower)
+      );
+    });
+
+    setFilteredCandidates(filtered);
+  }, [searchQuery, registeredCandidates]);
+
   const handleSearch = (query: string) => {
     setSearchQuery(query);
-    if (query.trim() === "") {
-      setFilteredCandidates(registeredCandidates);
-    } else {
-      const filtered = registeredCandidates.filter(
-        (candidate) =>
-          candidate.name.toLowerCase().includes(query.toLowerCase()) ||
-          candidate.institute.toLowerCase().includes(query.toLowerCase()) ||
-          candidate.email.toLowerCase().includes(query.toLowerCase())
-      );
-      setFilteredCandidates(filtered);
-    }
   };
 
   const openWhatsApp = async (phone: string, name: string) => {
@@ -85,9 +124,8 @@ export default function NetworkingScreen() {
         {
           text: "Join Group",
           onPress: async () => {
-            // Replace with your actual WhatsApp group link
             const groupLink =
-              "https://chat.whatsapp.com/YOUR_GROUP_INVITE_LINK";
+              "https://chat.whatsapp.com/Ccga2DRpzp3HHxAWAmdFwS";
             try {
               const canOpen = await Linking.canOpenURL(groupLink);
               if (canOpen) {
@@ -105,98 +143,142 @@ export default function NetworkingScreen() {
     );
   };
 
+  const renderCandidateCard = ({ item: candidate }: { item: Candidate }) => (
+    <View style={styles.candidateCard}>
+      {/* Header with Avatar and Name */}
+      <View style={styles.cardHeader}>
+        <View style={styles.avatarContainer}>
+          <Text style={styles.avatarText}>
+            {candidate.name
+              .split(" ")
+              .map((n) => n[0])
+              .slice(0, 2)
+              .join("")}
+          </Text>
+        </View>
+        <View style={styles.headerInfo}>
+          <Text style={styles.candidateName}>{candidate.name}</Text>
+          <View style={styles.researchBadge}>
+            <MaterialIcons name="science" size={12} color="#EF4444" />
+            <Text style={styles.researchText}>{candidate.areaOfResearch}</Text>
+          </View>
+        </View>
+      </View>
+
+      {/* Divider */}
+      <View style={styles.divider} />
+
+      {/* Details Section */}
+      <View style={styles.detailsSection}>
+        <View style={styles.detailRow}>
+          <MaterialIcons name="business" size={16} color="#6B7280" />
+          <Text style={styles.detailText}>{candidate.institute}</Text>
+        </View>
+        <View style={styles.detailRow}>
+          <MaterialIcons name="school" size={16} color="#6B7280" />
+          <Text style={styles.detailText}>{candidate.university}</Text>
+        </View>
+        <View style={styles.detailRow}>
+          <MaterialIcons name="public" size={16} color="#6B7280" />
+          <Text style={styles.detailText}>{candidate.country}</Text>
+        </View>
+        <View style={styles.detailRow}>
+          <MaterialIcons name="email" size={16} color="#6B7280" />
+          <Text style={styles.detailTextEmail}>{candidate.email}</Text>
+        </View>
+      </View>
+
+      {/* Action Button */}
+      <TouchableOpacity
+        style={styles.whatsappButton}
+        onPress={() => openWhatsApp(candidate.phone, candidate.name)}
+      >
+        <MaterialIcons name="chat" size={20} color="#FFFFFF" />
+        <Text style={styles.whatsappButtonText}>Connect via WhatsApp</Text>
+      </TouchableOpacity>
+    </View>
+  );
+
+  const renderListHeader = () => (
+    <View style={styles.countContainer}>
+      <Text style={styles.countText}>
+        {filteredCandidates.length}{" "}
+        {filteredCandidates.length === 1 ? "Participant" : "Participants"}
+      </Text>
+    </View>
+  );
+
+  const renderEmptyState = () => (
+    <View style={styles.emptyState}>
+      <MaterialIcons name="search-off" size={64} color="#ccc" />
+      <Text style={styles.emptyStateText}>No participants found</Text>
+      <Text style={styles.emptyStateSubtext}>Try adjusting your search</Text>
+    </View>
+  );
+
+  const renderListFooter = () => <Footer />;
+
+  const keyExtractor = (item: Candidate) => item.id;
+
   return (
     <SafeAreaView style={styles.safeArea} edges={[]}>
-      <ScrollView style={styles.container}>
-        {/* Header Section */}
-        <View style={styles.header}>
-          <MaterialIcons name="people" size={32} color="#EF4444" />
-          <Text style={styles.headerTitle}>Networking Hub</Text>
-          <Text style={styles.headerSubtitle}>
-            Connect with fellow participants via WhatsApp
-          </Text>
-        </View>
+      {/* Header Section */}
+      <View style={styles.header}>
+        <MaterialIcons name="people" size={32} color="#EF4444" />
+        <Text style={styles.headerTitle}>Networking Hub</Text>
+        <Text style={styles.headerSubtitle}>
+          Connect with fellow participants via WhatsApp
+        </Text>
+      </View>
 
-        {/* WhatsApp Group Button */}
-        <TouchableOpacity
-          style={styles.groupButton}
-          onPress={createWhatsAppGroup}
-        >
-          <MaterialIcons name="group-add" size={24} color="#FFFFFF" />
-          <Text style={styles.groupButtonText}>Join WhatsApp Group</Text>
-        </TouchableOpacity>
+      {/* WhatsApp Group Button */}
+      <TouchableOpacity
+        style={styles.groupButton}
+        onPress={createWhatsAppGroup}
+      >
+        <MaterialIcons name="group-add" size={24} color="#FFFFFF" />
+        <Text style={styles.groupButtonText}>Join WhatsApp Group</Text>
+      </TouchableOpacity>
 
-        {/* Search Bar */}
-        <View style={styles.searchContainer}>
-          <MaterialIcons
-            name="search"
-            size={24}
-            color="#757779ff"
-            style={styles.searchIcon}
-          />
-          <TextInput
-            style={styles.searchInput}
-            placeholder="Search by name, institute, or email..."
-            value={searchQuery}
-            onChangeText={handleSearch}
-            placeholderTextColor="#999"
-          />
-          {searchQuery.length > 0 && (
-            <TouchableOpacity onPress={() => handleSearch("")}>
-              <MaterialIcons name="close" size={24} color="#757779ff" />
-            </TouchableOpacity>
-          )}
-        </View>
-
-        {/* Participants Count */}
-        <View style={styles.countContainer}>
-          <Text style={styles.countText}>
-            {filteredCandidates.length}{" "}
-            {filteredCandidates.length === 1 ? "Participant" : "Participants"}
-          </Text>
-        </View>
-
-        {/* Candidates List */}
-        <View style={styles.candidatesList}>
-          {filteredCandidates.map((candidate) => (
-            <View key={candidate.id} style={styles.candidateCard}>
-              <View style={styles.candidateInfo}>
-                <View style={styles.avatarContainer}>
-                  <MaterialIcons name="person" size={32} color="#EF4444" />
-                </View>
-
-                <View style={styles.candidateDetails}>
-                  <Text style={styles.candidateName}>{candidate.name}</Text>
-                  <Text style={styles.candidateInstitute}>
-                    {candidate.institute}
-                  </Text>
-                  <Text style={styles.candidateEmail}>{candidate.email}</Text>
-                </View>
-              </View>
-
-              <TouchableOpacity
-                style={styles.whatsappButton}
-                onPress={() => openWhatsApp(candidate.phone, candidate.name)}
-              >
-                <MaterialIcons name="chat" size={20} color="#FFFFFF" />
-                <Text style={styles.whatsappButtonText}>Connect</Text>
-              </TouchableOpacity>
-            </View>
-          ))}
-        </View>
-
-        {filteredCandidates.length === 0 && (
-          <View style={styles.emptyState}>
-            <MaterialIcons name="search-off" size={64} color="#ccc" />
-            <Text style={styles.emptyStateText}>No participants found</Text>
-            <Text style={styles.emptyStateSubtext}>
-              Try adjusting your search
-            </Text>
-          </View>
+      {/* Search Bar */}
+      <View style={styles.searchContainer}>
+        <MaterialIcons
+          name="search"
+          size={24}
+          color="#757779ff"
+          style={styles.searchIcon}
+        />
+        <TextInput
+          style={styles.searchInput}
+          placeholder="Search by name, institute, or email..."
+          value={searchQuery}
+          onChangeText={setSearchQuery}
+          placeholderTextColor="#999"
+          autoCorrect={false}
+          autoCapitalize="none"
+        />
+        {searchQuery.length > 0 && (
+          <TouchableOpacity onPress={() => setSearchQuery("")}>
+            <MaterialIcons name="close" size={24} color="#757779ff" />
+          </TouchableOpacity>
         )}
+      </View>
 
-        <Footer />
-      </ScrollView>
+      <FlatList
+        style={styles.container}
+        data={filteredCandidates}
+        renderItem={renderCandidateCard}
+        keyExtractor={keyExtractor}
+        ListHeaderComponent={renderListHeader}
+        ListEmptyComponent={renderEmptyState}
+        ListFooterComponent={renderListFooter}
+        contentContainerStyle={styles.candidatesList}
+        initialNumToRender={10}
+        maxToRenderPerBatch={10}
+        windowSize={10}
+        removeClippedSubviews={true}
+        updateCellsBatchingPeriod={50}
+      />
     </SafeAreaView>
   );
 }
@@ -208,6 +290,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
+    backgroundColor: "#F9FAFB",
   },
   header: {
     alignItems: "center",
@@ -283,52 +366,90 @@ const styles = StyleSheet.create({
   candidatesList: {
     paddingHorizontal: 16,
     paddingBottom: 16,
+    flexGrow: 1,
   },
   candidateCard: {
     backgroundColor: "#FFFFFF",
-    borderRadius: 12,
-    padding: 16,
-    marginBottom: 12,
+    borderRadius: 16,
+    padding: 0,
+    marginBottom: 16,
     borderWidth: 1,
     borderColor: "#E5E7EB",
-    elevation: 1,
+    elevation: 3,
     shadowColor: "#000",
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.05,
-    shadowRadius: 2,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.08,
+    shadowRadius: 8,
+    overflow: "hidden",
   },
-  candidateInfo: {
+  cardHeader: {
     flexDirection: "row",
-    marginBottom: 12,
+    alignItems: "center",
+    padding: 16,
+    backgroundColor: "#FAFAFA",
   },
   avatarContainer: {
-    width: 56,
-    height: 56,
-    borderRadius: 28,
-    backgroundColor: "#FEE2E2",
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    backgroundColor: "#EF4444",
     justifyContent: "center",
     alignItems: "center",
     marginRight: 12,
   },
-  candidateDetails: {
+  avatarText: {
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "#FFFFFF",
+  },
+  headerInfo: {
     flex: 1,
   },
   candidateName: {
     fontSize: 18,
-    fontWeight: "600",
+    fontWeight: "700",
     color: "#1F2937",
-    marginBottom: 4,
+    marginBottom: 6,
   },
-  candidateInstitute: {
+  researchBadge: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#FEE2E2",
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: 12,
+    gap: 4,
+    alignSelf: "flex-start",
+  },
+  researchText: {
+    fontSize: 12,
+    fontWeight: "600",
+    color: "#DC2626",
+  },
+  divider: {
+    height: 1,
+    backgroundColor: "#E5E7EB",
+  },
+  detailsSection: {
+    padding: 16,
+    gap: 10,
+  },
+  detailRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
+  },
+  detailText: {
+    flex: 1,
     fontSize: 14,
-    color: "#4B5563",
-    marginBottom: 2,
+    color: "#374151",
+    lineHeight: 20,
   },
-  candidateEmail: {
+  detailTextEmail: {
+    flex: 1,
     fontSize: 13,
     color: "#6B7280",
-    marginBottom: 8,
-    fontStyle: "italic",
+    lineHeight: 18,
   },
   interestsContainer: {
     flexDirection: "row",
@@ -352,9 +473,16 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#25D366",
-    paddingVertical: 10,
-    borderRadius: 8,
-    gap: 6,
+    marginHorizontal: 16,
+    marginBottom: 16,
+    paddingVertical: 12,
+    borderRadius: 10,
+    gap: 8,
+    elevation: 2,
+    shadowColor: "#25D366",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
   },
   whatsappButtonText: {
     color: "#FFFFFF",

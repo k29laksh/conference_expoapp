@@ -49,6 +49,21 @@ export default function ResourcesScreen() {
     Linking.openURL("https://example.com/booklet.pdf");
   };
 
+  const handleAccommodation = async () => {
+    try {
+      const accommodationUrl =
+        "https://drive.google.com/file/d/1eNWCSSISTQ_wowcLtmv_9TOzAGdCBNfb/view?usp=sharing";
+
+      await WebBrowser.openBrowserAsync(accommodationUrl);
+    } catch (error) {
+      console.error("Error opening accommodation facility:", error);
+      Alert.alert(
+        "Error",
+        "Unable to open accommodation facility. Please try again."
+      );
+    }
+  };
+
   return (
     <SafeAreaView style={styles.safeArea} edges={[]}>
       <ScrollView style={styles.container}>
@@ -110,7 +125,7 @@ export default function ResourcesScreen() {
               <MaterialIcons name="auto-stories" size={36} color="#10B981" />
             </View>
             <View style={styles.cardContent}>
-              <Text style={styles.cardTitle}>Souvenir</Text>
+              <Text style={styles.cardTitle}>Conference Souvenir</Text>
               <Text style={styles.cardDescription}>
                 Abstract book and conference highlights
               </Text>
@@ -131,7 +146,7 @@ export default function ResourcesScreen() {
               <MaterialIcons name="description" size={36} color="#3B82F6" />
             </View>
             <View style={styles.cardContent}>
-              <Text style={styles.cardTitle}>Brochure</Text>
+              <Text style={styles.cardTitle}>Conference Brochure</Text>
               <Text style={styles.cardDescription}>
                 Official conference brochure
               </Text>
@@ -149,9 +164,30 @@ export default function ResourcesScreen() {
               <MaterialIcons name="menu-book" size={36} color="#F59E0B" />
             </View>
             <View style={styles.cardContent}>
-              <Text style={styles.cardTitle}>Session Booklet</Text>
+              <Text style={styles.cardTitle}>Conference Session Booklet</Text>
               <Text style={styles.cardDescription}>
                 Complete session program and schedule
+              </Text>
+              <View style={styles.badgeContainer}>
+                <MaterialIcons name="public" size={14} color="#666" />
+                <Text style={styles.badgeText}>Public Access</Text>
+              </View>
+            </View>
+            <MaterialIcons name="arrow-forward" size={24} color="#666" />
+          </TouchableOpacity>
+
+          {/* Accommodation Facility */}
+          <TouchableOpacity
+            style={styles.resourceCard}
+            onPress={handleAccommodation}
+          >
+            <View style={styles.cardIcon}>
+              <MaterialIcons name="hotel" size={36} color="#8B5CF6" />
+            </View>
+            <View style={styles.cardContent}>
+              <Text style={styles.cardTitle}>Accommodation Facility</Text>
+              <Text style={styles.cardDescription}>
+                Hotel and lodging information
               </Text>
               <View style={styles.badgeContainer}>
                 <MaterialIcons name="public" size={14} color="#666" />

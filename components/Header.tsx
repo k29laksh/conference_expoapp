@@ -11,13 +11,18 @@ export default function Header() {
   const [badgeCount, setBadgeCount] = useState(0);
 
   useEffect(() => {
-    const updateBadgeCount = () => {
+    const updateBadgeCount = async () => {
+      // Ensure storage is initialized before reading
+      await sessionStorage.initialize();
       const count = sessionStorage.getSavedSessions().length;
       setBadgeCount(count);
     };
 
     updateBadgeCount();
-    const unsubscribe = sessionStorage.subscribe(updateBadgeCount);
+    const unsubscribe = sessionStorage.subscribe(() => {
+      const count = sessionStorage.getSavedSessions().length;
+      setBadgeCount(count);
+    });
 
     return () => unsubscribe();
   }, []);
@@ -32,7 +37,7 @@ export default function Header() {
       {/* Logo Section */}
       <View style={styles.logoContainer}>
         <Image
-          source={require("@/assets/images/icon.png")}
+          source={require("@/assets/images/full-logo.png")}
           style={styles.logoIcon}
           resizeMode="contain"
         />
@@ -85,7 +90,7 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   logoIcon: {
-    width: 60,
+    width: 160,
     height: 60,
   },
   logoTextContainer: {

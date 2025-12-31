@@ -3,30 +3,4170 @@
     "name": "Mr. Shubham Asati",
     "institute": "Indian Institute of Information Technology, Pune",
     "email": "asatishubham2004@gmail.com",
-    "phone": "7506375806"
-  },
-  {
-    "name": "Dr. Deepak Bhambere",
-    "institute": "MET Institute of Pharmacy",
-    "email": "Deepakb_iop@bkc.met.edu",
-    "phone": "9764222761"
+    "phone": "7506375806",
+    "country": "India",
+    "university": "IIIT Pune",
+    "areaOfResearch": "IT"
   },
   {
     "name": "Mr. Shubham J. Khairnar",
     "institute": "MET Institute of Pharmacy",
     "email": "shubhamk_iop@bkc.met.edu",
-    "phone": "7741899120"
+    "phone": "7741899120",
+    "country": "India",
+    "university": "MET",
+    "areaOfResearch": "Pharmacy"
+  },
+  {
+    "name": "Dr. Deepak Bhambere",
+    "institute": "MET Institute of Pharmacy",
+    "email": "Deepakb_iop@bkc.met.edu",
+    "phone": "9764222761",
+    "country": "India",
+    "university": "MET",
+    "areaOfResearch": "Pharmacy"
   },
   {
     "name": "Dr. Sachin Gaikwad",
     "institute": "MET Institute of Pharmacy",
     "email": "saching_iop@bkc.met.edu",
-    "phone": "9860070924"
+    "phone": "9860070924",
+    "country": "India",
+    "university": "MET",
+    "areaOfResearch": "Pharmacy"
   },
   {
     "name": "Dr. Sanjay J. Kshirsagar",
     "institute": "MET Institute of Pharmacy",
     "email": "principal_iop@bkc.met.edu",
-    "phone": "9689932180"
+    "phone": "9689932180",
+    "country": "India",
+    "university": "MET",
+    "areaOfResearch": "Pharmacy"
+  },
+  {
+    "name": "Priyanka Ganesh Shirsat",
+    "institute": "MVP COLLEGE OF PHARMACY NASHIK",
+    "email": "priyankasandhan80@gmail.com",
+    "phone": "9370238518",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Mrs.Nishigandha Atul tapkire",
+    "institute": "MVP’s college of pharmacy Nashik",
+    "email": "nishigandhadawange9@gmail.com",
+    "phone": "8007868025",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Vaishnav Sanjay Kore",
+    "institute": "Gurunanak college of pharmacy",
+    "email": "vaishnavkore6@gmail.com",
+    "phone": "9579214385",
+    "country": "India",
+    "university": "Rashtrasant Tukadoji Maharaj Nagpur University",
+    "areaOfResearch": "Other"
+  },
+  {
+    "name": "Sanskruti Dhote",
+    "institute": "Gurunanak College of Pharmacy, Nagpur",
+    "email": "dhotesanskruti0@gmail.com",
+    "phone": "7887477672",
+    "country": "India",
+    "university": "Rashtrasant Tukdoji Maharaj Nagpur University",
+    "areaOfResearch": "Other"
+  },
+  {
+    "name": "Nikita Arunkumar Lanjewar",
+    "institute": "Gurunanak College of Pharmacy, Nagpur",
+    "email": "nlanjewar31@gmail.com",
+    "phone": "9322217677",
+    "country": "India",
+    "university": "Rashtrasant Tukadoji Maharaj Nagpur University",
+    "areaOfResearch": "Other"
+  },
+  {
+    "name": "Khushi Shashi Karemore",
+    "institute": "Gurunanak College Of Pharmacy, Nagpur",
+    "email": "khushikaremore34@gmail.com",
+    "phone": "9834566948",
+    "country": "India",
+    "university": "Rashtrasant Tukadoji Maharaj Nagpur University",
+    "areaOfResearch": "Other"
+  },
+  {
+    "name": "Arti Arun Ingale",
+    "institute": "Gurunanak College of Pharmacy, Nagpur",
+    "email": "arti2001ingale@gmail.com",
+    "phone": "8080990312",
+    "country": "India",
+    "university": "Rashtrasanta Tukadoji Maharaj University, Nagpur",
+    "areaOfResearch": "Other"
+  },
+  {
+    "name": "Devyani Vijay Pohane",
+    "institute": "Gurunanak College of Pharmacy",
+    "email": "devyu19pohane@gmail.com",
+    "phone": "9960570722",
+    "country": "India",
+    "university": "Rashtrasant Tukadoji Maharaj Nagpur University (RTMNU)",
+    "areaOfResearch": "Other"
+  },
+  {
+    "name": "Nandini Gopal Baghel",
+    "institute": "Guru Nanak College of Pharmacy",
+    "email": "ngbaghel810@gmail.com",
+    "phone": "8010706876",
+    "country": "India",
+    "university": "Rashtrasant Tukadoji Maharaj Nagpur University",
+    "areaOfResearch": "Other"
+  },
+  {
+    "name": "Himanshi Dhande",
+    "institute": "Gurunanak college of pharmacy",
+    "email": "himanshidhande@gmail.com",
+    "phone": "9067500628",
+    "country": "India",
+    "university": "Rashtrasant Tukadoji Maharaj Nagpur University",
+    "areaOfResearch": "Other"
+  },
+  {
+    "name": "Mithila Narendra Bambal",
+    "institute": "Gurunanak college of, pharmacy nagpur",
+    "email": "mithilabambal8@gmail.com",
+    "phone": "9022893921",
+    "country": "India",
+    "university": "Rashtrasant tukdoji Maharaj university Nagpur",
+    "areaOfResearch": "Other"
+  },
+  {
+    "name": "Roshan Rathod",
+    "institute": "Gurunanak college of pharmacy",
+    "email": "rathod.roshan3663@gmail.com",
+    "phone": "7744066721",
+    "country": "India",
+    "university": "Rashtra sant Tukdoji Maharaj University Nagpur",
+    "areaOfResearch": "Other"
+  },
+  {
+    "name": "samir pakhidde",
+    "institute": "gurunanak college of pharmacy",
+    "email": "samirpakhidde2425@gmail.com",
+    "phone": "9370340227",
+    "country": "India",
+    "university": "gurunanak college of pharmacy",
+    "areaOfResearch": "Other"
+  },
+  {
+    "name": "Pranav sanjay waghe",
+    "institute": "Guru Nanak college of pharmacy",
+    "email": "pranavwaghe369@gmail.com",
+    "phone": "9307285358",
+    "country": "India",
+    "university": "Rashtrasant tukadoji maharaj nagpur university",
+    "areaOfResearch": "Other"
+  },
+  {
+    "name": "Yash Rajesh Kondawar",
+    "institute": "Gurunanak College of Pharmacy, Nagpur",
+    "email": "yashkondawar63@gmail.com",
+    "phone": "9822865697",
+    "country": "India",
+    "university": "RTMNU Nagpur, University",
+    "areaOfResearch": "Other"
+  },
+  {
+    "name": "Kinnari Sunil Kini",
+    "institute": "St John Institute of Pharmacy and Research",
+    "email": "kinnarikini22@gmail.com",
+    "phone": "7262821780",
+    "country": "India",
+    "university": "University of Mumbai",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Philomina Shibu Vattaparambil",
+    "institute": "St. John Institute of Pharmcy and Research",
+    "email": "philominashibu299@gmail.com",
+    "phone": "7045449745",
+    "country": "India",
+    "university": "University of Mumbai",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Rohan Sunil Patil",
+    "institute": "St John Institute of Pharmacy and Research",
+    "email": "rohpatil12456@gmail.com",
+    "phone": "9699889809",
+    "country": "India",
+    "university": "University of Mumbai",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Namrata Santosh Sonavale",
+    "institute": "St. John Institute of Pharmacy and Research",
+    "email": "pp1244005@sjipr.edu.in",
+    "phone": "07798496780",
+    "country": "India",
+    "university": "University of Mumbai",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Pratiksha Dattatray Navghane",
+    "institute": "St. John Institute of Pharmacy and Research",
+    "email": "navghanepratiksha@gmail.com",
+    "phone": "8767928248",
+    "country": "India",
+    "university": "University of Mumbai",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Vidhi Trivedi",
+    "institute": "St. John Institute of Pharmacy and Research",
+    "email": "vidhitrivedi624@gmail.com",
+    "phone": "7304304569",
+    "country": "India",
+    "university": "Mumabi University",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "ASHWINI HARISHCHANDRA JAYBHAY",
+    "institute": "ST.JOHN INSTITUTE OF PHARMACY AND RESARCH",
+    "email": "ashwinijjaybhay@gmail.com",
+    "phone": "8591242833",
+    "country": "India",
+    "university": "MUMBAI UNIVERSITY",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "SHRUTI PURUSHOTTAM PATIL",
+    "institute": "ST. JOHN INSTITUTE OF PHARMACY & RESEARCH",
+    "email": "shrutipatil14356@gmail.com",
+    "phone": "8698094784",
+    "country": "India",
+    "university": "UNIVERSITY OF MUMBAI",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "VRUSHALI BHALCHANDRA SHELKE",
+    "institute": "ST. JOHN INSTITUTE OF PHARMACY AND RESEARCH ,PALGHAR",
+    "email": "vrushalishelke6602@gmail.com",
+    "phone": "9665190289",
+    "country": "India",
+    "university": "MUMBAI UNIVERSITY",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "PRANJAL MOHAN YADAV",
+    "institute": "ST. JOHN INSTITUTE OF PHARMACY AND RESEARCH",
+    "email": "pranjalyadav08081@gmail.com",
+    "phone": "9373507955",
+    "country": "India",
+    "university": "MUMBAI UNIVERSITY",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Vaishnavi Sanjay Navle",
+    "institute": "St. John Institute of Pharmacy and Research",
+    "email": "navalevaishnavi15@gmail.com",
+    "phone": "7387097249",
+    "country": "India",
+    "university": "Mumbai University",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Rashmi Ashok Lokhande",
+    "institute": "Priyadarshini J.L College of pharmacy",
+    "email": "rashmilokhande14@gmail.com",
+    "phone": "7620096539",
+    "country": "India",
+    "university": "Rashtrasant Tukdoji Maharaj Nagpur University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "VIDHI NOKCHAND SONBIRSE",
+    "institute": "PRIYADARSHINI J.L. COLLEGE OF PHARMACY , NAGPUR",
+    "email": "vidhisonbirse@gmail.com",
+    "phone": "08956947229",
+    "country": "India",
+    "university": "RASHTRASANT TUKDOJI MAHARAJ NAGPUR UNIVERSITY",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "SHREYASH SURESH VIRUTKAR",
+    "institute": "PRIYADARSHINI J.L. COLLEGE OF PHARMACY",
+    "email": "shreyashvirutkar0422@gmail.com",
+    "phone": "8624832272",
+    "country": "India",
+    "university": "RASHTRA SANT TUKDOJI MAHARAJ UNIVERSITY,NAGPUR",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Radha Ramesh Bind",
+    "institute": "Priyadarshini J.L. College of Pharmacy",
+    "email": "bindrrbbind@gmail.com",
+    "phone": "9975886809",
+    "country": "India",
+    "university": "Rashtrasant Tukadoji Maharaj Nagpur University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Pranali Prakash Dhule",
+    "institute": "Priyadarshini J.L. College of Pharmacy",
+    "email": "pranalidhule11@gmail.com",
+    "phone": "7058384078",
+    "country": "India",
+    "university": "Rashtrasant Tukadoji Maharaj Nagpur University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "SWATI KALE",
+    "institute": "PRIYADARSHINI J.L. COLLEGE OF PHARMACY",
+    "email": "swatikale106@gmail.com",
+    "phone": "8180842895",
+    "country": "India",
+    "university": "RASHTRA SANT TUKDOJI MAHARAJ UNIVERSITY,NAGPUR",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Prachi Anandrao Karadbhajane",
+    "institute": "Priyadarshini J.L. college of pharmacy",
+    "email": "prachikaradbhajane32@gmail.com",
+    "phone": "9823407986",
+    "country": "India",
+    "university": "Rashtrasanta Tukadoji Maharaj Nagpur University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Shravani Pramod Bhad",
+    "institute": "Priyadarshini J.L. College of Pharmacy",
+    "email": "bhadshravani@gmail.com",
+    "phone": "9604231183",
+    "country": "India",
+    "university": "Rashtrasant Tukadoji Maharaj Nagpur University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Dr SUPARNA SACCHIT BAKHLE",
+    "institute": "PRIYADARSHINI JL COLLEGE OF PHARMACY, NAGPUR",
+    "email": "s.bakhle@pjlcp.edu.in",
+    "phone": "9049800995",
+    "country": "India",
+    "university": "RTM Nagpur University, Nagpur",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Riya Rajeev Verma",
+    "institute": "PRIYADARSHINI J.L. COLLEGE OF PHARMACY, NAGPUR",
+    "email": "riyarajeev2002@gmail.com",
+    "phone": "9764433551",
+    "country": "India",
+    "university": "Rashtrasant Tukdoji Maharashtra Nagpur University, Nagpur",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "MRUNALI ROSHAN AKHARE",
+    "institute": "Priyadarshini J. L. College of Pharmacy",
+    "email": "monaakhare28@gmail.com",
+    "phone": "9356968992",
+    "country": "India",
+    "university": "Rashtrasant Tukadoji Maharaj Nagpur University, Nagpur",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Divya D. Nandgawe",
+    "institute": "Gurunanak college of pharmacy, Nagpur.",
+    "email": "divyanandgawe1661@gmail.com",
+    "phone": "8080325429",
+    "country": "India",
+    "university": "Rashtrasant tukadoji maharaj Nagpur University (RTMNU)",
+    "areaOfResearch": "Other"
+  },
+  {
+    "name": "Sanket Sunil Shirke",
+    "institute": "St.John Institute of Pharmacy and Research",
+    "email": "shirkesanket790@gmail.com",
+    "phone": "9049699941",
+    "country": "India",
+    "university": "Mumbai University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "AASHU NILKAMAL GUPTA",
+    "institute": "ST.JOHN INSTITUTE OF PHARMACY AND RESEARCH",
+    "email": "guptaaashu885@gmail.com",
+    "phone": "8291268514",
+    "country": "India",
+    "university": "UNIVERSITY OF MUMBAI",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Pruthviraj Sampat Kamalakar",
+    "institute": "Annasaheb Dange college Of Pharmacy",
+    "email": "pruthvirajkamalakar2002@gmail.com",
+    "phone": "9730493223",
+    "country": "India",
+    "university": "Shivaji University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "sapana valmik bhandare",
+    "institute": "St.John Institute of Pharmacy and Research",
+    "email": "sapanabhandare0@gmail.com",
+    "phone": "7499399077",
+    "country": "India",
+    "university": "University of Mumbai",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Ankit Rajesh Mishra",
+    "institute": "St. John Institute of Pharmacy and Research",
+    "email": "ankitmishra0079@gmail.com",
+    "phone": "8261031253",
+    "country": "India",
+    "university": "University of Mumbai",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Shubham Sopan Patil",
+    "institute": "St John Institute of Pharmacy and Research",
+    "email": "sp0163603@gmail.com",
+    "phone": "8080120650",
+    "country": "India",
+    "university": "University of Mumbai",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "SIMRAN PREMNATH SHEDAME",
+    "institute": "Priyadarshini J. L. College of Pharmacy",
+    "email": "simran.shed13@gmail.com",
+    "phone": "7888138938",
+    "country": "India",
+    "university": "Rashtrasant Tukadoji Maharaj Nagpur University",
+    "areaOfResearch": "Pharmacognosy"
+  },
+  {
+    "name": "Vitthal Ananta Kapse",
+    "institute": "Priyadarshani J.L college of Pharmacy Nagpur",
+    "email": "vitthalkapase1234@gmail.com",
+    "phone": "9322361995",
+    "country": "India",
+    "university": "Rashtrasant Tukadoji Maharaj Nagpur University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Niraj Bhaiyyanand Meshram",
+    "institute": "Priyadarshini J. L. College of pharmacy",
+    "email": "nirajmeshram26@gmail.com",
+    "phone": "9823404829",
+    "country": "India",
+    "university": "Rastrasant Tukdoji Maharaj University Nagpur",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Ganesh Omkar Shinde",
+    "institute": "Priyadarshani J. L. College of Pharmacy Nagpur",
+    "email": "shindeganeshomkar@gmail.com",
+    "phone": "7887619117",
+    "country": "India",
+    "university": "Rashtrasant Tukdadoji maharaj Nagpur",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Shubham Sharad Khedekar",
+    "institute": "St John institute of Pharmacy Palghar",
+    "email": "khedekarshubham42@gmail.com",
+    "phone": "9769003121",
+    "country": "India",
+    "university": "Mumbai university",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Ankit Rajesh Thakur",
+    "institute": "St. John Institute of Pharmacy and Research",
+    "email": "ankit260611@gmail.com",
+    "phone": "8329229463",
+    "country": "India",
+    "university": "Mumbai University",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "DIXITKUMAR CHAMPALAL PUALSA",
+    "institute": "St. John Institute of Pharmacy and Research",
+    "email": "pualsa.dixit@gmail.com",
+    "phone": "9137252986",
+    "country": "India",
+    "university": "Mumbai University",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Priya Anantroa kale",
+    "institute": "Priyadarshani j.l college of pharmacy nagpur",
+    "email": "priya.kale21298@gmail.com",
+    "phone": "8788771593",
+    "country": "India",
+    "university": "RTMNU nagpur university",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Tithi Machhi",
+    "institute": "St.John Institute Of Pharmacy & Research",
+    "email": "pp1242010@sjipr.edu.in",
+    "phone": "8390039236",
+    "country": "India",
+    "university": "Mumbai University",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Kajal Vilas Guldagad",
+    "institute": "Annasaheb dange college of b pharmacy ashta",
+    "email": "kajalguldagad20@gmail.com",
+    "phone": "8010128525",
+    "country": "India",
+    "university": "Shivaji university",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Shruti Prakash Ghodake",
+    "institute": "Annasaheb Dange college of b pharmacy",
+    "email": "shruti4476@gmail.com",
+    "phone": "8010182212",
+    "country": "India",
+    "university": "Shivaji university",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Nikita Vidyasagar Kulkarni",
+    "institute": "Annasaheb Dange College of B Pharmacy Ashta",
+    "email": "kulkarninikita302@gmail.com",
+    "phone": "7020588583",
+    "country": "India",
+    "university": "Shivaji University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Amruta Kalidas Patil",
+    "institute": "Annasaheb Dange College of B pharmacy Astha",
+    "email": "amrutakpatil345@gmail.com",
+    "phone": "9075674512",
+    "country": "India",
+    "university": "Shivaji university",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Kimaya Narendra Nawkhare",
+    "institute": "St John Institute of pharmacy & Research, palghar",
+    "email": "kimayanawkhare1234@gmail.com",
+    "phone": "9137985932",
+    "country": "India",
+    "university": "Mumbai University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Priyanka ramvilas Kanoujiya",
+    "institute": "St. john Institute of Pharmacy and Research",
+    "email": "priyakakanoujiya@gmail.com",
+    "phone": "08879057601",
+    "country": "India",
+    "university": "Mumbai University",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Bhumika Pravin Lad",
+    "institute": "St John Institute of pharmacy and Research, Palghar.",
+    "email": "bhumikalad279@gmail.com",
+    "phone": "7718098045",
+    "country": "India",
+    "university": "Mumbai University",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Aditi Anant Shewale",
+    "institute": "St John Institute of Pharmacy and Research",
+    "email": "aditi401203@gmail.com",
+    "phone": "8308123040",
+    "country": "India",
+    "university": "Mumbai University",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Pranjali Pradip Shinde",
+    "institute": "St John Institute of Pharmacy & Research, Palghar",
+    "email": "pranjalips8788@gmail.com",
+    "phone": "8788996495",
+    "country": "India",
+    "university": "University of Mumbai",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Sakshi Sanjay Aher",
+    "institute": "St. John Institute of Pharmacy and Research",
+    "email": "sakshiiaher08@gmail.com",
+    "phone": "9021470587",
+    "country": "India",
+    "university": "University of Mumbai",
+    "areaOfResearch": "Other"
+  },
+  {
+    "name": "SHARMA KHUSHBU RAJENDRA",
+    "institute": "PRINCIPAL K.M.KUNDNANI COLLEGE OF PHARMACY",
+    "email": "rajendrasharma01977@gmail.com",
+    "phone": "9325133349",
+    "country": "India",
+    "university": "UNIVERSITY OF MUMBAI",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Pawar Aditya Prakash",
+    "institute": "Principal k m kundnani college of pharmacy mumbai",
+    "email": "adityapawar192002@gmail.com",
+    "phone": "9022947438",
+    "country": "India",
+    "university": "university of mumbai",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Waghmode Aparna Arun",
+    "institute": "Principal K.M.Kundnani College of pharmacy",
+    "email": "aparnawaghmode2002@gmail.com",
+    "phone": "9004224425",
+    "country": "India",
+    "university": "University of Mumbai",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "SAHIL VINOD DHOKE",
+    "institute": "Prin. K. M. Kundnani College of Pharmacy",
+    "email": "sahilvkd74@gmail.com",
+    "phone": "8097629608",
+    "country": "India",
+    "university": "University of Mumbai",
+    "areaOfResearch": "Pharmaceutical Analysis"
+  },
+  {
+    "name": "Rai Harshita Pramod",
+    "institute": "Principal K.M.Kundnani College of Pharmacy",
+    "email": "harshitar41@gmail.com",
+    "phone": "8779738761",
+    "country": "India",
+    "university": "Mumbai",
+    "areaOfResearch": "Pharmacognosy"
+  },
+  {
+    "name": "Shaikh Ayesha Mahomed Shareef",
+    "institute": "Principal K. M. Kundnani College of Pharmacy",
+    "email": "ayeshamshareef@gmail.com",
+    "phone": "8591271324",
+    "country": "India",
+    "university": "Mumbai",
+    "areaOfResearch": "Pharmacognosy"
+  },
+  {
+    "name": "Apurva Raju Dhainje",
+    "institute": "Prin. K.M. Kundnani college of pharmacy",
+    "email": "apurvadhainje@gmail.com",
+    "phone": "9892639039",
+    "country": "India",
+    "university": "Mumbai university",
+    "areaOfResearch": "Pharmacognosy"
+  },
+  {
+    "name": "Mr. Rajratan Devrao Thorat",
+    "institute": "Principal K. M. Kundanani College of Pharmacy Mumbai",
+    "email": "Rajthoratpharma@gmail.com",
+    "phone": "8888717843",
+    "country": "India",
+    "university": "University of Mumbai",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Sreya Subhash",
+    "institute": "Principal K.M. Kundanani College of Pharmacy, cuffe parade, colaba, Mumbai",
+    "email": "jsreya1998@gmail.com",
+    "phone": "07558581257",
+    "country": "India",
+    "university": "Mumbai University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Prerana Ganesh Bambale",
+    "institute": "Principal K. M. Kundnani College of Pharmacy ,Mumbai, Maharashtra",
+    "email": "pachu.g.bambale@gmail.com",
+    "phone": "7517210785",
+    "country": "India",
+    "university": "University of Mumbai",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "NITIN YASHWANT GORAD",
+    "institute": "PRIN. K. M. KUNDNANI COLLEGE OF PHARMACY, MUMBAI",
+    "email": "nyg18122001@gmail.com",
+    "phone": "9421567153",
+    "country": "India",
+    "university": "MUMBAI UNIVERSITY",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Priyanka Pandurang Thore",
+    "institute": "MET's Institute of pharmacy Nashik",
+    "email": "priyankathore2015@gmail.com",
+    "phone": "7498618862",
+    "country": "India",
+    "university": "Savitribai phule pune university",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Amol Tonde",
+    "institute": "MET's Institute of Pharmacy, Nashik",
+    "email": "amoltonde@gmail.com",
+    "phone": "9764621451",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Vinod Rajaram Jejurkar",
+    "institute": "MGV’s Pharmacy College, Panchavati, Nashik-422003, India",
+    "email": "jejurkar.vinod@gmail.com",
+    "phone": "8888127848",
+    "country": "India",
+    "university": "Savitribai Phule Pune University (SPPU)",
+    "areaOfResearch": "Pharmaceutical Analysis"
+  },
+  {
+    "name": "Rupesh Anil Saindane",
+    "institute": "MET Institute of Pharmacy",
+    "email": "rupeshsaindane@gmail.com",
+    "phone": "9819431364",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "yogita d patil",
+    "institute": "mets institute of pharmacy",
+    "email": "pharmaccts@bkc.met.edu",
+    "phone": "9096245956",
+    "country": "India",
+    "university": "pune university",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Darshan Ratan Jadhav",
+    "institute": "Ravindra Gambirrao Sapkal College of Pharmacy Nashik",
+    "email": "darshanjadhav913@gmail.com",
+    "phone": "9156544433",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Sarthak Kisan Ghule",
+    "institute": "R.G. Sapkal Collage of Pharmacy, Nashik",
+    "email": "sarthakghule1892@gmail.com",
+    "phone": "9552078827",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Yash Sharad Kokate",
+    "institute": "R.G.Sapkal college of pharmacy",
+    "email": "kokateyash8767@gmail.com",
+    "phone": "8767651446",
+    "country": "India",
+    "university": "Savitribai Phule pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Madhavi Eknath Kubade",
+    "institute": "Sudhakarao NaiK Institute Of Pharmacy",
+    "email": "madhvikubde123@gmail.com",
+    "phone": "9022973384",
+    "country": "India",
+    "university": "S",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Gaurav Mukunda Takote",
+    "institute": "Kalyani Charitable Trust's, Ravindra Gambhirrao Sapkal College of Pharmacy , Kalyanii Hills, Anjaneri, Tal. Trimbakeshwar, Dist. Nashik - 422 213.",
+    "email": "takotegaurav7@gmail.com",
+    "phone": "9370730358",
+    "country": "India",
+    "university": "SAVITRIBAI PHULE PUNE UNIVERSITY",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "vaishnavi sharad raipurkar",
+    "institute": "sudhakarrao naik institute of pharmacy pusad",
+    "email": "vaishnaviraipurkar123@gmail.com",
+    "phone": "9699153249",
+    "country": "India",
+    "university": "sant gadgebaba university amravati",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Rutuja baburao shinde",
+    "institute": "R.G sapkal college of pharmacy Nashik",
+    "email": "shinderutuja890@gmail.com",
+    "phone": "9307909302",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Khushi Parag Patodkar",
+    "institute": "R.G Sapkal College of Pharmacy, Nashik",
+    "email": "khushipatodkar02@gmail.com",
+    "phone": "7588358296",
+    "country": "India",
+    "university": "Sppu",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Mansi Chandrashekhar Jadhav",
+    "institute": "R.G.Sapkal college of pharmacy, Angineer",
+    "email": "mansijadhav6363@gmail.com",
+    "phone": "9637824649",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Taherim Mubin Shaikh",
+    "institute": "R. G. SAPKAL COLLEGE OF PHARMACY",
+    "email": "taherim1303@gmail.com",
+    "phone": "8459552522",
+    "country": "India",
+    "university": "MMETS INSTITUTE OF PHARMACY (DEGREE) NASHIK \"",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Rohit Gangadhar Chaudhari",
+    "institute": "MET Institute of Pharmacy, Nashik",
+    "email": "rohitgc0045@gmail.com",
+    "phone": "9370568375",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Snehal Raosaheb chavan",
+    "institute": "Ravindra Gambhirao sapkal college of pharmacy",
+    "email": "snehalchavan1323@gmail.com",
+    "phone": "9325790328",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Asmita Sharad Avhad",
+    "institute": "MET's Institute of pharmacy, Aadgaon Nashik",
+    "email": "asmitaavhad2003@gmail.com",
+    "phone": "8830748159",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Harshita Nilesh Gajare",
+    "institute": "MET’S Institute of Pharamcy",
+    "email": "harshitagajare10@gmail.com",
+    "phone": "8421497949",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Quality Assurance Techniques"
+  },
+  {
+    "name": "Dr. Sushma M Rathod",
+    "institute": "SGSPS Institute of Pharamcy Akola Maharashtra.",
+    "email": "sushma05rathod@gmail.com",
+    "phone": "7276016555",
+    "country": "India",
+    "university": "Sant Gadgebaba Amravati University, Amravati Maharashtra",
+    "areaOfResearch": "Pharmacognosy"
+  },
+  {
+    "name": "Samruddhi balkrishna sawant",
+    "institute": "Matoshri clg of pharmacy",
+    "email": "samruddhisawant462@gmail.com",
+    "phone": "9325783299",
+    "country": "India",
+    "university": "Sppu",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Dikshanka Jibhau Baste",
+    "institute": "Matoshree College of Pharmacy Eklahare Nashik",
+    "email": "bastedikshanka@gmail.com",
+    "phone": "7620152982",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Dugaje Jyoti Namdev",
+    "institute": "MET's Institute of Pharmacy, Adgaon Nashik",
+    "email": "dugajejyoti@gmail.com",
+    "phone": "8329156291",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Pritam Gorakh Kande",
+    "institute": "MET's Institute of Pharmacy Adgoan, Nashik",
+    "email": "pritamkande230@gmail.com",
+    "phone": "8080245162",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical Quality Assurannce"
+  },
+  {
+    "name": "Pratiksha Bharat Rakibe",
+    "institute": "MET's Institute of Pharmacy Nashik",
+    "email": "rakibepratikshabharat@gmail.com",
+    "phone": "7498375655",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Komal Sharad Hiray",
+    "institute": "MET's Institute of Pharmacy, Bhujbal knowledge city, Adgaon, Nashik.",
+    "email": "hiraykomal7@gmail.com",
+    "phone": "9689534163",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Ms. Akshata Arundas Bairagi",
+    "institute": "METs Institute of Pharmacy",
+    "email": "akshatabairagi14@gmail.com",
+    "phone": "9765906501",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Snehal Subhashrao Manekar",
+    "institute": "Dr Rajendra Gode Institute of Pharmacy Amravati",
+    "email": "snehal.manekar@gmail.com",
+    "phone": "9860633667",
+    "country": "India",
+    "university": "Sant Gadge Baba Amravati University, Amravati",
+    "areaOfResearch": "Pharmacognosy"
+  },
+  {
+    "name": "Kartik Prakash Khairnar",
+    "institute": "R G SAPKAL COLLEGE OF PHARMACY NASHIK",
+    "email": "kartikkhairnar2003@gmail.com",
+    "phone": "9421511741",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Tanvi Raosaheb Koshire",
+    "institute": "R.G.Sapkal College of Pharmacy, Anjaneri",
+    "email": "tanvikoshire@gmail.com",
+    "phone": "9665631306",
+    "country": "India",
+    "university": "Savitribai phule university",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Prajwal Aher",
+    "institute": "School of Pharmacy, P P Savani University",
+    "email": "prajwalaher0603@gmail.com",
+    "phone": "9623590849",
+    "country": "India",
+    "university": "P P Savani University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Arya Kulkarni",
+    "institute": "MET IOP",
+    "email": "aaryakulkarni15@gmail.com",
+    "phone": "8421555837",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Ajay B. Bedadurge",
+    "institute": "Shivai charitable Trusts College of Pharmacy",
+    "email": "bedadurgeajay@gmail.com",
+    "phone": "9423398438",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Mr. Mogal Rajendra Tryambak",
+    "institute": "MET's Institute of Pharmacy, Bhujbal Knowledge City, Adgaon, Nashik",
+    "email": "rajendram_iop@bkc.met.edu",
+    "phone": "8983773193",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Dadasaheb Madhukar Kawade",
+    "institute": "MET's Institute of Pharmacy",
+    "email": "kawadedada@gmail.com",
+    "phone": "8830551094",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Mr. Abhijit S. Deore",
+    "institute": "MET's Institute of Pharmacy, Nashik",
+    "email": "abhideore1703@gmail.com",
+    "phone": "9096017462",
+    "country": "India",
+    "university": "SPPU Pune",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Mrs. Madhuri Pandurang Khedkar",
+    "institute": "METs Institute of Pharmacy",
+    "email": "madhurujain299@gmail.com",
+    "phone": "9850091397",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Bindu Chandrakant Ghodeswar",
+    "institute": "MET's Institute of Pharmacy, Bhujbal Knowledge City. Location: Adgaon, Nashik.",
+    "email": "pikbinbg@gmail.com",
+    "phone": "9850120066",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Mr.Sneh Diwakar Sonkamble",
+    "institute": "MET Institute of Pharmacy  Adgaon Nashik",
+    "email": "snehs_iop@bkc.met.edu",
+    "phone": "9970833032",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Pooja  Shantaram Gangurde",
+    "institute": "P P Savani University, Gujarat",
+    "email": "poojagangurde2023@gmail.com",
+    "phone": "9764757196",
+    "country": "India",
+    "university": "P P Savani University,Gujarat",
+    "areaOfResearch": "Pharmaceutical Analysis"
+  },
+  {
+    "name": "Mr.Chetan Devanand Sitan",
+    "institute": "MET's Institute Of Pharmacy Nashik",
+    "email": "chetansitan07@gmail.com",
+    "phone": "7756058577",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Sakshi Santosh Wavhal",
+    "institute": "MET'S Institute of Pharmacy Nashik",
+    "email": "sakshisswavhal2003@gmail.com",
+    "phone": "9172820251",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Srushti Vikas Dhuldhule",
+    "institute": "METs institute of pharmacy adgao nashik",
+    "email": "srushtidhuldhule123@gmail.com",
+    "phone": "8766568594",
+    "country": "India",
+    "university": "Savitribai phule Pune University",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Jain Sejal Kantilal",
+    "institute": "MET's institute of pharmacy, adgaon Nashik",
+    "email": "jsejal328@gmail.com",
+    "phone": "9423086043",
+    "country": "India",
+    "university": "Savitribai Phule pune university",
+    "areaOfResearch": "Regulatory affairs"
+  },
+  {
+    "name": "Mr. Umesh Ashok Bahiram",
+    "institute": "MET'S Institute of Pharmacy, Nashik",
+    "email": "umeshbahiram36@gmail.com",
+    "phone": "9423533174",
+    "country": "India",
+    "university": "Savitribai Phule Pune University Pune",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Randhir Aditya Sudam",
+    "institute": "MET'S Institute of pharmacy Adgoan, Nashik",
+    "email": "adityarandhir14@gmail.com",
+    "phone": "8928445420",
+    "country": "India",
+    "university": "Savitribai phule pune university",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Snehal Sampat Ukhade",
+    "institute": "Bhujbal knowledge city,MET's institute of Pharmacy,Adgoan nashik-422003",
+    "email": "snehalukhade712@gmail.com",
+    "phone": "9284502139",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Sohum Sunil Waskar",
+    "institute": "MET BKC Institute of Pharmacy, nashik",
+    "email": "sohumwaskar9875@gmail.com",
+    "phone": "8788897466",
+    "country": "India",
+    "university": "Savitribai phule pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Poonam santosh thorat",
+    "institute": "MET college of pharmacy",
+    "email": "poonamthorat282002@gmail.com",
+    "phone": "9359720971",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical Analysis"
+  },
+  {
+    "name": "Swati Sanjay Darade",
+    "institute": "CU Shah College of Pharmacy ,mumbai",
+    "email": "swatisanjaydarade@gmail.com",
+    "phone": "7276481999",
+    "country": "India",
+    "university": "C U SHAH COLLEGE OF PHARMACY",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Kalyani Vishwas Pasrate",
+    "institute": "MET Institute of Pharmacy",
+    "email": "kalyanipasrate@gmail.com",
+    "phone": "9373363582",
+    "country": "India",
+    "university": "Sppu",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Pallavi Sunil Jadhav",
+    "institute": "METs Institute of Pharmacy.Nashik",
+    "email": "pallavijadhav467@gmail.com",
+    "phone": "9359441009",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Mr. Shantanu Sanjay Ghodke",
+    "institute": "MET's Institute of Pharmacy",
+    "email": "sgshant45@gmail.com",
+    "phone": "7620049170",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Ms. Sonali Ravindra Patil",
+    "institute": "MET'S Institute of Pharmacy, Bhujbal Knowledge City, Adgaon, Nashik",
+    "email": "sonalip_iodp@bkc.met.edu",
+    "phone": "8888193410",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Jadhav Sakshi Ramesh",
+    "institute": "MET’s BKC Institute of Pharmacy",
+    "email": "sakshirjadhav412@gmail.com",
+    "phone": "8805625650",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "No"
+  },
+  {
+    "name": "Deore Ketana Sahebrao",
+    "institute": "MET's BKC Institute of Pharmacy",
+    "email": "ketanadeore121@gmail.com",
+    "phone": "8600524935",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Akanksha Dafare",
+    "institute": "METS Institute of Pharmacy",
+    "email": "akankshadafare8@gmail.com",
+    "phone": "7276404236",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Priyanka Abhaykumar Borase",
+    "institute": "MET Institute of Pharmacy",
+    "email": "priyankaborase53@gmail.com",
+    "phone": "7249303681",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Om Deepak Kasar",
+    "institute": "MET Institute Of Pharmacy",
+    "email": "omdkasar2003@gmail.com",
+    "phone": "9307228556",
+    "country": "India",
+    "university": "Savitribai phule pune university",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Temkar Harshada Murari",
+    "institute": "MET Institute Of Pharmacy Nashik",
+    "email": "harshadatemkar6@gmail.com",
+    "phone": "09890372218",
+    "country": "India",
+    "university": "Savitribai phule pune university",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "ASHISHKUMAR MADHUKAR PANPATIL",
+    "institute": "MET bhujbal knowledge City institute of pharmacy nashik",
+    "email": "ashishkumarpanpatil@gmail.com",
+    "phone": "8180055340",
+    "country": "India",
+    "university": "Savitribai phule Pune University Maharashtra",
+    "areaOfResearch": "Pharmaceutical Analysis"
+  },
+  {
+    "name": "Zope Utkarsha Gajanan",
+    "institute": "METS INSTITUTE OF PHARMACY",
+    "email": "utkarshazope03@gmail.com",
+    "phone": "9404755748",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Sangare komal ravindra",
+    "institute": "MET Institute of Pharmacy Nashik",
+    "email": "komalsangare2003@gmail.com",
+    "phone": "8265086390",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Gayatri Sharad Shelar",
+    "institute": "Matoshri College of Pharmacy, Eklhare, Nashik",
+    "email": "gayatri11shelar@gmail.com",
+    "phone": "9403452533",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Ms. Mansi Popat Bandawane",
+    "institute": "Matoshri college of pharmacy, Eklahare, Nashik",
+    "email": "mansibandawane4@gmail.com",
+    "phone": "9420025903",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Mugdha Salvi",
+    "institute": "MET Institute of Pharmacy Nashik",
+    "email": "mugdhanilsalvi@gmail.com",
+    "phone": "9136331024",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Jirekar Janhavi Sunil",
+    "institute": "METS institute of Pharmacy",
+    "email": "janhavijirekar@gmail.com",
+    "phone": "8624970900",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Rajeshwar Yadav",
+    "institute": "MET Institute of pharmacy",
+    "email": "ry935945@gmail.com",
+    "phone": "8007054130",
+    "country": "India",
+    "university": "Savitribai phule",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Jain Umesh Nandlal",
+    "institute": "SNJB Shriman Sureshdada Jain College of pharmacy chandwad",
+    "email": "ujain4236@gmail.com",
+    "phone": "8080981191",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Yashomala Vilas Chaudhari",
+    "institute": "SNJB'S SSDJ college of Pharmacy Chandwad",
+    "email": "yashomalachaudhari@gmail.com",
+    "phone": "8668325813",
+    "country": "India",
+    "university": "SPPU Pune",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Aarti Digambar Darade",
+    "institute": "SNJB's SSDJ College of Pharmacy",
+    "email": "aartidarade2001@gmail.com",
+    "phone": "8390410395",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Harsha Rajendra Marathe.",
+    "institute": "SNJBs SSDJ College Of Pharmacy, Chandwad.",
+    "email": "maratheharsha9091@gmail.com",
+    "phone": "9834803221",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Mamta Bhikamchand Patil",
+    "institute": "SNJB'S SSDJ COP Chandwad",
+    "email": "mp6052962@gmail.com",
+    "phone": "9665886013",
+    "country": "India",
+    "university": "SPPU Pune",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Bachhav Sakshi Rohidas",
+    "institute": "SNJB'S SSDJ College Of Pharmacy",
+    "email": "sakshibachhav024@gmail.com",
+    "phone": "9834672093",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Divya kalyan Thakare",
+    "institute": "SNJBs SSDJ college of pharmacy chandwad",
+    "email": "divyathakare79@gmail.com",
+    "phone": "9158700732",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Priyanka Rajendra Adavadkar",
+    "institute": "METs Institute of Pharmacy",
+    "email": "adavadkarpriyanka114@gmail.com",
+    "phone": "8329229324",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Harshada Radhakisan Takate",
+    "institute": "SNJB'S Suresh Dada Jain College Of Pharmacy Chandwad Nashik",
+    "email": "harshadatakate@gmail.com",
+    "phone": "9502996101",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Ghumare Bhumika Jayant",
+    "institute": "SNJB's SSDJ College of pharmacy Chandwad",
+    "email": "ghumarebhumika1712@gmail.com",
+    "phone": "9503946295",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Sachin Sunil Baviskar",
+    "institute": "SNJB College of Pharmacy Chandwad",
+    "email": "sachinbaviskar444@gmail.com",
+    "phone": "7758941975",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Shreya Vilas Dharbale",
+    "institute": "Met institute of pharmacy",
+    "email": "shreyadharbale2004@gmail.com",
+    "phone": "9689421016",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "No"
+  },
+  {
+    "name": "Chavan Pallavi Anant",
+    "institute": "MET INSTITUTE OF PHARMACY NASHIK",
+    "email": "pallavichavan382@gmail.com",
+    "phone": "9820886211",
+    "country": "India",
+    "university": "Savitri Bai Phule pune University",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Pradnya Anil Deore",
+    "institute": "MET INSTITUTE OF PHARMACY",
+    "email": "pradnyadeore27@gmail.com",
+    "phone": "8637728102",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "M.Pharm (Pharmaceutics)",
+    "institute": "METs Institute of pharmacy Nashik",
+    "email": "sudarshanwagh9021@gmail.com",
+    "phone": "7083355710",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Neha Narayan Wattamwar",
+    "institute": "METs Institute of Pharmacy",
+    "email": "nehawattamwar23@gmail.com",
+    "phone": "9604131043",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Darshan sharad chavan",
+    "institute": "Snjb ssdj college of pharmacy chandwad",
+    "email": "manupatil779612@gmail.com",
+    "phone": "7796128732",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Anisha Nitin Pawar",
+    "institute": "MET's Institute of Pharmacy,Adgaon,Nashik",
+    "email": "anupawar121002@gmail.com",
+    "phone": "8329957616",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Ankita Raman mhaske",
+    "institute": "Shriman sureshdada jain college of pharmacy snjb chandwad nashik maharashtra",
+    "email": "Mhaskeankita84@gmail.com",
+    "phone": "7822890348",
+    "country": "India",
+    "university": "Sppu",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Rutuja Manoj Padol",
+    "institute": "MET's Institute of Pharmacy,Nashik",
+    "email": "rutujapadol25@gmail.com",
+    "phone": "9067935752",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Pranjal Vinod Thorat",
+    "institute": "MET's Institute of Pharmacy, Nashik",
+    "email": "pvthorat2002@gmail.com",
+    "phone": "9325642219",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Pooja Tokhlal Verma",
+    "institute": "st.john institute of pharmacy",
+    "email": "pp1241005@sjipr.edu.in",
+    "phone": "8390063675",
+    "country": "India",
+    "university": "mumbai univers",
+    "areaOfResearch": "Pharmaceutical quality assurance"
+  },
+  {
+    "name": "Najan Nikita Ramesh",
+    "institute": "MET'S Institute of Pharmacy, Nashik",
+    "email": "nikitanajan@gmail.com",
+    "phone": "7823862422",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Arote Nayan Vijay",
+    "institute": "MET's Institute of Pharmacy Nashik",
+    "email": "arotenayan@gmail.com",
+    "phone": "9579274954",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Govind Sakharam Giram",
+    "institute": "MET's Institute of Pharmacy Adgaon Nashik",
+    "email": "govindgiram0545@gmail.com",
+    "phone": "9975804388",
+    "country": "India",
+    "university": "Savitribai Phule Pune",
+    "areaOfResearch": "pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "NIKHIL SUDHAKAR AHIRE",
+    "institute": "METs Institute of Pharmacy",
+    "email": "nikhilahire318@gmail.com",
+    "phone": "9561417353",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Bachhav Sakshi Bhila",
+    "institute": "MET COLLEGE OF PHARMACY",
+    "email": "bachhavsakshi7@gmail.com",
+    "phone": "9422173775",
+    "country": "India",
+    "university": "Sppu",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Tanisha Kiran Patil",
+    "institute": "MET Bhujbal knowledge city institute of pharmacy Adgaon",
+    "email": "tanishapatil91@gmail.com",
+    "phone": "9404144171",
+    "country": "India",
+    "university": "Savitribai Phule Pune university",
+    "areaOfResearch": "Pharmaceuticals Quality assurance"
+  },
+  {
+    "name": "Sejal Kantilal Jain",
+    "institute": "METs Institute of Pharmacy",
+    "email": "jsejal328@gmail.com",
+    "phone": "9423086043",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Gayatri Suryabhan Thete",
+    "institute": "SNJB's suresh dada jain college of pharmacy chandawad Nashik",
+    "email": "gayatrithete205@gmail.com",
+    "phone": "7447817060",
+    "country": "India",
+    "university": "Sppu university",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Sonanwani Aryan",
+    "institute": "MET BKC IOP  Adgaon Nashik",
+    "email": "sonawaniaryan@gmail.com",
+    "phone": "8208441351",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Volunteer"
+  },
+  {
+    "name": "Suresh gunaki",
+    "institute": "BLDEA'S COLLEGE OF PHARMACY BASAVANA BAGEWADI",
+    "email": "sureshgunaki01@gmail.com",
+    "phone": "7676666442",
+    "country": "India",
+    "university": "BEAD",
+    "areaOfResearch": "Pharmacognosy"
+  },
+  {
+    "name": "Chetna Anil Chavan",
+    "institute": "SNJB's Suresh Dada Jain College of Pharmacy",
+    "email": "chavanchetna3@gmail.com",
+    "phone": "8369449926",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Mr.Garje Bhagwat Haribhau",
+    "institute": "MET's Institute of Pharmacy,Adgaon,Nashik-422003,Maharashtra,India.",
+    "email": "garjebh25@gmail.com",
+    "phone": "7744802178",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Madhura Milind Bhargave",
+    "institute": "MET institute of pharmacy",
+    "email": "madhurabhargave5@gmail.com",
+    "phone": "9322484493",
+    "country": "India",
+    "university": "Savitribai Phule pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Shivani Uday Chavan",
+    "institute": "Mahavir Institute of pharmacy Nashik",
+    "email": "shivanichavan26@gmail.com",
+    "phone": "7420855925",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Kale Pooja Bapu",
+    "institute": "MET's BKC Institute of Pharmacy, Adgaon, Nashik.",
+    "email": "poojakaleb3@gmail.com",
+    "phone": "9209093499",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Dhoble Omkar Anil",
+    "institute": "MET's Institute of Pharmacy",
+    "email": "omkardhoble004@gmail.com",
+    "phone": "9657345803",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "KHEMNAR OMKAR PRAKASH",
+    "institute": "MET'S INSTITUTE OF PHARMACY BHUJBAL KNOWLEDGE CITY, NASHIK",
+    "email": "khemnaromkar017@gmail.com",
+    "phone": "9322854181",
+    "country": "India",
+    "university": "SAVITRIBAI PHULE PUNE UNIVERSITY (SPPU)",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Mansi Sunil Mhaske",
+    "institute": "SNJBs SSDJ COP, Chandwad",
+    "email": "mansimhaske6@gmail.com",
+    "phone": "9623193044",
+    "country": "India",
+    "university": "Savitribai phule pune university",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "NIRMAL SAKSHI KAILAS",
+    "institute": "SNJBS SSDJS COLLEGE OF PHARMACY, CHANDWAD",
+    "email": "sakshinirmal32@gmail.com",
+    "phone": "8530814199",
+    "country": "India",
+    "university": "Savitribai Phule University",
+    "areaOfResearch": "No"
+  },
+  {
+    "name": "Patil Ritesh Dattatray",
+    "institute": "MET's Institute Of Pharmacy Adgaon , Nashik",
+    "email": "riteshpatil5468@gmail.com",
+    "phone": "7028082807",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "WAGH KANCHAN BALKRISHNA",
+    "institute": "SNJB'S SSDJ College of Pharmacy, Chandwad",
+    "email": "waghkanchan14@gmail.com",
+    "phone": "9022725816",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Jayesh Ajay Khairnar",
+    "institute": "SNJB SSDJ College of Pharmacy, Chandwad",
+    "email": "jayeshkhairnar1023@gmail.com",
+    "phone": "7058039531",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Jain Puja Sanjay",
+    "institute": "SNJB'S SSDJ COP CHANDWAD",
+    "email": "jainpuja0103@gmail.com",
+    "phone": "8767711021",
+    "country": "India",
+    "university": "Savitribai Phule pune University",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "More Prachi Pramod",
+    "institute": "MET IOP, BKC, Nashik",
+    "email": "prachimore9011@gmail.com",
+    "phone": "9960596925",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Shubham Devidas Hembade",
+    "institute": "SNJB's SSDJ College of Pharmacy Chandwad",
+    "email": "shubhamhembade6@gmail.com",
+    "phone": "9370196808",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Divya Dipak Kudal",
+    "institute": "SNJB'S SSDJCOP Chandwad",
+    "email": "divyakudal974@gmail.com",
+    "phone": "7620701080",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "TEJAS SURYABHAN WALE",
+    "institute": "SNJB's SSDJ College of Pharmacy, Chandwad,Nashik 423101",
+    "email": "tejaswale13@gmail.com",
+    "phone": "7774970643",
+    "country": "India",
+    "university": "Savitribai phule pune University",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Samarth Shailendra Kajale",
+    "institute": "Met's institute of pharmacy nashik",
+    "email": "samarthkajale11@gmail.com",
+    "phone": "7378605011",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Arti Kishor Biyani",
+    "institute": "SNJB College of Pharmacy",
+    "email": "artibiyani71@gmail.com",
+    "phone": "9881053271",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Sakshi Sanjay Mahalpure",
+    "institute": "SNJB's SSDJ College of Pharmacy, Chandwad, Nashik.",
+    "email": "sakshimahalpure11@gmail.com",
+    "phone": "9834496491",
+    "country": "India",
+    "university": "Savitribai Phule Pune University (SPPU)",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Sonawane Nikita Vijay",
+    "institute": "SNJB's Shriman Suresh Dada Jain College of Pharmacy, Chandwad",
+    "email": "nikita.s1372@gmail.com",
+    "phone": "9673700990",
+    "country": "India",
+    "university": "Savitribai Phule Pune University (SPPU) Nashik. Maharashtra. India",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Mrs. Anjali Piyush Boraste",
+    "institute": "K K Wagh College of Pharmacy",
+    "email": "apboraste@kkwagh.edu.in",
+    "phone": "7276309030",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Deore Sanskruti Avinash",
+    "institute": "SNJB's SSDJ COP,Chandwad",
+    "email": "deoresanskruti85@gmail.com",
+    "phone": "8767299410",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Jadhav Pallavi Madhukar",
+    "institute": "Snjb's shriman sureshdada jain college of pharmacy Neminagar, Chandwad",
+    "email": "pallavijadhav8337@gmail.com",
+    "phone": "8999325318",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Baride Tanvi Ravindra",
+    "institute": "SNJB'S  SSDJ college of pharmacy  , Chandwad",
+    "email": "tanvirbaride@gmail.com",
+    "phone": "8237836734",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Sayali Dipak Pagar",
+    "institute": "SNJB SSDJ COP Chandwad",
+    "email": "sayalipagar100@gmail.com",
+    "phone": "7887549782",
+    "country": "India",
+    "university": "Savitribai Phule Pune University, Maharashtra",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Kshirsagar Rajashri Vijay",
+    "institute": "SNJB SSDJ College of pharmacy",
+    "email": "rajashrikshirsagar17@gmail.com",
+    "phone": "8999495025",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "SHIRUDE PRATIK KISHOR",
+    "institute": "SNJB's SSDJ INSTITUTE OF PHARMACY, CHANDVAD",
+    "email": "pratik100302@gmail.com",
+    "phone": "9527229294",
+    "country": "India",
+    "university": "SAVITRIBAI FULE PUNE UNIVERSITY",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Bornare Meghali Balasaheb",
+    "institute": "SNJB'S SSDJ college of pharmacy, Chandwad",
+    "email": "bornaremeghali@gmail.com",
+    "phone": "7030292368",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Sonawane Rutuja Santosh",
+    "institute": "SNJBs SSDJ college of pharmacy Chandwad",
+    "email": "rutujasonawan300@gmail.com",
+    "phone": "9763343504",
+    "country": "India",
+    "university": "Savitribai Phule  Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Shinde Nikhil Vinayak",
+    "institute": "SNJB's SSDJ College of Pharmacy Chandwad",
+    "email": "shindenikhil380@gmail.com",
+    "phone": "7378961375",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "DR. MANOJKUMAR SITARAM MAHAJAN",
+    "institute": "SNJB's ShrimanSureshdada Jain College of Pharmacy, Chandwad",
+    "email": "mahajan.mscop@snjb.org",
+    "phone": "9423962663",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Jejurkar Shital Raju",
+    "institute": "SNJB'S SSDJ College of pharmacy, Chandwad",
+    "email": "shitaljejurkar123@gmail.com",
+    "phone": "8390650066",
+    "country": "India",
+    "university": "Savitribai Phule pune university, pune",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "ZALTE RUTUJA NANDU",
+    "institute": "SNJB's Shriman Sureshdada Jain College of pharmacy, Neminagar, Chandwad",
+    "email": "rutujazalte24@gmail.com",
+    "phone": "9527281928",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Kale Sakshi Anil",
+    "institute": "SNJB'S SSDJ College of pharmacy chandwad, Nasik",
+    "email": "kalesakshi116@gmail.com",
+    "phone": "7517931075",
+    "country": "India",
+    "university": "Savitribai phule pune university pune",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Khute Ishwari Shambhu",
+    "institute": "SNJB'S Shriman Sureshdada jain college of pharmacy ,Chandwad, Nashik",
+    "email": "ishukhute555@gmail.com",
+    "phone": "9527845379",
+    "country": "India",
+    "university": "Savitribai Phule Pune University, Pune",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Rupali Nitin kaloge",
+    "institute": "MET's Institute of pharmacy adgaon, Nashik",
+    "email": "rupalikaloge58@gmail.com",
+    "phone": "8208750029",
+    "country": "India",
+    "university": "Savitribai phule pune university",
+    "areaOfResearch": "No"
+  },
+  {
+    "name": "Sharmila Deepak Kuskar",
+    "institute": "MET's Institute of Pharmacy, Adgaon",
+    "email": "sharmilakuskar1@gmail.com",
+    "phone": "9766895973",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "NIPHADE KALPESH SANJAY",
+    "institute": "SNJBs SSDJ College of Pharmacy,Chandwad",
+    "email": "Kalpeshniphade@gmail.com",
+    "phone": "8799997316",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "SHAIKH APSARA RAJJAK",
+    "institute": "SNJB's Shriman Sureshdada Jain College Of Pharmacy, Chandwad Nashik",
+    "email": "shaikhapsara15@gmail.com",
+    "phone": "8459718643",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Mayuri Namdev Jagtap",
+    "institute": "MET's Institute of Pharmacy, Nashik",
+    "email": "mayurinjagtap185@gmail.com",
+    "phone": "7066554576",
+    "country": "India",
+    "university": "Savitribai Phule Pune University, Pune",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Student",
+    "institute": "MET INSTITUTE OF PHARMACY",
+    "email": "siddhantdhatrak292@gmail.com",
+    "phone": "8975292513",
+    "country": "India",
+    "university": "Sppu",
+    "areaOfResearch": "Fy m pharm QA Department"
+  },
+  {
+    "name": "Mahajan Shreya Ajit",
+    "institute": "SNJB's Shriman Sureshdada Jain College of Pharmacy, Neminagar, Chandwad, Dist. Nashik.",
+    "email": "shreyaajitmahajan@gmail.com",
+    "phone": "8600806214",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Lodha Chanchal Vijay",
+    "institute": "SNJBS SSDJ COLLEGE OF PHARMACY CHANDWAD",
+    "email": "Chanchallodha1@gmail.com",
+    "phone": "7620362425",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Khaire Prasad Dnyaneshwar",
+    "institute": "SNJB's SSDJ COP CHANDWAD",
+    "email": "Prasaddk1975@gmail.com",
+    "phone": "9834756804",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Chaturya Shrivallabh Upasani",
+    "institute": "MET Institute of pharmacy, nashik",
+    "email": "csupasani@gmail.com",
+    "phone": "8828053111",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Jagruti Vithoba Pomnar",
+    "institute": "Snjb SSDJ College of Pharmacy, Chandwad",
+    "email": "jagrutipomnar2003@gmail.com",
+    "phone": "9763416980",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Roshani Pandharinath yashod",
+    "institute": "SNJB'S SSDJ college of pharmacy chandwad",
+    "email": "roshaniyashod2003@gmail.com",
+    "phone": "8767697105",
+    "country": "India",
+    "university": "Savitribai phule pune university",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Bhamare Manasi Nitin",
+    "institute": "SNJB'S SSDJ'S College Of Pharmacy Chandwad",
+    "email": "manasibhamare451@gmail.com",
+    "phone": "9850581465",
+    "country": "India",
+    "university": "Savitribai Phule Pune University,Pune",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Bhakti Gotmare",
+    "institute": "Aditya Pharmacy college",
+    "email": "gotmarebhakti3@gmail.com",
+    "phone": "9322967180",
+    "country": "India",
+    "university": "Dbatu",
+    "areaOfResearch": "To be decide"
+  },
+  {
+    "name": "Amruta Vitthal Ware",
+    "institute": "Aditya pharmacy college beed",
+    "email": "wareamruta22@gmail.com",
+    "phone": "7972878239",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "To be decide"
+  },
+  {
+    "name": "Krishna Rajesh Tawde",
+    "institute": "Aditya Pharmacy college ,Beed",
+    "email": "krishnatawde4201@gmail.com",
+    "phone": "8180994201",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Clinical case"
+  },
+  {
+    "name": "Diksha Laxman Ghanekar",
+    "institute": "Aditya pharmacy college beed",
+    "email": "dikshaghanekar594@gmail.com",
+    "phone": "8010383127",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Aditi Namdev Ingawale",
+    "institute": "Aditya Pharmacy College,Beed",
+    "email": "aditiingawale1032@gmail.com",
+    "phone": "8149411032",
+    "country": "India",
+    "university": "Dr Babasaheb Technical University (DBATU)",
+    "areaOfResearch": "Yet to decide"
+  },
+  {
+    "name": "Trupti dattatray garje",
+    "institute": "Aditya pharmacy college",
+    "email": "truptigarje2004@gmail.com",
+    "phone": "9356202718",
+    "country": "India",
+    "university": "Dr Babasaheb Ambedkar (Dbatu)",
+    "areaOfResearch": "Yet to decide"
+  },
+  {
+    "name": "Krupa anil pise",
+    "institute": "Aditya college of pharmacy beed",
+    "email": "krupapise039@gmail.com",
+    "phone": "7020879519",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Achal Raju Kharkate",
+    "institute": "Aditya Pharmacy College Beed",
+    "email": "achalkharkate3@gmail.com",
+    "phone": "9823718240",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Krupal Bhaiyalal Dhote",
+    "institute": "Aditya pharmacy college",
+    "email": "krupaldhote@gmail.com",
+    "phone": "7798124061",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Shruti vaishnav",
+    "institute": "Aditya pharmacy college",
+    "email": "shrutivaishnav158@gmail.com",
+    "phone": "8180926703",
+    "country": "India",
+    "university": "Dbatu",
+    "areaOfResearch": "Yet to decide"
+  },
+  {
+    "name": "Nirjal javheri",
+    "institute": "Aditya pharmacy college beed",
+    "email": "nirjaljavheri@gmail.com",
+    "phone": "9561241103",
+    "country": "India",
+    "university": "Dbatu",
+    "areaOfResearch": "To be decide"
+  },
+  {
+    "name": "Mitali Vijay Dalvi",
+    "institute": "MET institute of pharmacy",
+    "email": "mitalidalvi18@gmail.com",
+    "phone": "8956119086",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Anamika Sudhir Patne",
+    "institute": "Channabasweshwar Pharmacy college,(Degree),Latur",
+    "email": "patneanamika38@gmail.com",
+    "phone": "8605064541",
+    "country": "India",
+    "university": "swami ramanand teerth marathwada university",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Aditi Nilesh Sarmalkar",
+    "institute": "SNJB COLLEGE OF PHARMACY CHANDWAD",
+    "email": "aditi.n.sarmalkar@gmail.com",
+    "phone": "9146498480",
+    "country": "India",
+    "university": "SAVITRIBAI PHULE PUNE UNIVERSITY",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Chinmayi Dipak Baviskar",
+    "institute": "SVKMs Institute of Pharmacy Dhule",
+    "email": "chinmayidipak105@gmail.com",
+    "phone": "9545527222",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Pranjal Kishor Patil",
+    "institute": "SVKM's Institute of Pharmacy, Dhule",
+    "email": "pranjalpatil02112002@gmail.com",
+    "phone": "7558779199",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Atharva Ravindra Halkunde",
+    "institute": "SVKM NMIMS Global University SPTM Dhule",
+    "email": "atharva.halkunde@gmail.com",
+    "phone": "8208357036",
+    "country": "India",
+    "university": "NMIMS GLOBAL UNIVERSITY",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Pawar Pradesh Madhukar",
+    "institute": "MET Institute of pharmacy Nashik",
+    "email": "pawarmadukar449@gmail.com",
+    "phone": "8010261044",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical quality assurance"
+  },
+  {
+    "name": "Mohit Vilas Pawar",
+    "institute": "Svkm Institute of pharmacy Dhule",
+    "email": "mohitvilas1404@gmail.com",
+    "phone": "8626005450",
+    "country": "India",
+    "university": "Dr. Babasaheb Ambedkar Technological University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Pratiksha Nandalal Patil",
+    "institute": "SVKM's Institute of pharmacy , Dhule",
+    "email": "pratikshapatil6131@gmail.com",
+    "phone": "9356662615",
+    "country": "India",
+    "university": "DBATU, Lonere",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Abhijeet Amol Jain",
+    "institute": "SVKM NMIMS Global University Dhule",
+    "email": "abhijej2008@gmail.com",
+    "phone": "7666181280",
+    "country": "India",
+    "university": "SVKM NMIMS Global University",
+    "areaOfResearch": "Pharmacognosy"
+  },
+  {
+    "name": "Komal Bhausaheb sonawane",
+    "institute": "SVKM NMIMS GLOBAL UNIVERSITY  School of Pharmacy and Technology Management, Dhule",
+    "email": "09sonawanekomal@gmail.com",
+    "phone": "8767096066",
+    "country": "India",
+    "university": "NMIMS Global university",
+    "areaOfResearch": "Pharmaceutical Analysis"
+  },
+  {
+    "name": "Minal Pandurang Borse",
+    "institute": "SVKM's Institute of pharmacy, dhule",
+    "email": "minalborse2002@gmail.com",
+    "phone": "7058188246",
+    "country": "India",
+    "university": "Dr. Babasaheb Ambedkar Technological University",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Diya Anil Patil",
+    "institute": "SVKM NMIMS GLOBAL UNIVERSITY  School of Pharmacy and Technology Management, Dhule",
+    "email": "diyapatil26082003@gmail.com",
+    "phone": "8262872303",
+    "country": "India",
+    "university": "SVKM Global NMIMS Dhule",
+    "areaOfResearch": "NO"
+  },
+  {
+    "name": "Tejas Mukesh Pawar",
+    "institute": "SVKM NMIMS GLOBAL UNIVERSITY  School of Pharmacy and Technology Management, Dhule",
+    "email": "tejaspawar7028@gmail.com",
+    "phone": "8010669410",
+    "country": "India",
+    "university": "SVKM NMIMS GLOBAL UNIVERSITY",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Pragati Haresh Patil",
+    "institute": "SNGU school of Pharmacy and Technology Management",
+    "email": "pragatipatil1914@gmail.com",
+    "phone": "9322647944",
+    "country": "India",
+    "university": "SNGU School of Pharmacy and Technology Management,Dhule",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Chincholikar Siddhi Milind",
+    "institute": "Svkm NMIMS Global University Dhule",
+    "email": "siddhi.c3103@gmail.com",
+    "phone": "8263830917",
+    "country": "India",
+    "university": "NMIMS Global University Dhule",
+    "areaOfResearch": "No"
+  },
+  {
+    "name": "Yuvraj Tukaram Khandarkar",
+    "institute": "SVKM SNGU School of Pharmacy and Technology Management, Dhule",
+    "email": "yuvrajkhandarkar@gmail.com",
+    "phone": "7517735126",
+    "country": "India",
+    "university": "SVKM NMIMS Global University, Dhule",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Sumit Suresh Shirsath",
+    "institute": "SVKM'S IOP, Dhule",
+    "email": "shirsathsumit30@gmail.com",
+    "phone": "9096948275",
+    "country": "India",
+    "university": "DBATU, Lonere",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Mansi Ravindra Mohite",
+    "institute": "SVKM's Institute of Pharmacy, Dhule",
+    "email": "mansirmohite@gmail.com",
+    "phone": "8766575209",
+    "country": "India",
+    "university": "Dr. Babasaheb Ambedkar technological University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Divya Anil Varute",
+    "institute": "Met Institute of pharmacy",
+    "email": "divyavarute28@gmail.com",
+    "phone": "7397809677",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Tushar Shailendrasing Girase",
+    "institute": "SVKM NMIMS GLOBAL UNIVERSITY",
+    "email": "tusharshailendrasing@gmail.com",
+    "phone": "9284436047",
+    "country": "India",
+    "university": "Svkm Nmims Global University",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Dhage Omkar Sanjay",
+    "institute": "SVKM NMIMS GLOBAL UNIVERSITY  School of Pharmacy and Technology Management, Dhule",
+    "email": "osdhage12@gmail.com",
+    "phone": "9699198366",
+    "country": "India",
+    "university": "SVKM NMIMS GLOBAL UNIVERSITY",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Yash Kashinath Kale",
+    "institute": "SVKM NMIMS GLOBAL UNIVERSITY  School of Pharmacy and Technology Management, Dhule",
+    "email": "yashkale2225@gmail.com",
+    "phone": "7218187604",
+    "country": "India",
+    "university": "SVKM NMIMS GLOBAL UNIVERSITY, DHULE",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Yogesh umesh pendharkar",
+    "institute": "Svkm NMIMS Global university school of pharmacy and technology management, dhule",
+    "email": "yogeshpendharkar2210@gmail.com",
+    "phone": "9359460941",
+    "country": "India",
+    "university": "Svkm NMIMS Global university school of pharmacy and technology management, dhule",
+    "areaOfResearch": "Pharmaceutical quality assurance"
+  },
+  {
+    "name": "Nikhil Shivdas Mahajan",
+    "institute": "SVKM’S Institute of Pharmacy,Dhule",
+    "email": "mahajannikhil1440@gmail.com",
+    "phone": "7038840653",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Neha Prakash Patil",
+    "institute": "Svkm Institute of Pharmacy, Dhule",
+    "email": "nehpatil9881@gmail.com",
+    "phone": "9373150609",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Lalit Sunil Patil",
+    "institute": "SVKM NMIMS GLOBAL UNIVERSITY  School of Pharmacy and Technology Management, Dhule",
+    "email": "lalitpatil17803@gmail.com",
+    "phone": "8999829399",
+    "country": "India",
+    "university": "Svkm NMIMS Global University",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Mrudula Mahesh Patil",
+    "institute": "Svkm Nmims Global University, Dhule",
+    "email": "patilmrudu296@gmail.com",
+    "phone": "9021117502",
+    "country": "India",
+    "university": "SNGU pharmacy ,dhule",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Harshal Rajendra Chaudhari",
+    "institute": "SVKM NMIMS GLOBAL University Dhule",
+    "email": "dr.harshalrchaudhari@gmail.com",
+    "phone": "9307773953",
+    "country": "India",
+    "university": "SVKM NMIMS GLOBAL UNIVERSITY DHULE",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Pranav Kinage",
+    "institute": "Svkm institute of pharmacy dhule",
+    "email": "pranavkinage07@gmail.com",
+    "phone": "9326490320",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Janhavi Vasudeo Mali",
+    "institute": "SVKM NMIMS Global University SPTM , Dhule",
+    "email": "janhavim256@gmail.com",
+    "phone": "8698401886",
+    "country": "India",
+    "university": "NMIMS GLOBAL UNIVERSITY",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Amol kailas pawar",
+    "institute": "SVKM NMIMS global University dhule",
+    "email": "amolpawar0852@gmail.com",
+    "phone": "93",
+    "country": "India",
+    "university": "SVKM NMIMS global University",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Rohan Ratan Gavhane",
+    "institute": "Aditya pharmacy college, Beed",
+    "email": "rohangavhane86@gmail.com",
+    "phone": "9094943536",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "To be decide"
+  },
+  {
+    "name": "Abhimanyu Kashinath Vadhane",
+    "institute": "MET BKC INSTITUTE OF PHARMACY ADGAON , NASHIK",
+    "email": "abhiwahdane2310@gmail.com",
+    "phone": "9689315873",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Quality Assurance"
+  },
+  {
+    "name": "Yuvraj Sanjay Ahire",
+    "institute": "MET Institute of Pharmacy, Nashik",
+    "email": "ahireyuvraj08@gmail.com",
+    "phone": "8871596102",
+    "country": "India",
+    "university": "Savitribai Phule Pune University, Pune",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "ROHIT SANJAY BHADANE",
+    "institute": "Svkm's Institute of Pharmacy College Dhule",
+    "email": "203rohitbhadane@gmail.com",
+    "phone": "9021047707",
+    "country": "India",
+    "university": "Dr. Babasaheb Ambedkar Technological University",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Apurva Rajesh Halde",
+    "institute": "Met Institute of pharmacy",
+    "email": "apurvahalde702@gmail.com",
+    "phone": "8010648710",
+    "country": "India",
+    "university": "savitribai phule University",
+    "areaOfResearch": "pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Pallavi Dinesh Jadhav",
+    "institute": "MET's Institute of Pharmacy",
+    "email": "pallavi7219@gmail.com",
+    "phone": "7219128254",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Quality Assurance"
+  },
+  {
+    "name": "Sneha Kishor Jaiswal",
+    "institute": "SVKM’S INSTITUTE OF PHARMACY DHULE",
+    "email": "snehajaiswal1019@gmail.com",
+    "phone": "9960516896",
+    "country": "India",
+    "university": "Dr. Babasaheb Ambedkar Technological University",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Devyani Mangal Patil",
+    "institute": "SVKM NMIMS Global University,SPTM Dhule",
+    "email": "devyanipatil9322@gmail.com",
+    "phone": "9322075354",
+    "country": "India",
+    "university": "SVKM NMIMS GLOBAL UNIVERSITY SPTM DHULE",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Shantanu Lade",
+    "institute": "SVKM's Institute of Pharmacy",
+    "email": "shantanulade2002@gmail.com",
+    "phone": "8263931379",
+    "country": "India",
+    "university": "Dr. Babasaheb Ambedkar Technological University",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Devyani Mangal Patil",
+    "institute": "SVKM NMIMS GLOBAL UNIVERSITY SPTM DHULE",
+    "email": "devyanipatil9322@gmail.com",
+    "phone": "9322075354",
+    "country": "India",
+    "university": "SVKM NMIMS GLOBAL UNIVERSITY DHULE",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Mayur Popat Sawant",
+    "institute": "MET's Institute of Pharmacy",
+    "email": "mayurs_iop@bkc.met.edu",
+    "phone": "9890901476",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Gayatri Machindra Jagdhane",
+    "institute": "MET institute of pharmacy",
+    "email": "gayatrijagdhane86055@gmail.com",
+    "phone": "7798506013",
+    "country": "India",
+    "university": "Savitribai phule Pune University",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Yogita Akash Shinde",
+    "institute": "MET's Bhujbal Knowledge City, Institute of Pharmacy, Nashik",
+    "email": "galandeyogita@gmail.com",
+    "phone": "08530619351",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Mr Kapil Kulkarni",
+    "institute": "MET's institute of Pharmacy, nashik",
+    "email": "kulkarnikapil220@gmail.com",
+    "phone": "9969411460",
+    "country": "India",
+    "university": "Savitribai Phule Pune university",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Uddhav pandurang chavan",
+    "institute": "MET's institute of pharmacy,Adgaon,Nashik",
+    "email": "uddhavchavan344@gmail.com",
+    "phone": "9284224908",
+    "country": "India",
+    "university": "Savitribai phule University",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "KIRAN PRAKASH INGLE",
+    "institute": "METs Institute of pharmacy Nashik",
+    "email": "kiraningle0795@gmail.com",
+    "phone": "7620659476",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Utkarsha Rajesh Patil",
+    "institute": "SVKM Institute Of Pharmacy,Dhule",
+    "email": "utkarshapatil2011@gmail.com",
+    "phone": "8856877453",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Kajal Devanand Gawhad",
+    "institute": "MET's institute of pharmacy adgaon nashik maharashtra",
+    "email": "kgawhad53@gmail.com",
+    "phone": "7020513552",
+    "country": "India",
+    "university": "Savitribai Phule pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Ishwari Santosh Dabare",
+    "institute": "METs institute of pharmacy Nashik",
+    "email": "ishwaridabare@gmail.com",
+    "phone": "9322121690",
+    "country": "India",
+    "university": "Savitribai Fule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Vaishnavi Rajendra Bhalerao",
+    "institute": "METs Institute Of Pharmacy",
+    "email": "bhaleraovaishnavi1819@gmail.com",
+    "phone": "9022827463",
+    "country": "India",
+    "university": "SAVITRIBAI PHULE PUNE UNIVERSITY",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Jagruti Raju Nikumbe",
+    "institute": "MET'S Institute of Pharmacy, Adgoan-Nashik",
+    "email": "jagrutinikumbe@gmail.com",
+    "phone": "9136838694",
+    "country": "India",
+    "university": "Savitribai Phule University of Pune, Pune",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Kotkar Pratiksha Annasaheb",
+    "institute": "MET's Institute of Pharmacy Adgaon, Nashik",
+    "email": "kotkarpratiksha211@gmail.com",
+    "phone": "917448138171",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Ashitee Anil Deore",
+    "institute": "SVKM'S institute of pharmacy, Dhule.",
+    "email": "ashiteedeore@gmail.com",
+    "phone": "7820982149",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Harsh krushnarao shinde",
+    "institute": "Met's institute of pharmacy",
+    "email": "harshshinde1186@gmail.com",
+    "phone": "8766411553",
+    "country": "India",
+    "university": "SAVITRIBAI PHULE PUNE UNIVERSITY",
+    "areaOfResearch": "Phatamaceutical Quality Assurance"
+  },
+  {
+    "name": "Dipali Devidas Kapadne",
+    "institute": "SVKM's institute of pharmacy, Dhule",
+    "email": "dipalikapdane76@gmail.com",
+    "phone": "7620167295",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Samata Yuvraj Sonawane",
+    "institute": "MET's institute of pharmacy Nashik",
+    "email": "samatasonawane12088@gmail.com",
+    "phone": "9209290455",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Pranav Mahesh Modak",
+    "institute": "MET Bhujbal Knowledge City",
+    "email": "pranavmaheshmodak@gmail.com",
+    "phone": "9922974365",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Sarika Gorakhanath Shinde",
+    "institute": "MET'S Institute of Pharmacy",
+    "email": "sarikap_iop@bkc.met.edu",
+    "phone": "7720002333",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Ms. Pooja Arjun Shinde",
+    "institute": "MET INSTITUTE OF PHARMACY",
+    "email": "poojaarjunshinde321@gmail.com",
+    "phone": "9145301593",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Mansi Vilas Yeole",
+    "institute": "MET’S Institute of pharmacy Nashik",
+    "email": "mansi.yeole1112@gmail.com",
+    "phone": "8080050949",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Priya Madhukar Salunke",
+    "institute": "MET Institute of Pharmacy, Adgaon Nashik",
+    "email": "priyasalunke888@gmail.com",
+    "phone": "9529653539",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Aakanksha Chandrakant Bhoi",
+    "institute": "MET Bhujbal Knowledge City Institute of Pharmacy, Nashik",
+    "email": "aakankshabhoi732@gmail.com",
+    "phone": "9322904717",
+    "country": "India",
+    "university": "Savitibai Phule Pune University",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Ms. Vaishnavi Avdhut Pathak",
+    "institute": "MET's Institute of Pharmacy, Bhujbal Knowledge City, Adgaon, Nashik",
+    "email": "pathakvaishnavi24@gmail.com",
+    "phone": "7276711062",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Akanksha Balkrishna Paik",
+    "institute": "MET Institute of pharmacy Nashik",
+    "email": "abpaik2003@gmail.com",
+    "phone": "9309405305",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "PRATIKSHA VIJAY JADHAV",
+    "institute": "MET Institute of Pharmacy, Nashik",
+    "email": "jadhavpratiksha6772@gmail.com",
+    "phone": "8975212241",
+    "country": "India",
+    "university": "Savitribai phule pune university",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Rutuja Falaji Sontakke",
+    "institute": "Met institute of pharmacy bhujbal knowledge city Nashik",
+    "email": "rutujasontakke07@gmail.com",
+    "phone": "9579393598",
+    "country": "India",
+    "university": "SAVATRIBAI PHULE PUNE UNIVERSITY",
+    "areaOfResearch": "Pharmaceuticals Quality Assurance"
+  },
+  {
+    "name": "Priya Ganesh Gawali",
+    "institute": "MET's Institute of Pharmacy, Nashik",
+    "email": "priyagawali934@gmail.com",
+    "phone": "9307800539",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Naikwade Ankita Sanjay",
+    "institute": "Met's Institute of Pharmacy",
+    "email": "ankitanaikwade33@gmail.com",
+    "phone": "09307875265",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Supriya Ravindra Bhamare",
+    "institute": "MET’s Institute of Pharmacy, Nashik",
+    "email": "bhamaresupriya0623@gmail.com",
+    "phone": "8830196309",
+    "country": "India",
+    "university": "SPPU Pune",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Girish Narayan Patil",
+    "institute": "Sandip Institute of Pharmaceutical Sciences, Sandip University, Nasik",
+    "email": "ggirishpatil05@gmail.com",
+    "phone": "917720025666",
+    "country": "India",
+    "university": "Sandip University Nasik",
+    "areaOfResearch": "Pharmaceutical Analysis"
+  },
+  {
+    "name": "Suchita Shirsath",
+    "institute": "MET's Institute of Pharmacy, Nashik",
+    "email": "suchita.shirsath@gmail.com",
+    "phone": "8806522793",
+    "country": "India",
+    "university": "SSPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Kanchan Ramesh sanap",
+    "institute": "Met institute of pharmacy",
+    "email": "sanapkanchan2002@gmail.com",
+    "phone": "9021458186",
+    "country": "India",
+    "university": "Savitribai Phule pune university",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "SHAIKH MADNIFATEMA ANSARULHAQUE",
+    "institute": "K. K. WAGH COLLEGE OF PHARMACY, NASHIK.",
+    "email": "madnishaikh2236@gmail.com",
+    "phone": "9637837542",
+    "country": "India",
+    "university": "DR. BABASAHEB TECHNOLOGICAL UNIVERSITY, LONERE, RAIGAD.",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Atharva Bhalerao",
+    "institute": "METs BKC IOP",
+    "email": "atharva_bhalerao@yahoo.com",
+    "phone": "8796310659",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Tile Prasad Bhaskar",
+    "institute": "Mets Institute of Pharmacy Adgaon Nashik",
+    "email": "prasadtile04@gmail.com",
+    "phone": "9623037131",
+    "country": "India",
+    "university": "Savitribai Phule apune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Sakshi mukesh sali",
+    "institute": "Kkwagh college of pharmacy",
+    "email": "salisakshi74@gmail.com",
+    "phone": "7840993964",
+    "country": "India",
+    "university": "Dr. Babasaheb ambedkar technological university",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Bhavika Surendra Jain",
+    "institute": "K.K Wagh College of Pharmacy Nashik Maharashtra",
+    "email": "bhavikajaun340@gmail.com",
+    "phone": "8767498825",
+    "country": "India",
+    "university": "DBATU Lonere Raigad",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Komal Rajendra Deore",
+    "institute": "K.K. Wagh College of pharmacy, Nashik",
+    "email": "komaldeore021@gmail.com",
+    "phone": "7276345218",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Harshada Yuvraj Baviskar",
+    "institute": "K K Wagh College of Pharmacy Nashik",
+    "email": "harshadabaviskar12@gmail.com",
+    "phone": "8390142494",
+    "country": "India",
+    "university": "Dbatu lonere",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Sayali Gajanan Rajgade",
+    "institute": "MET's  INSTITUTE OF PHARMACY",
+    "email": "saileeraaj@gmail.com",
+    "phone": "07350366265",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Pratiksha Bhausaheb Sangle",
+    "institute": "K K Wagh College of Pharmacy, Nashik",
+    "email": "psangle9356@gmail.com",
+    "phone": "9356609002",
+    "country": "India",
+    "university": "Dr.Babasaheb Ambedkar Technological University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Kartiki Uday Jadhav",
+    "institute": "K.k.wagh college of pharmacy",
+    "email": "kartikijadhav2002@gmail.com",
+    "phone": "7391803804",
+    "country": "India",
+    "university": "Dr.Babasaheb Ambedkar Technological University lonere.",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Yogesh chatur desale",
+    "institute": "Met institute of Pharmacy",
+    "email": "desale1342001@gmail.com",
+    "phone": "7057476495",
+    "country": "India",
+    "university": "Savitribai Phule pune university",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Rakesh Dilip sonawane",
+    "institute": "MET'S Institute of pharmacy,Adgaon,Nashik",
+    "email": "rakeshsonawane256@gmail.com",
+    "phone": "8856061565",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Aniket Prakash Shelar",
+    "institute": "K K wagh college of pharmacy (nashik)",
+    "email": "Aniketshelar7711@gmail.com",
+    "phone": "7066601609",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Amol sukdev Nathe",
+    "institute": "K.K.WAGH COLLEGE OF PHARMACY,NASHIK",
+    "email": "amolnathe9579@gmail.com",
+    "phone": "9579711772",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Tanvi Gajanan Charode",
+    "institute": "MET's Institute of Pharmacy Nashik",
+    "email": "tanvicharode@gmail.com",
+    "phone": "8806380699",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "PAWAR PRANJAL NAVNATH",
+    "institute": "MET's Institute of Pharmacy",
+    "email": "pranjalpawarn@gmail.com",
+    "phone": "7721004422",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Kedar Khushi Dilip",
+    "institute": "MET Institute of Pharmacy",
+    "email": "kedar15khushi@gmail.com",
+    "phone": "8788395764",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Yash Chandrakant Borse",
+    "institute": "MET’s institute of pharmacy nashik",
+    "email": "yashborse909@gmail.com",
+    "phone": "8767749724",
+    "country": "India",
+    "university": "Sppu",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Kadam Nilesh Ganesh",
+    "institute": "Aditya pharmacy college,beed",
+    "email": "kadamnilesh621@gmail.com",
+    "phone": "7796567410",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "To be decide"
+  },
+  {
+    "name": "Hemant Zamanand Dhanvijay",
+    "institute": "Aditya Pharmacy College, Beed",
+    "email": "hemantdhanvijay928@gmail.com",
+    "phone": "9765432224",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "To be decide"
+  },
+  {
+    "name": "Siddhi Sanjay Bagul",
+    "institute": "MET's Institute of Pharmacy, Nashik",
+    "email": "siddhibagul.01@gmail.com",
+    "phone": "7447711130",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Varsha Ramesh Sabale",
+    "institute": "METs Institute of pharmacy , Nashik",
+    "email": "varshasabale677@gmail.com",
+    "phone": "9021846773",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Savita Bapu Bhil",
+    "institute": "MET Institute of Pharmacy",
+    "email": "bhilsavita3@gmail.com",
+    "phone": "8767608910",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Bhakti Sachin Malve",
+    "institute": "MET's Institute of Pharmacy",
+    "email": "malvebhakti@gmail.com",
+    "phone": "9975917754",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Sachin Rohidas Ahire",
+    "institute": "Svkm's Institute of pharmacy, Dhule",
+    "email": "301sachinahire@gmail.com",
+    "phone": "7796180870",
+    "country": "India",
+    "university": "Dr. Babasaheb Ambedkar Technological University  LONERE RAIGAD, MAHARASHTRA",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Shraddha Ashokrao Gawali",
+    "institute": "MET Institute of pharmacy, nashik",
+    "email": "shraddhagawali2020@gmail.com",
+    "phone": "9021086500",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Prerana Vijay Chaudhari",
+    "institute": "SVKM's IOP Dhule",
+    "email": "preranachaudhari359@gmail.com",
+    "phone": "8767981728",
+    "country": "India",
+    "university": "Dr. Babasaheb Ambedkar Technological University",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Harsha Digambar Jadhav",
+    "institute": "SVKM NMIMS GLOBAL UNIVERSITY SPTM DHULE",
+    "email": "harshajadhav2508@gmail.com",
+    "phone": "7499275031",
+    "country": "India",
+    "university": "SVKM NMIMS GLOBAL UNIVERSITY DHULE",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Bagul Ghansham Rajendra",
+    "institute": "MET'S IOP NASHIK",
+    "email": "bagulg144@gmail.com",
+    "phone": "9921458651",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Siddhesh Madhav Kale",
+    "institute": "Met institute of pharmacy",
+    "email": "siddheshkale1000@gmail.com",
+    "phone": "7620034689",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Sakshi Govinda Badgujar",
+    "institute": "MET's Institute of Pharmacy",
+    "email": "sakshibadgujr25@gmail.com",
+    "phone": "8208285075",
+    "country": "India",
+    "university": "Savitribai phule pune university",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Mr.Sandeep Rangnath Purkar",
+    "institute": "GES' SIR Dr.M.S.Gosavi College of Pharmaceutical Education & Research,Nashik-05.",
+    "email": "sandippurkar@gmail.com",
+    "phone": "9822854264",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Shaikh Nasreen Bano Sabir Husain",
+    "institute": "MET Institute of pharmacy",
+    "email": "shknasreen007@gmail.com",
+    "phone": "7875508479",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Sangle Shradha Jagannath",
+    "institute": "MET's Institute of Pharmacy , Adgaon, Nashik.",
+    "email": "shradhasangle@gmail.com",
+    "phone": "9637509828",
+    "country": "India",
+    "university": "SPPU, Pune",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Shanatanu Sanjay Hange",
+    "institute": "Aditya Pharmacy college , beed",
+    "email": "shantanuhange@gmail.com",
+    "phone": "8623953704",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "to be decide"
+  },
+  {
+    "name": "Tanisha Ghanshyam Sharma",
+    "institute": "SVKM NMIMS GLOBAL UNIVERSITY DHULE",
+    "email": "tanishasharma9922@gmail.com",
+    "phone": "7666413843",
+    "country": "India",
+    "university": "SNGU",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Preeti Premshankar Bhagat",
+    "institute": "SVKM NMIMS Global University, Dhule.",
+    "email": "pritibhagat267@gmail.com",
+    "phone": "9890524588",
+    "country": "India",
+    "university": "SNGU",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Payal Himmat Chavan",
+    "institute": "METs Institute of Pharmacy, Nashik",
+    "email": "payalchavan113@gmail.com",
+    "phone": "9307498931",
+    "country": "India",
+    "university": "Savitribai Phule Pune University",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Kalpesh Mukesh Patil",
+    "institute": "SVKM NMIMS GLOBAL UNIVERSITY School of Pharmacy And Technology Management Dhule",
+    "email": "kp1332922@gmail.com",
+    "phone": "8767175585",
+    "country": "India",
+    "university": "SNGU",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Ms.Devyani Pravin Chavan",
+    "institute": "MET's Institute of Pharmacy Nasik",
+    "email": "chavandevyani788@gmail.com",
+    "phone": "7741996993",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Kartiki Prakashkumar Aher",
+    "institute": "R.G .Sapkal college of pharmacy",
+    "email": "kartikiaher90@gmail.com",
+    "phone": "9373438058",
+    "country": "India",
+    "university": "Sppu",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Pratibha Sandeep Shinde",
+    "institute": "MET's Institute of Pharmacy, Nashik",
+    "email": "pratibha.pawar702@gmail.com",
+    "phone": "94036340997620908032",
+    "country": "India",
+    "university": "S P P University, Pune",
+    "areaOfResearch": "Microbiology"
+  },
+  {
+    "name": "Thakare Prerana Bapu",
+    "institute": "RG Sapkal college of pharmacy",
+    "email": "thakareprerana@gmail.com",
+    "phone": "9420768119",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Sawale Prerna Mahendra",
+    "institute": "R.G.Sapkal College of Pharmacy",
+    "email": "prernasawale0716@gmail.com",
+    "phone": "9766750698",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Yugandhara rumale",
+    "institute": "K k wagh college of pharmacy nashik",
+    "email": "yugandhararumale22@gmail.com",
+    "phone": "7498895838",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Arpita Arun katkade",
+    "institute": "K.k.wagh college of pharmacy nashik",
+    "email": "arpitakatkade@gmail.com",
+    "phone": "9175476624",
+    "country": "India",
+    "university": "Dr . Babasaheb Ambedkar technology University",
+    "areaOfResearch": "Quality assurance"
+  },
+  {
+    "name": "Akshada Uttam Pawar",
+    "institute": "K.k.wagh college of pharmacy,nashik",
+    "email": "akshadapawar333@gmail.com",
+    "phone": "9834668997",
+    "country": "India",
+    "university": "Dr.Babasaheb Ambedkar technology University",
+    "areaOfResearch": "Quality assurance"
+  },
+  {
+    "name": "Livja Ajij Patel",
+    "institute": "Kk wagh college of pharmacy",
+    "email": "livzapatel462@gmail.com",
+    "phone": "9226882667",
+    "country": "India",
+    "university": "DBATU University  Lonere",
+    "areaOfResearch": "Quality Assurance"
+  },
+  {
+    "name": "Sonam Balkrishna Chauhan",
+    "institute": "K.K Wagh college of pharmacy Nashik",
+    "email": "sonambc57@gmail.com",
+    "phone": "9881578169",
+    "country": "India",
+    "university": "Dr. Babasaheb Ambedkar University, lonere",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Ms. Kartiki Manoj Bhandari",
+    "institute": "MET's Institute of Pharmacy",
+    "email": "kartikib1111@gmail.com",
+    "phone": "8850318503",
+    "country": "India",
+    "university": "MET's Institute of Pharmacy",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Sanjana Ravindra Deore",
+    "institute": "k k wagh college of Pharmacy",
+    "email": "sanjanadeore4@gmail.com",
+    "phone": "7447557651",
+    "country": "India",
+    "university": "Dbatu university lonere",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Akanksha Raghunath Wagh",
+    "institute": "K.K.Wagh College Of Pharmacy Nashik",
+    "email": "akankshawagh818@gmail.com",
+    "phone": "9699541215",
+    "country": "India",
+    "university": "DBATU Lonere",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Sakshi balasaheb bhangre",
+    "institute": "Kk Wagh college of pharmacy Nashik",
+    "email": "sakshibhangre63@gmail.com",
+    "phone": "7397827928",
+    "country": "India",
+    "university": "DBATU university lonere",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Nikita Rajendra Sandhan",
+    "institute": "K.k.wagh college of pharmacy nashik",
+    "email": "nikitasandhan512@gmail.com",
+    "phone": "8975097801",
+    "country": "India",
+    "university": "Dr. Babasaheb Ambedkar University Lonere",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Faiza Naushad Sayyad",
+    "institute": "K k Wagh College of Pharmacy Nashik",
+    "email": "faizasaiyyad6@gmail.com",
+    "phone": "7350569786",
+    "country": "India",
+    "university": "Dbatu University, lonere",
+    "areaOfResearch": "Pharmaceuticals Quality Assurance"
+  },
+  {
+    "name": "Kalyani uttam chinchale",
+    "institute": "kk wagh College of pharmacy, nashik",
+    "email": "ishachinchale30@gmail.com",
+    "phone": "8855915030",
+    "country": "India",
+    "university": "Dbatu university, lonere",
+    "areaOfResearch": "quality assurance"
+  },
+  {
+    "name": "Sakshi prakash Daware",
+    "institute": "Kk wagh college of pharmacy, nashik",
+    "email": "sakshidaware63@gmail.com",
+    "phone": "9067466079",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Ayodhya Gokul Shirsath",
+    "institute": "Kk Wagh College of pharmacy,nashik",
+    "email": "ayodhyashirsath26@gmail.com",
+    "phone": "7385949135",
+    "country": "India",
+    "university": "Dbatu university",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Kiran Ramesh Gore",
+    "institute": "K.K. Wagh College of Pharmacy Nashik",
+    "email": "kirangore3513@gmail.com",
+    "phone": "9021182270",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Asmita Avinash Rathod",
+    "institute": "MET Institute of Pharmacy",
+    "email": "rathodasmita455@gmail.com",
+    "phone": "8262949587",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Shaikh Shabana A Raheman",
+    "institute": "MET's Institute of Pharmacy, Nashik",
+    "email": "shabanashaikh0301@gmail.com",
+    "phone": "8208103873",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Purva Dilip Muley",
+    "institute": "K. K. Wagh college of Pharmacy, Nashik.",
+    "email": "purvamuley555@gmail.com",
+    "phone": "8975042527",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Krushna Umakant Baviskar",
+    "institute": "K.K.Wagh College of Pharmacy",
+    "email": "krushnabaviskar20@gmail.com",
+    "phone": "7559303057",
+    "country": "India",
+    "university": "Dr.Babesaheb Ambedkar Technological University,Lonere.",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Swapnil Sarjerao Salunke",
+    "institute": "K.K Wagh College of Pharmacy Nashik",
+    "email": "swapnil7447371185@gmail.com",
+    "phone": "7447371185",
+    "country": "India",
+    "university": "Dr.Babasaheb Ambedkar Technical University Lonere",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Aditya Rajendra Gangatire",
+    "institute": "K.K Wagh College of Pharmacy Nashik",
+    "email": "gangatireaditya78@gmail.com",
+    "phone": "7822054010",
+    "country": "India",
+    "university": "Dr.Babasaheb Ambedkar Technical University Lonere",
+    "areaOfResearch": "Pharmaceutical Quality Assurance"
+  },
+  {
+    "name": "Rahul Prashant Dwivedi",
+    "institute": "Kk wagh college of pharmacy, nashik",
+    "email": "dwivedirahul022@gmail.com",
+    "phone": "7058700890",
+    "country": "India",
+    "university": "Dbatu",
+    "areaOfResearch": "Pharmaceutical quality assurance"
+  },
+  {
+    "name": "Jignesh Ashok Tonde",
+    "institute": "aditya pharmacy college beed",
+    "email": "jigneshtonde04@gmail.com",
+    "phone": "9284084675",
+    "country": "India",
+    "university": "d batu",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Preeti Bapi Roy",
+    "institute": "Loknete Dr J.D Pawar College of pharmacy",
+    "email": "preetiroy2504@gmail.com",
+    "phone": "7558216103",
+    "country": "India",
+    "university": "Savitribai Phule university, pune",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Sneha Kishor Jaiswal",
+    "institute": "SVKM’S INSTITUTE OF PHARMACY DHULE",
+    "email": "snehajaiswal1019@gmail.com",
+    "phone": "9960516896",
+    "country": "India",
+    "university": "Dr. Babasaheb Ambedkar Technological University",
+    "areaOfResearch": "Pharmaceutical Chemistry"
+  },
+  {
+    "name": "Vaishnavi bhavlal patil",
+    "institute": "K k wagh of pharmacy",
+    "email": "vaishnavipatil3912984@gmail.com",
+    "phone": "8999875736So",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Vaishnavi Dinesh Patil",
+    "institute": "K.K.Wagh College of pharmacy, nashik",
+    "email": "vaishnavipatil13045@gmail.com",
+    "phone": "7041955359",
+    "country": "India",
+    "university": "Dr.Babasaheb Ambedkar Technological University, lonere",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Sanskruti Dipak Bora",
+    "institute": "K.K.Wagh College of Pharmacy, Nashik",
+    "email": "sanskrutibora585@gmail.com",
+    "phone": "7028936026",
+    "country": "India",
+    "university": "Dr.Babasaheb Ambedkar technological University",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Dhiraj Bhaskar Bhalkar",
+    "institute": "SVKM IOP DHULE",
+    "email": "dhirajbhalkar2001@gmail.com",
+    "phone": "9834434389",
+    "country": "India",
+    "university": "DBATU",
+    "areaOfResearch": "Pharmacology"
+  },
+  {
+    "name": "Ankita Bhika rathod",
+    "institute": "Met institute of pharmacy Adgoan Nashik",
+    "email": "ankitarathod342@gmail.com",
+    "phone": "9130823872",
+    "country": "India",
+    "university": "SPPU",
+    "areaOfResearch": "QAT"
+  },
+  {
+    "name": "Akanksha Kishor Khairnar",
+    "institute": "Loknete DR J.d pawar college of pharmacy",
+    "email": "akanksha2247@gmail.com",
+    "phone": "9370152651",
+    "country": "India",
+    "university": "savitribai phule university,pune",
+    "areaOfResearch": "Pharmaceutics"
+  },
+  {
+    "name": "Priyanka Subhash Bhalsing",
+    "institute": "K.K.Wagh College Of Pharmacy,Nashik",
+    "email": "priyankabhalsing27@gmail.com",
+    "phone": "9273726577",
+    "country": "India",
+    "university": "Dr.Babasaheb Ambedkar technologial University lonere",
+    "areaOfResearch": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "name": "Tejashri Ranganath Dugaje",
+    "institute": "P P Savani University,Dhamdod, Kosamba, Gujarat.",
+    "email": "tdugaje@gmail.com",
+    "phone": "7719897728",
+    "country": "India",
+    "university": "P P Savani University,Dhamdod, Kosamba, Gujarat.",
+    "areaOfResearch": "Pharmaceutical Analysis"
+  },
+  {
+    "Email Address": "Chandgudepriti9@gmail.com",
+    "Name of the Delegates ": "Priti Ravindra Chandgude",
+    "Name of College/organization": "K. K. Wagh college of pharmacy, Nashik",
+    "Country ": "India",
+    "Affiliated University": "Dr. Babasaheb ambedkar technological University lonere",
+    "Mobile no": 8855828751,
+    "District": "Nashik",
+    "Area of research": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "Email Address": "vishusb2004@gmail.com",
+    "Name of the Delegates ": "Vishwanjali Sangam Bawaskar ",
+    "Name of College/organization": "K K Wagh college of pharmacy ",
+    "Country ": "India",
+    "Affiliated University": "Dr Babasaheb Ambedkar Technolgical University ",
+    "Mobile no": 8055369308,
+    "District": "Nashik ",
+    "Area of research": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "Email Address": "shraddhagaikawad4@gmail.com",
+    "Name of the Delegates ": "Gaikwad Shraddha Pravin ",
+    "Name of College/organization": "METIOP",
+    "Country ": "India",
+    "Affiliated University": "SPPU",
+    "Mobile no": 7249228753,
+    "District": "Nashik",
+    "Area of research": "Pharmaceutical Chemistry"
+  },
+  {
+    "Email Address": "nehamore4040@gmail.com",
+    "Name of the Delegates ": "Neha Subhash More ",
+    "Name of College/organization": "MET's Institute of Pharmacy, Adgaon , Nashik",
+    "Country ": "India",
+    "Affiliated University": "Savitribai Phule Pune University ",
+    "Mobile no": 9226471770,
+    "District": "Nashik",
+    "Area of research": "Pharmacology"
+  },
+  {
+    "Email Address": "mvaishnavi216@gmail.com",
+    "Name of the Delegates ": "Mahajan Vaishnavi Tushar ",
+    "Name of College/organization": "MET's Institute of Pharmacy Nashik ",
+    "Country ": "India",
+    "Affiliated University": "Savitribai Phule Pune University ",
+    "Mobile no": 9421266066,
+    "District": "Nashik ",
+    "Area of research": "Pharmacology"
+  },
+  {
+    "Email Address": "mbpatil@kkwagh.edu.in",
+    "Name of the Delegates ": "Monali Pratik Aher",
+    "Name of College/organization": "k k wagh college of pharmacy , Nashik ",
+    "Country ": "India",
+    "Affiliated University": "DBATU",
+    "Mobile no": 9373560910,
+    "District": "Nashik",
+    "Area of research": "Pharmaceutics"
+  },
+  {
+    "Email Address": "shivanik1319@gmail.com",
+    "Name of the Delegates ": "Shivani Dattatray Kumbhar ",
+    "Name of College/organization": "MET'S Institute of Pharmacy, Bhujbal Knowledge City, Adgaon, Nashik ",
+    "Country ": "India",
+    "Affiliated University": "Savitribai Phule Pune University,Pune",
+    "Mobile no": 8007798295,
+    "District": "Nashik",
+    "Area of research": "Pharmacology"
+  },
+  {
+    "Email Address": "minhazdgr8@gmail.com",
+    "Name of the Delegates ": "SHAIKH MINHAZ PARVEEN JAWED HUSSAIN ",
+    "Name of College/organization": "JMCT INSTITUTE OF PHARMACY, NASHIK",
+    "Country ": "India",
+    "Affiliated University": "Dr.Babasaheb Ambedkar Technological University",
+    "Mobile no": 7972284382,
+    "District": "NASHIK",
+    "Area of research": "Pharmaceutics"
+  },
+  {
+    "Email Address": "nadimsk770@gmail.com",
+    "Name of the Delegates ": "Shaikh Nadim Daud",
+    "Name of College/organization": "METs INSTITUTE OF PHARMACY",
+    "Country ": "India",
+    "Affiliated University": "SPPU",
+    "Mobile no": "7709 504 249",
+    "District": "NASHIK",
+    "Area of research": "Pharmaceutical Chemistry"
+  },
+  {
+    "Email Address": "pranalichandurkar97@gmail.com",
+    "Name of the Delegates ": "Pranali A. Chandurkar",
+    "Name of College/organization": "Smt. Kishoritai Bhoyar College of Pharmacy, Kamptee, Nagpur",
+    "Country ": "India",
+    "Affiliated University": "Rashtrasant Tukadoji Maharaj Nagpur University, Nagpur",
+    "Mobile no": 9022487598,
+    "District": "Nagpur",
+    "Area of research": "Pharmacology"
+  },
+  {
+    "Email Address": "snehagaurkardrgiop1011@gmail.com",
+    "Name of the Delegates ": "Ms. Sneha B. Gaurkar",
+    "Name of College/organization": "Dr. Rajendra Gode Institute of Pharmacy, Amravati",
+    "Country ": "India",
+    "Affiliated University": "Sant Gadge Baba Amravati University, Amravati",
+    "Mobile no": 7083160634,
+    "District": "Amravati",
+    "Area of research": "Pharmaceutics"
+  },
+  {
+    "Email Address": "moremanisha92@gmail.com",
+    "Name of the Delegates ": "Ms. Manisha P. More",
+    "Name of College/organization": "Dr. Rajendra Gode Institute of Pharmacy, Amravati",
+    "Country ": "India",
+    "Affiliated University": "Sant Gadge Baba Amravati University, Amravati",
+    "Mobile no": 9561555860,
+    "District": "Amravati",
+    "Area of research": "Quality Assurance"
+  },
+  {
+    "Email Address": "niveditakhairnar7@gmail.com",
+    "Name of the Delegates ": "Nivedita Vijay Khairnar ",
+    "Name of College/organization": "Ssdj snjb Chandwad nashik ",
+    "Country ": "India",
+    "Affiliated University": "SPPU",
+    "Mobile no": 8459696134,
+    "District": "Nashik ",
+    "Area of research": "Pharmacology"
+  },
+  {
+    "Email Address": "modelzoha12@gmail.com",
+    "Name of the Delegates ": "ANSARI ZOHA TAUQEER ",
+    "Name of College/organization": " MET Institute of Pharmacy ",
+    "Country ": "India",
+    "Affiliated University": "Savitribai Phule University",
+    "Mobile no": 8459364308,
+    "District": "Nashik ",
+    "Area of research": "Pharmaceutical Chemistry"
+  },
+  {
+    "Email Address": "adityaborase324@gmail.com",
+    "Name of the Delegates ": "Borase Aditya Abhaykumar ",
+    "Name of College/organization": "Pratibhatai Pawar College of Pharmacy Wadala Mahadev Shrirampur ",
+    "Country ": "India",
+    "Affiliated University": "D.Batu",
+    "Mobile no": 9172044897,
+    "District": "Ahilyanager ",
+    "Area of research": "B.Pharmacy 3rd Year"
+  },
+  {
+    "Email Address": "kavitadhamak29@rediffmail.com",
+    "Name of the Delegates ": "Kavita Bhushan Vikhe",
+    "Name of College/organization": "METS Institiute of Pharmacy, Bhujbal Knowledge City Adgaon Nashik",
+    "Country ": "India",
+    "Affiliated University": "Savitribai Phule Pune University",
+    "Mobile no": 9404123161,
+    "District": "Nashik",
+    "Area of research": "Pharmaceutical Chemistry"
+  },
+  {
+    "Email Address": "hemantraut184@gmail.com",
+    "Name of the Delegates ": "Mr. Hemant Vishnu Raut ",
+    "Name of College/organization": "MET INSTITUTE OF PHARMACY,ADGAON,NASHIK ",
+    "Country ": "India",
+    "Affiliated University": "SPPU",
+    "Mobile no": 9049893238,
+    "District": "Nashik ",
+    "Area of research": "Pharmacology"
+  },
+  {
+    "Email Address": "rutujajain9420@gmail.com",
+    "Name of the Delegates ": "Jain Rutuja sandip ",
+    "Name of College/organization": "MET institute of pharmacy ",
+    "Country ": "India",
+    "Affiliated University": "Sppu",
+    "Mobile no": 8605248870,
+    "District": "Nashik",
+    "Area of research": "Pharmaceutical Chemistry"
+  },
+  {
+    "Email Address": "vd_kakad@jspmrscopr.edu.in",
+    "Name of the Delegates ": "Vrushali D. Kakad ",
+    "Name of College/organization": "MVP's College of Pharmacy, Nashik",
+    "Country ": "India",
+    "Affiliated University": "SPPU ",
+    "Mobile no": 7744069815,
+    "District": "Nashik",
+    "Area of research": "Pharmacology"
+  },
+  {
+    "Email Address": "gayatrideore005@gmail.com",
+    "Name of the Delegates ": "Gayatri Dipak Deore ",
+    "Name of College/organization": "K.K Wagh College of Pharmacy, Nashik ",
+    "Country ": "India",
+    "Affiliated University": "Dr. Babasaheb Ambedkar technologial university lonare",
+    "Mobile no": 9699144242,
+    "District": "Nashik",
+    "Area of research": "Pharmaceutical regulatory affairs"
+  },
+  {
+    "Email Address": "kunalbhambar@gmail.com",
+    "Name of the Delegates ": "Dr Kunal V Bhambar",
+    "Name of College/organization": "MGV’S Samajshri Prashantdada Hiray College of Pharmacy",
+    "Country ": "India",
+    "Affiliated University": "SPPU",
+    "Mobile no": 9423969392,
+    "District": "Nashik",
+    "Area of research": "Pharmaceutics"
+  },
+  {
+    "Email Address": "priti.newadkar@gmail.com",
+    "Name of the Delegates ": "Priti Tushar Newadkar",
+    "Name of College/organization": "MGV’s Samajshri Prashantdada Hiray, college of Pharmacy ",
+    "Country ": "India",
+    "Affiliated University": "SPPU ",
+    "Mobile no": 7741030797,
+    "District": "Nashik",
+    "Area of research": "Pharmaceutics"
+  },
+  {
+    "Email Address": "aparnapatil3953@gmail.com",
+    "Name of the Delegates ": "Aparna Prakashrao Patil ",
+    "Name of College/organization": "METs Institute of pharmacy Nashik ",
+    "Country ": "India",
+    "Affiliated University": "Savitribai Phule Pune University ",
+    "Mobile no": 7796443744,
+    "District": "Nashik",
+    "Area of research": "Pharmaceutical Chemistry"
+  },
+  {
+    "Email Address": "krutikakale920@gmail.com",
+    "Name of the Delegates ": "Krutika Kale ",
+    "Name of College/organization": "Gurunanak college of pharmacy Nagpur ",
+    "Country ": "India",
+    "Affiliated University": "Rashtrasant Tukadoji Maharaj University ",
+    "Mobile no": 8600524696,
+    "District": "Nagpur ",
+    "Area of research": "Pharmaceuticals Managements"
+  },
+  {
+    "Email Address": "omkarnewar36532@gmail.com",
+    "Name of the Delegates ": "OM DHANRAJ KARNEWAR",
+    "Name of College/organization": "Gurunnak College of Pharmacy",
+    "Country ": "India",
+    "Affiliated University": "RTMNU",
+    "Mobile no": 7057017293,
+    "District": "Yavatmal",
+    "Area of research": "Pharmaceutical MBA"
+  },
+  {
+    "Email Address": "ks7710036@gmail.com",
+    "Name of the Delegates ": "Singh Khushi Dilip ",
+    "Name of College/organization": "Srinath college of pharmacy ",
+    "Country ": "India",
+    "Affiliated University": "Dr. Babasaheb Ambedkar Technological University ",
+    "Mobile no": 7499272654,
+    "District": "Chh.sambhajinagar",
+    "Area of research": "Pharmaceutical Analysis"
+  },
+  {
+    "Email Address": "siraskarshraddha80@gmail.com",
+    "Name of the Delegates ": "Siraskar Shraddha Shyam ",
+    "Name of College/organization": "Srinath college of pharmacy ",
+    "Country ": "India",
+    "Affiliated University": "Dr. Babasaheb Ambedkar Technological University ",
+    "Mobile no": 9356871841,
+    "District": "Chhatrapati Sambhajinagar ",
+    "Area of research": "Pharmaceutical Analysis"
+  },
+  {
+    "Email Address": "payalrat598@gmail.com",
+    "Name of the Delegates ": "Rathod Payal Bhagwan ",
+    "Name of College/organization": "Srinath college of pharmacy ",
+    "Country ": "India",
+    "Affiliated University": "Dr.Babasaheb Ambedkar Technological University ",
+    "Mobile no": 8669162830,
+    "District": "Chh. Shambhajingar ",
+    "Area of research": "Pharmaceutical Analysis"
+  },
+  {
+    "Email Address": "madhavibochare@gmail.com",
+    "Name of the Delegates ": "Madhavi P Shinde",
+    "Name of College/organization": "MVP college of Pharmacy, Nashik",
+    "Country ": "India",
+    "Affiliated University": "SPPU",
+    "Mobile no": 9730738436,
+    "District": "Nashik",
+    "Area of research": "Pharmaceutical Analysis"
+  },
+  {
+    "Email Address": "pinjarishaista36@gmail.com",
+    "Name of the Delegates ": "Ms.Pinjari Shaista Shareef ",
+    "Name of College/organization": "JMCT Institute of Pharmacy Nashik ",
+    "Country ": "India",
+    "Affiliated University": "Dr. Baba Saheb Ambedkar Technological University Lonere ,Raigad.",
+    "Mobile no": 7040569689,
+    "District": "Nashik",
+    "Area of research": "Pharmaceutical Analysis"
+  },
+  {
+    "Email Address": "sumitsatpute444@gmail.com",
+    "Name of the Delegates ": "Satpute Sumit Mohan ",
+    "Name of College/organization": "Srinath College Of Pharmacy, Chh.Sambhajinagar ",
+    "Country ": "India",
+    "Affiliated University": "Dr. Babasaheb Ambedkar Technological University (DBATU)",
+    "Mobile no": 7875298996,
+    "District": "Chh.Sambhajinagar",
+    "Area of research": "Pharmaceutical Analysis"
+  },
+  {
+    "Email Address": "wadgaonkarshreyash@gmail.com",
+    "Name of the Delegates ": "Wadgaonkar Shreyash Sandip ",
+    "Name of College/organization": "Srinath college of pharmacy ",
+    "Country ": "India",
+    "Affiliated University": "Dr. Babasaheb Ambedkar Technological University (DBATU)",
+    "Mobile no": 9326737322,
+    "District": "Chht. Sambhajinagar ",
+    "Area of research": "Pharmaceutical Analysis"
+  },
+  {
+    "Email Address": "akashnavpute20@gmail.com",
+    "Name of the Delegates ": "Navpute Akash Anil",
+    "Name of College/organization": "Srinath College of pharmacy ",
+    "Country ": "India",
+    "Affiliated University": "Dr. Babasaheb Ambedkar Technological University (DBATU)",
+    "Mobile no": 9730922520,
+    "District": "Chhatrapati Sambhaji Nagar",
+    "Area of research": "Pharmaceutical Analysis"
+  },
+  {
+    "Email Address": "krushnashelke304@gmail.com",
+    "Name of the Delegates ": "Shelke Krushna Ramesh ",
+    "Name of College/organization": "Srinath College of pharmacy Chhatrapati Sambhajinagar",
+    "Country ": "India",
+    "Affiliated University": "Dr. Babasaheb Ambedkar Technological University (DBATU)",
+    "Mobile no": 7709870815,
+    "District": "Chhatrapati Sambhajinagar ",
+    "Area of research": "Pharmaceutical Analysis"
+  },
+  {
+    "Email Address": "jyotisharmass789@gmail.com",
+    "Name of the Delegates ": "Jyoti Jaihind Sharma ",
+    "Name of College/organization": "Srinath College of Pharmacy",
+    "Country ": "India",
+    "Affiliated University": "Dr. Babasaheb Ambedkar Technological University (DBATU)",
+    "Mobile no": 7822025910,
+    "District": " Aurangabad ",
+    "Area of research": "Pharmaceutical Analysis"
+  },
+  {
+    "Email Address": "shreyashsomani2022@gmail.com",
+    "Name of the Delegates ": "Somani Shreyash Kailas ",
+    "Name of College/organization": "Srinath College of Pharmacy ",
+    "Country ": "India",
+    "Affiliated University": "Dr. Babasaheb Ambedkar Technological University, Lonere, Raigad ",
+    "Mobile no": 9730934262,
+    "District": "Chhatrapati Sambhajinagar ",
+    "Area of research": "Pharmaceutical Analysis"
+  },
+  {
+    "Email Address": "dhanashrikathar28@gmail.com",
+    "Name of the Delegates ": "Kathar Dhanashri Dnyaneshwar ",
+    "Name of College/organization": "Srinath College of Pharmacy, Ch.Sambhajinagar",
+    "Country ": "India",
+    "Affiliated University": "Dr. Babasaheb Ambedkar technological University , lonere",
+    "Mobile no": 9404899241,
+    "District": "Ch. Sambhaji Nagar ",
+    "Area of research": "Pharmaceutical Analysis"
+  },
+  {
+    "Email Address": "aartimorebalu@gmail.com",
+    "Name of the Delegates ": "More Aarti Balu",
+    "Name of College/organization": "Srinath College of Pharmacy ",
+    "Country ": "India",
+    "Affiliated University": "Dr. Babasaheb Ambedkar Technological University, Lonere, Raigad ",
+    "Mobile no": 8177906113,
+    "District": "Chhatrapati Sambhajinagar ",
+    "Area of research": "Pharmaceutical Analysis"
+  },
+  {
+    "Email Address": "khareprashant005@gmail.com",
+    "Name of the Delegates ": "Prashant Sushil Khare",
+    "Name of College/organization": "Sanjivani College of Pharmaceutical Education & Research, Kopargaon, Maharashtra 423603, India.",
+    "Country ": "India",
+    "Affiliated University": "Savitribai Phule Pune University, Maharashtra, India",
+    "Mobile no": 9096755499,
+    "District": "Nashik",
+    "Area of research": "Pharmaceutical Biotechnology"
+  },
+  {
+    "Email Address": "shwetagaikwad.pharma@gmail.com",
+    "Name of the Delegates ": "Shweta Gaikwad ",
+    "Name of College/organization": "Institute of Chemical Technology, Matunga ",
+    "Country ": "India",
+    "Affiliated University": "Institute of Chemical Technology ",
+    "Mobile no": 9767889323,
+    "District": "Mumbai",
+    "Area of research": "Pharmaceutical Chemistry"
+  },
+  {
+    "Email Address": "qualitymaster2000@gmail.com",
+    "Name of the Delegates ": "MISAL DISHA MOHAN",
+    "Name of College/organization": "Y B CHAVAN COLLEGE OF PHARMACY AURANGABAD",
+    "Country ": "India",
+    "Affiliated University": "Dr. Babasaheb Ambedkar Marathwada University",
+    "Mobile no": 7558215576,
+    "District": "Chhatrapati Sambhaji Nagar",
+    "Area of research": "Quality Assurance Techniques"
+  },
+  {
+    "Email Address": "chaudharidipti2000@gmail.com",
+    "Name of the Delegates ": "Deepti Nivrutti Chaudhari ",
+    "Name of College/organization": "Sir Dr. M.S. Gosovi College of Phormoceuticol Educotion & Reseorch, Noshik",
+    "Country ": "India",
+    "Affiliated University": "SPPU ,Pune ",
+    "Mobile no": 9021578234,
+    "District": "Nashik ",
+    "Area of research": "Pharmaceutics"
+  },
+  {
+    "Email Address": "kanchanc1117@gmail.com",
+    "Name of the Delegates ": "Kanchan S. Chaudhari",
+    "Name of College/organization": "MVPs college of pharmacy, nashik",
+    "Country ": "India",
+    "Affiliated University": "Sppu",
+    "Mobile no": 9579475532,
+    "District": "Nashik",
+    "Area of research": "Pharmaceutics"
+  },
+  {
+    "Email Address": "jadhavsnehal2705@gmail.com",
+    "Name of the Delegates ": "Snehal Balasaheb Jadhav ",
+    "Name of College/organization": "MET Institute of Pharmacy ",
+    "Country ": "India",
+    "Affiliated University": "SPPU",
+    "Mobile no": 9930557149,
+    "District": "Nashik",
+    "Area of research": "Pharmaceutics"
+  },
+  {
+    "Email Address": "aishwaryajadhavkvn@gmail.com",
+    "Name of the Delegates ": "Aishwarya Jagannath Jadhav ",
+    "Name of College/organization": "Sandip School of Pharmaceutical Sciences",
+    "Country ": "India",
+    "Affiliated University": "Sandip university ",
+    "Mobile no": 7666463411,
+    "District": "Nashik ",
+    "Area of research": "Pharmaceutics"
+  },
+  {
+    "Email Address": "kadampranali1601@gmail.com",
+    "Name of the Delegates ": "Pranali Sharad Kadam",
+    "Name of College/organization": "St. John Institute of Pharmacy and Research",
+    "Country ": "India",
+    "Affiliated University": "Mumbai University",
+    "Mobile no": 9637554954,
+    "District": "Thane",
+    "Area of research": "Pharmaceutical Chemistry"
+  },
+  {
+    "Email Address": "shwetagawali20@gmail.com",
+    "Name of the Delegates ": "Ms. Shweta A. Das",
+    "Name of College/organization": "Department of Pharmaceutical Sciences, RTMNU Nagpur",
+    "Country ": "India",
+    "Affiliated University": "Rashtrasant Tukadoji Maharaj Nagpur University, Nagpur",
+    "Mobile no": 9112328358,
+    "District": "Nagpur",
+    "Area of research": "Pharmaceutics"
+  },
+  {
+    "Email Address": "abhipyadav19@gmail.com",
+    "Name of the Delegates ": "Abhishek Prakash Yadav ",
+    "Name of College/organization": "SharadChandra pawar college of pharmacy Otur, pune ",
+    "Country ": "India",
+    "Affiliated University": "Savitraibai phule pune university ",
+    "Mobile no": 8530429674,
+    "District": "Pune",
+    "Area of research": "Pharmaceutics"
+  },
+  {
+    "Email Address": "pawarpurva0105@gamil.com",
+    "Name of the Delegates ": "Pawar Purva Balasaheb",
+    "Name of College/organization": "Sharadchndra Pawar College OF Pharamcy,Otur. ",
+    "Country ": "India",
+    "Affiliated University": "Savitribai Phule Pune University",
+    "Mobile no": 9860273242,
+    "District": "Pune",
+    "Area of research": "Pharmaceutics"
+  },
+  {
+    "Email Address": "dnyaneshwarkeskar526@gmail.com",
+    "Name of the Delegates ": "Dnyaneshwar Eknath Keskar ",
+    "Name of College/organization": "Sharadachandra pawar college of pharmacy otur Pune ",
+    "Country ": "India",
+    "Affiliated University": "Savitribai phule Pune University ",
+    "Mobile no": 7498462479,
+    "District": "Pune ",
+    "Area of research": "Pharmaceutics"
+  },
+  {
+    "Email Address": "sagarkulkarni2005@gmail.com",
+    "Name of the Delegates ": "Sagar Kiran Kulkarni ",
+    "Name of College/organization": "Sharadchandra Pawar College Of Pharmacy Otur Pune ",
+    "Country ": "India",
+    "Affiliated University": "SPPU",
+    "Mobile no": 7722013676,
+    "District": "Pune",
+    "Area of research": "Pharmaceutics"
+  },
+  {
+    "Email Address": "najiyatam786@gmail.com",
+    "Name of the Delegates ": "Tamboli Najiya Jakir ",
+    "Name of College/organization": "Sharadchandra Pawar College Of Pharmacy, Dumberwadi, Otur",
+    "Country ": "India",
+    "Affiliated University": "Savitribai Phule Pune University ",
+    "Mobile no": 9834180790,
+    "District": "Pune",
+    "Area of research": "Pharmaceutics"
+  },
+  {
+    "Email Address": "warghadeneha0911@gmail.com",
+    "Name of the Delegates ": "Warghade Neha Rajkumar ",
+    "Name of College/organization": "Sharadchandra pawar college of pharmacy ,(dumbarwadi ,otur)",
+    "Country ": "India",
+    "Affiliated University": "Savitribai Phule pune university ",
+    "Mobile no": 8668907776,
+    "District": "Pune",
+    "Area of research": "Pharmacology"
+  },
+  {
+    "Email Address": "anishanir04@gmail.com",
+    "Name of the Delegates ": "Anisha Arun Nirgude ",
+    "Name of College/organization": "Sharadchandra Pawar College Of Pharmacy Otur Pune ",
+    "Country ": "India",
+    "Affiliated University": "SPPU ",
+    "Mobile no": 7722013676,
+    "District": "Pune ",
+    "Area of research": "Pharmaceutics"
+  },
+  {
+    "Email Address": "khandagaleshraddha750@gmail.com",
+    "Name of the Delegates ": "Khandagale Shraddha Navnath ",
+    "Name of College/organization": "Sharadchandra Pawar College of Pharmacy, Otur ",
+    "Country ": "India",
+    "Affiliated University": "Savitribai Phule Pune University ",
+    "Mobile no": 8275640064,
+    "District": "Pune ",
+    "Area of research": "Pharmaceutics"
+  },
+  {
+    "Email Address": "pratikshataralke@gmail.com",
+    "Name of the Delegates ": "Pratiksha  Manish Tarale",
+    "Name of College/organization": "Dr. Rajendra Gode Institute of Pharmacy, Amravati",
+    "Country ": "India",
+    "Affiliated University": "Sant Gadge Baba Amravati University",
+    "Mobile no": 9359766627,
+    "District": "Amravati ",
+    "Area of research": "Pharmacology"
+  },
+  {
+    "Email Address": "sakshikharchan3@gmail.com",
+    "Name of the Delegates ": "Sakshi Sarang Kharchan ",
+    "Name of College/organization": "Dr. Rajendra Gode Institute of pharmacy Amravati ",
+    "Country ": "India",
+    "Affiliated University": "Sant Gadge Baba Amravati University ",
+    "Mobile no": 9096653766,
+    "District": "Amravati ",
+    "Area of research": "Pharmacology"
+  },
+  {
+    "Email Address": "urvashigawande27@gmail.com",
+    "Name of the Delegates ": "Urvashi Ramkrushna Gawande ",
+    "Name of College/organization": "Dr. Rajendra Gode institute of pharmacy amravati ",
+    "Country ": "India",
+    "Affiliated University": "Sant gadge Baba amravati university amravati ",
+    "Mobile no": 8263813573,
+    "District": "Amravati ",
+    "Area of research": "Pharmacology"
+  },
+  {
+    "Email Address": "tejumulatkar2001@gmail.com",
+    "Name of the Delegates ": "Tejaswini Dipak Mulatkar ",
+    "Name of College/organization": "Dr. Rajendra Gode Institute of Pharmacy ",
+    "Country ": "India",
+    "Affiliated University": "Santa Gadge Baba Amravati University ",
+    "Mobile no": 8421408849,
+    "District": "Amravati ",
+    "Area of research": "Pharmacology"
+  },
+  {
+    "Email Address": "shravanimete@gmail.com",
+    "Name of the Delegates ": "Shravani Atul Mete ",
+    "Name of College/organization": "Dr. Rajendra gode institute of pharmacy, Amravati ",
+    "Country ": "India",
+    "Affiliated University": "Sant Gadge Baba Amravati university, Amravati ",
+    "Mobile no": 8625952582,
+    "District": "Amravati ",
+    "Area of research": "Pharmacology"
+  },
+  {
+    "Email Address": "payaltighare01@gmail.com",
+    "Name of the Delegates ": "Payal Ramesh Tighare",
+    "Name of College/organization": "Dr. Rajendra Gode institute of pharmacy, Amravati ",
+    "Country ": "India",
+    "Affiliated University": "Sant Gadge Baba Amravati University ",
+    "Mobile no": 9284754746,
+    "District": "Amravati ",
+    "Area of research": "Pharmacology"
+  },
+  {
+    "Email Address": "swatimalgunde05@gmail.com",
+    "Name of the Delegates ": "Swati Pandurang Malgunde",
+    "Name of College/organization": "Sharadachandra pawar college of pharmacy otur Pune ",
+    "Country ": "India",
+    "Affiliated University": "Sppu ",
+    "Mobile no": 8380891981,
+    "District": "Pune",
+    "Area of research": "Pharmaceutics"
+  },
+  {
+    "Email Address": "shubhamshinde1708@gmail.com",
+    "Name of the Delegates ": "Shubham Bajirao Shinde ",
+    "Name of College/organization": "K K Wagh College of Pharmacy ",
+    "Country ": "India",
+    "Affiliated University": "Dbatu",
+    "Mobile no": 9657469354,
+    "District": "Nashik",
+    "Area of research": "Pharmaceutics"
+  },
+  {
+    "Email Address": "chaudharisakshi206@gmail.com",
+    "Name of the Delegates ": "Chaudhari Sakshi Dattatraya ",
+    "Name of College/organization": "Sharadchandra pawar college of pharmacy dumbarwadi otur pune ",
+    "Country ": "India",
+    "Affiliated University": "Savitribai phule pune University ",
+    "Mobile no": 9834972758,
+    "District": "Pune",
+    "Area of research": "Pharmaceutics"
+  },
+  {
+    "Email Address": "avi.2911@gmail.com",
+    "Name of the Delegates ": "Avinash D.Hatkar",
+    "Name of College/organization": "Dr.D.Y.Patil College of Pharmacy,Akurdi,Pune",
+    "Country ": "India",
+    "Affiliated University": "Pune University",
+    "Mobile no": "09892380997",
+    "District": "Pune",
+    "Area of research": "Pharmacology"
+  },
+  {
+    "Email Address": "sayalichaudhari0414@gmail.com",
+    "Name of the Delegates ": "Sayali Chaudhari",
+    "Name of College/organization": "Lovely Professional University",
+    "Country ": "India",
+    "Affiliated University": "Lovely Professional University",
+    "Mobile no": 9404211789,
+    "District": "Mumbai",
+    "Area of research": "Pharmaceutics"
   }
 ]

@@ -1,4 +1,9 @@
 import Footer from "@/components/Footer";
+import {
+  getScheduledNotifications,
+  requestNotificationPermissions,
+  sendTestNotification,
+} from "@/utils/notificationManager";
 import { sessionStorage } from "@/utils/sessionStorage";
 import { MaterialIcons } from "@expo/vector-icons";
 import React, { useEffect, useState } from "react";
@@ -28,23 +33,87 @@ export default function BasketScreen() {
   const [savedSessions, setSavedSessions] = useState<ScheduleItem[]>([]);
   const [viewMode, setViewMode] = useState<"all" | "day1" | "day2">("all");
   const [conflicts, setConflicts] = useState<string[]>([]);
+  const [notificationsEnabled, setNotificationsEnabled] = useState(false);
+  const [scheduledNotificationsCount, setScheduledNotificationsCount] =
+    useState(0);
 
   useEffect(() => {
     // Subscribe to session storage changes
-    const updateSavedSessions = () => {
+    const updateSavedSessions = async () => {
+      // Ensure storage is initialized before reading
+      await sessionStorage.initialize();
       const sessions = sessionStorage.getSavedSessions();
       setSavedSessions(sessions);
     };
 
     updateSavedSessions();
-    const unsubscribe = sessionStorage.subscribe(updateSavedSessions);
+    const unsubscribe = sessionStorage.subscribe(() => {
+      const sessions = sessionStorage.getSavedSessions();
+      setSavedSessions(sessions);
+    });
 
     return () => unsubscribe();
   }, []);
 
   useEffect(() => {
     checkTimeConflicts();
+    checkNotificationStatus();
   }, [savedSessions]);
+
+  const checkNotificationStatus = async () => {
+    try {
+      const scheduled = await getScheduledNotifications();
+      setScheduledNotificationsCount(scheduled.length);
+      setNotificationsEnabled(scheduled.length > 0);
+    } catch (error) {
+      console.error("Error checking notifications:", error);
+    }
+  };
+
+  const handleEnableNotifications = async () => {
+    const granted = await requestNotificationPermissions();
+    if (granted) {
+      Alert.alert(
+        "Notifications Enabled",
+        "You will receive reminders 10 minutes before each session starts.",
+        [{ text: "OK" }]
+      );
+      await checkNotificationStatus();
+    } else {
+      Alert.alert(
+        "Permission Denied",
+        "Please enable notifications in your device settings to receive session reminders.",
+        [{ text: "OK" }]
+      );
+    }
+  };
+
+  const handleTestNotification = async () => {
+    try {
+      const granted = await requestNotificationPermissions();
+      if (!granted) {
+        Alert.alert(
+          "Permission Required",
+          "Please enable notifications to test.",
+          [{ text: "OK" }]
+        );
+        return;
+      }
+
+      await sendTestNotification();
+      Alert.alert(
+        "Test Notification Sent",
+        "A test notification will appear in 2 seconds. You can close the app to test background notifications.",
+        [{ text: "OK" }]
+      );
+    } catch (error) {
+      Alert.alert(
+        "Error",
+        "Failed to send test notification. Please try again.",
+        [{ text: "OK" }]
+      );
+    }
+  };
 
   const checkTimeConflicts = () => {
     // Check for time conflicts
@@ -135,6 +204,15 @@ export default function BasketScreen() {
     return acc;
   }, {} as { [key: string]: ScheduleItem[] });
 
+  // Sort sessions by time within each day
+  Object.keys(groupedByDay).forEach((day) => {
+    groupedByDay[day].sort((a, b) => {
+      const timeA = a.time.split(" - ")[0].replace(":", "");
+      const timeB = b.time.split(" - ")[0].replace(":", "");
+      return parseInt(timeA) - parseInt(timeB);
+    });
+  });
+
   return (
     <SafeAreaView style={styles.safeArea} edges={[]}>
       <ScrollView style={styles.container}>
@@ -148,6 +226,17 @@ export default function BasketScreen() {
               </Text>
             </View>
             <View style={styles.headerActions}>
+              <TouchableOpacity
+                style={styles.actionButton}
+                onPress={handleTestNotification}
+                accessibilityLabel="Test Notification"
+              >
+                <MaterialIcons
+                  name="notifications-active"
+                  size={24}
+                  color="#059669"
+                />
+              </TouchableOpacity>
               <TouchableOpacity
                 style={styles.actionButton}
                 onPress={handleShare}
@@ -224,6 +313,48 @@ export default function BasketScreen() {
               </Text>
             </View>
           )}
+
+          {/* Notification Status */}
+          {savedSessions.length > 0 && (
+            <View
+              style={[
+                styles.notificationBanner,
+                notificationsEnabled
+                  ? styles.notificationBannerEnabled
+                  : styles.notificationBannerDisabled,
+              ]}
+            >
+              <MaterialIcons
+                name={
+                  notificationsEnabled
+                    ? "notifications-active"
+                    : "notifications-off"
+                }
+                size={20}
+                color={notificationsEnabled ? "#059669" : "#6B7280"}
+              />
+              <Text
+                style={[
+                  styles.notificationText,
+                  notificationsEnabled
+                    ? styles.notificationTextEnabled
+                    : styles.notificationTextDisabled,
+                ]}
+              >
+                {notificationsEnabled
+                  ? `${scheduledNotificationsCount} notification(s) scheduled`
+                  : "Enable notifications for session reminders"}
+              </Text>
+              {!notificationsEnabled && (
+                <TouchableOpacity
+                  style={styles.enableButton}
+                  onPress={handleEnableNotifications}
+                >
+                  <Text style={styles.enableButtonText}>Enable</Text>
+                </TouchableOpacity>
+              )}
+            </View>
+          )}
         </View>
 
         {/* Sessions List */}
@@ -258,6 +389,15 @@ export default function BasketScreen() {
                       <View style={styles.sessionTime}>
                         <MaterialIcons name="schedule" size={16} color="#666" />
                         <Text style={styles.timeText}>{session.time}</Text>
+                        {notificationsEnabled && (
+                          <View style={styles.notificationIndicator}>
+                            <MaterialIcons
+                              name="notifications"
+                              size={12}
+                              color="#059669"
+                            />
+                          </View>
+                        )}
                       </View>
                       <Text style={styles.sessionTitle}>{session.title}</Text>
                       {session.venue && (
@@ -394,6 +534,42 @@ const styles = StyleSheet.create({
     color: "#EF4444",
     fontWeight: "500",
   },
+  notificationBanner: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+    marginTop: 12,
+    padding: 12,
+    borderRadius: 8,
+  },
+  notificationBannerEnabled: {
+    backgroundColor: "#D1FAE5",
+  },
+  notificationBannerDisabled: {
+    backgroundColor: "#F3F4F6",
+  },
+  notificationText: {
+    flex: 1,
+    fontSize: 14,
+    fontWeight: "500",
+  },
+  notificationTextEnabled: {
+    color: "#059669",
+  },
+  notificationTextDisabled: {
+    color: "#6B7280",
+  },
+  enableButton: {
+    backgroundColor: "#EF4444",
+    paddingHorizontal: 16,
+    paddingVertical: 6,
+    borderRadius: 6,
+  },
+  enableButtonText: {
+    color: "#FFFFFF",
+    fontSize: 13,
+    fontWeight: "600",
+  },
   emptyState: {
     flex: 1,
     alignItems: "center",
@@ -463,6 +639,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
     gap: 4,
     marginBottom: 8,
+  },
+  notificationIndicator: {
+    marginLeft: 4,
+    backgroundColor: "#D1FAE5",
+    borderRadius: 10,
+    padding: 2,
   },
   timeText: {
     fontSize: 14,

@@ -17,14 +17,19 @@ export default function TabLayout() {
 
   useEffect(() => {
     // Subscribe to session storage changes to update badge
-    const updateBadgeCount = () => {
+    const updateBadgeCount = async () => {
+      // Ensure storage is initialized before reading
+      await sessionStorage.initialize();
       // Only count sessions (not speakers) to avoid double counting from cross-linking
       const count = sessionStorage.getSavedSessions().length;
       setBadgeCount(count);
     };
 
     updateBadgeCount();
-    const unsubscribe = sessionStorage.subscribe(updateBadgeCount);
+    const unsubscribe = sessionStorage.subscribe(() => {
+      const count = sessionStorage.getSavedSessions().length;
+      setBadgeCount(count);
+    });
 
     return () => unsubscribe();
   }, []);

@@ -26,7 +26,7 @@ export default function MediaPartners() {
 
       {/* Rest in One Row */}
       <View style={styles.mediaRow}>
-        <TouchableOpacity
+        {/* <TouchableOpacity
           style={styles.mediaImageContainerRow}
           onPress={() => Linking.openURL("https://allconferencealert.net/")}
         >
@@ -35,7 +35,7 @@ export default function MediaPartners() {
             style={styles.mediaImageRow}
             resizeMode="contain"
           />
-        </TouchableOpacity>
+        </TouchableOpacity> */}
 
         <View style={styles.mediaImageContainerRow}>
           <Image

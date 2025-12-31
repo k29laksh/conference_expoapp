@@ -1,8 +1,13 @@
 import Footer from "@/components/Footer";
+import {
+  cancelAllSessionReminders,
+  getScheduledNotifications,
+} from "@/utils/notificationManager";
 import { checkAndPromptForUpdate } from "@/utils/updateManager";
 import { MaterialIcons } from "@expo/vector-icons";
 import { useState } from "react";
 import {
+  Alert,
   Image,
   ScrollView,
   StyleSheet,
@@ -15,6 +20,7 @@ import { WebView } from "react-native-webview";
 
 export default function AboutScreen() {
   const [checking, setChecking] = useState(false);
+  const [resetting, setResetting] = useState(false);
 
   const handleCheckForUpdates = async () => {
     setChecking(true);
@@ -24,6 +30,55 @@ export default function AboutScreen() {
       console.error("Error checking for updates:", error);
     } finally {
       setChecking(false);
+    }
+  };
+
+  const handleResetNotifications = async () => {
+    try {
+      // First, show count of scheduled notifications
+      const scheduled = await getScheduledNotifications();
+      const count = scheduled.length;
+
+      if (count === 0) {
+        Alert.alert("Info", "No notifications are currently scheduled.");
+        return;
+      }
+
+      Alert.alert(
+        "Reset Notifications",
+        `You have ${count} scheduled notification${
+          count > 1 ? "s" : ""
+        }. This will cancel all of them. They will be rescheduled correctly when you close and reopen the app.`,
+        [
+          { text: "Cancel", style: "cancel" },
+          {
+            text: "Reset",
+            style: "destructive",
+            onPress: async () => {
+              setResetting(true);
+              try {
+                await cancelAllSessionReminders();
+                Alert.alert(
+                  "Success",
+                  "All notifications cleared! Please close and reopen the app to reschedule them properly (without duplicates).",
+                  [{ text: "OK" }]
+                );
+              } catch (error) {
+                console.error("Error resetting notifications:", error);
+                Alert.alert(
+                  "Error",
+                  "Failed to reset notifications. Please try again."
+                );
+              } finally {
+                setResetting(false);
+              }
+            },
+          },
+        ]
+      );
+    } catch (error) {
+      console.error("Error checking notifications:", error);
+      Alert.alert("Error", "Failed to check notifications.");
     }
   };
 
@@ -50,6 +105,79 @@ export default function AboutScreen() {
           </Text>
         </View>
 
+        {/* About Institute of Pharmacy */}
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>About Institute of Pharmacy</Text>
+          <Text style={styles.paragraph}>
+            MET's Institute of Pharmacy, located in Bhujbal Knowledge City,
+            Adgaon, Nashik-03, is a distinguished institute, established in 2006
+            and committed to excellence in Pharmaceutical Education and
+            Research. Our milestones include:
+          </Text>
+
+          <View style={styles.milestoneContainer}>
+            <Text style={styles.milestoneHighlight}>
+              450+ research publications in well reputed National and
+              International Journals
+            </Text>
+          </View>
+
+          <View style={styles.iprSection}>
+            <Text style={styles.iprTitle}>IPR:</Text>
+            <View style={styles.iprGrid}>
+              <View style={styles.iprItem}>
+                <Text style={styles.iprBullet}>□</Text>
+                <Text style={styles.iprText}>15 Granted Patents</Text>
+              </View>
+              <View style={styles.iprItem}>
+                <Text style={styles.iprBullet}>□</Text>
+                <Text style={styles.iprText}>10 Published Patents</Text>
+              </View>
+              <View style={styles.iprItem}>
+                <Text style={styles.iprBullet}>□</Text>
+                <Text style={styles.iprText}>5 Filed Patents</Text>
+              </View>
+              <View style={styles.iprItem}>
+                <Text style={styles.iprBullet}>□</Text>
+                <Text style={styles.iprText}>2 Copyrights</Text>
+              </View>
+              <View style={styles.iprItem}>
+                <Text style={styles.iprBullet}>□</Text>
+                <Text style={styles.iprText}>7 Design Registration</Text>
+              </View>
+            </View>
+          </View>
+
+          <View style={styles.achievementsList}>
+            <View style={styles.bulletPoint}>
+              <Text style={styles.bullet}>■</Text>
+              <Text style={styles.bulletText}>
+                Accredited by NAAC and NBA, Ranking in NIRF
+              </Text>
+            </View>
+            <View style={styles.bulletPoint}>
+              <Text style={styles.bullet}>■</Text>
+              <Text style={styles.bulletText}>
+                Completed Multiple Industrial Projects and Consultancy
+                Assignments
+              </Text>
+            </View>
+            <View style={styles.bulletPoint}>
+              <Text style={styles.bullet}>■</Text>
+              <Text style={styles.bulletText}>
+                Recipients of National and International Research Grants (DST &
+                The Korean Society of Ginseng)
+              </Text>
+            </View>
+            <View style={styles.bulletPoint}>
+              <Text style={styles.bullet}>■</Text>
+              <Text style={styles.bulletText}>
+                State-of-the-art research and facilities
+              </Text>
+            </View>
+          </View>
+        </View>
+
         {/* Thrust Area */}
         <View style={styles.thrustSection}>
           <Text style={styles.thrustTitle}>THRUST AREA OF CONFERENCE</Text>
@@ -64,7 +192,7 @@ export default function AboutScreen() {
           <View style={styles.bulletPoint}>
             <Text style={styles.bullet}>■</Text>
             <Text style={styles.bulletText}>
-              Breakthrough in nanotechnology in drug delivery.
+              Breakthroughs in nanotechnology in drug delivery.
             </Text>
           </View>
           <View style={styles.bulletPoint}>
@@ -82,14 +210,14 @@ export default function AboutScreen() {
           <View style={styles.bulletPoint}>
             <Text style={styles.bullet}>■</Text>
             <Text style={styles.bulletText}>
-              Panel discussion on future pharma trends.
+              Panel discussions on future pharma trends.
             </Text>
           </View>
           <View style={styles.bulletPoint}>
             <Text style={styles.bullet}>■</Text>
             <Text style={styles.bulletText}>
-              Showcasing entrepreneurial ventures shaping the future of startups
-              in pharmaceuticals.
+              Showcasing entrepreneurial ventures shaping the future of
+              start-ups in pharmaceuticals.
             </Text>
           </View>
           <View style={styles.bulletPoint}>
@@ -128,21 +256,21 @@ export default function AboutScreen() {
           <View style={styles.bulletPoint}>
             <Text style={styles.bullet}>■</Text>
             <Text style={styles.bulletText}>
-              Expert talk and keynote sessions—insight from global
+              Expert Talks & Keynote Sessions - Insight from global
               pharmaceutical leaders.
             </Text>
           </View>
           <View style={styles.bulletPoint}>
             <Text style={styles.bullet}>■</Text>
             <Text style={styles.bulletText}>
-              Poster Presentation—Showcasing Innovative Research and
+              Poster Presentations—Showcasing Innovative Research and
               Breakthrough Ideas.
             </Text>
           </View>
           <View style={styles.bulletPoint}>
             <Text style={styles.bullet}>■</Text>
             <Text style={styles.bulletText}>
-              Oral Presentation—Sharing Impactful Findings with Peers and
+              Oral Presentations—Sharing Impactful Findings with Peers and
               Experts.
             </Text>
           </View>
@@ -156,7 +284,7 @@ export default function AboutScreen() {
           <View style={styles.bulletPoint}>
             <Text style={styles.bullet}>■</Text>
             <Text style={styles.bulletText}>
-              Gala night and networking dinner—celebrate, connect, and
+              Gala Night and networking dinner—celebrate, connect, and
               collaborate.
             </Text>
           </View>
@@ -170,7 +298,7 @@ export default function AboutScreen() {
           <View style={styles.bulletPoint}>
             <Text style={styles.bullet}>■</Text>
             <Text style={styles.bulletText}>
-              panel discussion—debating future challenges and opportunities in
+              panel Discussion—debating future challenges and opportunities in
               pharma.
             </Text>
           </View>
@@ -236,15 +364,15 @@ export default function AboutScreen() {
           <View style={styles.bulletPoint}>
             <Text style={styles.bullet}>■</Text>
             <Text style={styles.bulletText}>
-              To facilitate collaborative exchange among academicians,
-              industrialists, clinical practitioners, and young pharmacists.
+              To facilitate collaborative exchange among academicians, Industry,
+              Clinicians, and young pharmacists.
             </Text>
           </View>
 
           <View style={styles.bulletPoint}>
             <Text style={styles.bullet}>■</Text>
             <Text style={styles.bulletText}>
-              To catalyze new conceptions and innovative approaches within the
+              To catalyze new concepts and innovative approaches within the
               pharmaceutical field.
             </Text>
           </View>
@@ -331,7 +459,7 @@ export default function AboutScreen() {
               <View style={styles.dateItem}>
                 <MaterialIcons name="arrow-right" size={24} color="#E31E24" />
                 <Text style={styles.dateText}>
-                  Final Registration for Paper Presenter: December 31st, 2025
+                  Final Registration for Paper Presenters: December 31st, 2025
                 </Text>
               </View>
               <View style={styles.dateItem}>
@@ -371,6 +499,27 @@ export default function AboutScreen() {
               {checking ? "Checking for Updates..." : "Check for Updates"}
             </Text>
           </TouchableOpacity>
+
+          {/* Reset Notifications Button */}
+          <TouchableOpacity
+            style={[
+              styles.resetButton,
+              resetting && styles.updateButtonDisabled,
+            ]}
+            onPress={handleResetNotifications}
+            disabled={resetting}
+          >
+            <MaterialIcons
+              name="notifications-off"
+              size={20}
+              color="#FFFFFF"
+              style={styles.updateIcon}
+            />
+            <Text style={styles.updateButtonText}>
+              {resetting ? "Resetting..." : "Reset Notifications"}
+            </Text>
+          </TouchableOpacity>
+
           <Text style={styles.updateNote}>App Version 1.0.0</Text>
         </View>
 
@@ -457,6 +606,58 @@ const styles = StyleSheet.create({
     color: "#555",
     flex: 1,
     lineHeight: 22,
+  },
+  milestoneContainer: {
+    marginTop: 15,
+    marginBottom: 15,
+    paddingVertical: 12,
+    paddingHorizontal: 15,
+    backgroundColor: "#F0F9FF",
+    borderLeftWidth: 4,
+    borderLeftColor: "#E31E24",
+    borderRadius: 4,
+  },
+  milestoneHighlight: {
+    fontSize: 15,
+    fontWeight: "600",
+    color: "#2C3E50",
+    lineHeight: 22,
+  },
+  iprSection: {
+    marginTop: 15,
+    marginBottom: 15,
+  },
+  iprTitle: {
+    fontSize: 18,
+    fontWeight: "bold",
+    color: "#2C3E50",
+    marginBottom: 12,
+  },
+  iprGrid: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 8,
+  },
+  iprItem: {
+    flexDirection: "row",
+    alignItems: "center",
+    width: "48%",
+    marginBottom: 8,
+  },
+  iprBullet: {
+    fontSize: 16,
+    color: "#2C3E50",
+    marginRight: 8,
+    fontWeight: "bold",
+  },
+  iprText: {
+    fontSize: 14,
+    color: "#555",
+    flex: 1,
+    lineHeight: 20,
+  },
+  achievementsList: {
+    marginTop: 10,
   },
   highlightsBanner: {
     backgroundColor: "#fff",
@@ -563,12 +764,31 @@ const styles = StyleSheet.create({
     padding: 20,
     alignItems: "center",
     marginTop: 10,
+    gap: 12,
   },
   updateButton: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#E31E24",
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+    borderRadius: 8,
+    minWidth: 200,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+  },
+  resetButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#6B7280",
     paddingVertical: 12,
     paddingHorizontal: 24,
     borderRadius: 8,

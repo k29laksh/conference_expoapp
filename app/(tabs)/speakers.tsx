@@ -44,7 +44,8 @@ const speakers: Speaker[] = [
       "Natural non-antibiotic antimicrobials for the skincare treatment",
     bio: "Dr. Zyta Ziora is a distinguished researcher specializing in antimicrobial compounds and their therapeutic applications. Her groundbreaking work focuses on developing natural alternatives to traditional antibiotics.",
     topics: ["Antimicrobials", "Skincare", "Biotechnology", "Natural Products"],
-    linkedIn: "https://www.linkedin.com/in/zyta-ziora",
+    linkedIn:
+      "https://www.linkedin.com/in/zyta-ziora?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Dr. Kim Seok-ho",
@@ -58,7 +59,7 @@ const speakers: Speaker[] = [
       "Discovery of an ERRg agonist as a therapeutic for neurological disease",
     bio: "Prof. Dr. Kim Seok-ho is an expert in pharmaceutical sciences with focus on neurological disease therapeutics. His research has contributed significantly to drug discovery in neurology.",
     topics: ["Neurology", "Drug Discovery", "Therapeutics", "Pharmacology"],
-    linkedIn: "https://www.linkedin.com/in/kim-seokho",
+    linkedIn: "",
   },
   {
     name: "Dr. Abdi Wira Septama",
@@ -72,12 +73,13 @@ const speakers: Speaker[] = [
       "Natural Product as an Alternative Source to Overcome Antimicrobial Resistance Problem (AMR)",
     bio: "Dr. Abdi Wira Septama is a leading researcher in natural products and antimicrobial resistance. His work focuses on discovering novel compounds from natural sources to combat AMR.",
     topics: ["AMR", "Natural Products", "Phytotherapy", "Drug Resistance"],
-    linkedIn: "https://www.linkedin.com/in/abdi-septama",
+    linkedIn:
+      "https://www.linkedin.com/in/abdi-wira-septama-8542075a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Dr. Kailas Kalicharan Moravkar",
     title: "Principal, Research Engineer",
-    organization: "Regeron Inc.",
+    organization: "Regeneron Inc.",
     country: "South Korea",
     imageUri: require("@/assets/images/kailash.png"),
     day: "Day-I",
@@ -86,7 +88,8 @@ const speakers: Speaker[] = [
       "Hot Melt Extrusion (HME) as an Emerging Frontiers Platform for Future-Ready Drug Delivery Systems",
     bio: "Dr. Kailas Moravkar specializes in advanced drug delivery systems with expertise in Hot Melt Extrusion technology. His innovations have revolutionized pharmaceutical manufacturing processes.",
     topics: ["Drug Delivery", "HME", "Pharmaceutics", "Manufacturing"],
-    linkedIn: "https://www.linkedin.com/in/kailas-moravkar",
+    linkedIn:
+      "https://www.linkedin.com/in/kailas-k-moravkar-phd-tech-pharm-994b5725?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Prof. Rakesh K. Tekade",
@@ -100,7 +103,21 @@ const speakers: Speaker[] = [
       "Targeting cancer cells via Next-generation technological advances",
     bio: "Prof. Rakesh K. Tekade is a renowned pharmaceutical scientist and educator. His research in cancer therapeutics and nanotechnology has earned international recognition.",
     topics: ["Cancer Research", "Nanotechnology", "Drug Targeting", "Oncology"],
-    linkedIn: "https://www.linkedin.com/in/rakesh-tekade",
+    linkedIn:
+      "https://www.linkedin.com/in/dr-rakesh-tekade-21109612?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    name: "Dr. Suchita Lokhande",
+    title: "Scientist D",
+    organization: "Department of Science & Technology, Government of India",
+    country: "India",
+    imageUri: require("@/assets/images/suchita.png"),
+    day: "Day-I",
+    time: "09th January, 2026, Friday 02:00 to 03:00",
+    sessionTitle: "Government of India Funding Opportunities for Researchers",
+    bio: "Dr. Suchita Lokhande is a distinguished Scientist D at the Department of Science & Technology, Government of India. She specializes in guiding researchers through funding opportunities and grant applications.",
+    topics: ["Research Funding", "Government Grants", "Science Policy", "R&D"],
+    linkedIn: "",
   },
   {
     name: "Dr. Sachin Kushare",
@@ -114,7 +131,8 @@ const speakers: Speaker[] = [
       "The Intelligent Future: AI, Digital Health, and the 2030 Pharma Blueprint",
     bio: "Dr. Sachin Kushare is at the forefront of AI integration in pharmaceutical research. His work bridges technology and healthcare for future-ready solutions.",
     topics: ["AI", "Digital Health", "Pharma Innovation", "Technology"],
-    linkedIn: "https://www.linkedin.com/in/sachin-kushare",
+    linkedIn:
+      "https://www.linkedin.com/in/dr-sachin-kushare-44811734?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Mr. Sharad Chandak",
@@ -132,7 +150,8 @@ const speakers: Speaker[] = [
       "Medical Devices",
       "Innovation",
     ],
-    linkedIn: "https://www.linkedin.com/in/sharad-chandak",
+    linkedIn:
+      "https://www.linkedin.com/in/sharad-chandak-24016aba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Dr. Nilesh Prakash Nirmal",
@@ -151,7 +170,8 @@ const speakers: Speaker[] = [
       "Waste Valorization",
       "Nutrition",
     ],
-    linkedIn: "https://www.linkedin.com/in/nilesh-nirmal",
+    linkedIn:
+      "https://www.linkedin.com/in/nilesh-nirmal-65461a70?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Dr. Manoj Chitnis",
@@ -164,7 +184,8 @@ const speakers: Speaker[] = [
     sessionTitle: "Pharmaceutical quality system",
     bio: "Dr. Manoj Chitnis is a quality systems expert with extensive industry experience. He has led numerous quality initiatives in pharmaceutical manufacturing.",
     topics: ["Quality Systems", "GMP", "Regulatory Affairs", "Manufacturing"],
-    linkedIn: "https://www.linkedin.com/in/manoj-chitnis",
+    linkedIn:
+      "https://www.linkedin.com/in/manoj-chitnis-63190515?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Prof. Dr. Javed Ali",
@@ -178,12 +199,12 @@ const speakers: Speaker[] = [
       "Strategic Combinatorial Approach for Enhanced Bioavailability of Antiretroviral in HIV-1 Viral Reservoirs",
     bio: "Prof. Dr. Javed Ali is a distinguished pharmaceutics expert specializing in HIV therapeutics. His combinatorial approaches have significantly improved drug delivery for antiretroviral therapy.",
     topics: ["HIV", "Antiretroviral", "Drug Delivery", "Pharmaceutics"],
-    linkedIn: "https://www.linkedin.com/in/javed-ali-pharmaceutics",
+    linkedIn: "",
   },
   {
     name: "Dr. J. S. Wagh",
-    title: "Service Director (1999-2024)",
-    organization: "Walters India Pvt. Ltd., Mumbai",
+    title: "Ex Service Director (1999-2024)",
+    organization: "Waters India Pvt. Ltd., Mumbai",
     country: "India",
     imageUri: require("@/assets/images/jswagh.png"),
     day: "Day-II",
@@ -192,7 +213,22 @@ const speakers: Speaker[] = [
       "GLP Audit Readiness and Laboratory Productivity for pharma QC lab- Options and Way Forward",
     bio: "Dr. J. S. Wagh brings decades of laboratory quality control experience. His expertise in GLP compliance and audit readiness has guided numerous pharmaceutical laboratories.",
     topics: ["GLP", "Quality Control", "Laboratory Management", "Audit"],
-    linkedIn: "https://www.linkedin.com/in/jswagh",
+    linkedIn: "",
+  },
+  {
+    name: "Dr. Dinesh Jagtap",
+    title: "Scientific Officer",
+    organization: "RGSTC, Government of Maharashtra",
+    country: "India",
+    imageUri: require("@/assets/images/dinesh.png"),
+    day: "Day-II",
+    time: "10th January, 2026, Saturday 02:00 to 03:00",
+    sessionTitle:
+      "Unlocking Research Potential: How to Identify opportunities and Apply for RGSTC Funding",
+    bio: "Dr. Dinesh Jagtap is a Scientific Officer at the Rajiv Gandhi Science and Technology Commission (RGSTC), Government of Maharashtra. He specializes in research funding opportunities and helping researchers navigate the application process for RGSTC grants.",
+    topics: ["Research Funding", "RGSTC", "Grant Applications", "Maharashtra"],
+    linkedIn:
+      "https://www.linkedin.com/in/dinesh-jagtap-96a18a260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 ];
 

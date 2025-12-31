@@ -1,6 +1,9 @@
 // Persistent storage for saved sessions using AsyncStorage
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { scheduleSessionReminder, cancelSessionReminder } from "./notificationManager";
+import {
+  cancelSessionReminder,
+  scheduleSessionReminder,
+} from "./notificationManager";
 
 interface ScheduleItem {
   id: string;
@@ -98,27 +101,28 @@ export const sessionStorage = {
     if (!sessionStorage.isSessionSaved(session.id)) {
       savedSessions.push(session);
       await saveSessions();
-      
-      // Schedule notification 10 minutes before the session
-      await scheduleSessionReminder(
-        session.id,
-        session.title,
-        session.time,
-        session.day
-      );
-      
+
+      // Schedule notification for this session
+      if (session.type === "session") {
+        await scheduleSessionReminder(
+          session.id,
+          session.title,
+          session.time,
+          session.day
+        );
+      }
+
       notifyListeners();
     }
   },
 
   // Remove session
   removeSession: async (sessionId: string): Promise<void> => {
+    // Cancel notification before removing
+    await cancelSessionReminder(sessionId);
+
     savedSessions = savedSessions.filter((s) => s.id !== sessionId);
     await saveSessions();
-    
-    // Cancel the notification for this session
-    await cancelSessionReminder(sessionId);
-    
     notifyListeners();
   },
 
