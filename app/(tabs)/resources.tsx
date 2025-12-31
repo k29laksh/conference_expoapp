@@ -15,13 +15,13 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export default function ResourcesScreen() {
   const handleSouvenir = async () => {
     try {
-      const brochureUrl =
-        "";
+      const souvenirUrl =
+        "https://drive.google.com/file/d/19Ji7ix1ErlpAxAojU_9OJykTnc7Ebab_/view?usp=sharing";
 
-      await WebBrowser.openBrowserAsync(brochureUrl);
+      await WebBrowser.openBrowserAsync(souvenirUrl);
     } catch (error) {
-      console.error("Error opening brochure:", error);
-      Alert.alert("Error", "Unable to open brochure. Please try again.");
+      console.error("Error opening Souvenir:", error);
+      Alert.alert("Error", "Unable to open souvenir. Please try again.");
     }
   };
 
