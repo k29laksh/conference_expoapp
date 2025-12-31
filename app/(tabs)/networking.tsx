@@ -19,7 +19,6 @@ interface Candidate {
   name: string;
   institute: string;
   email: string;
-  phone: string;
   country: string;
   university: string;
   areaOfResearch: string;
@@ -36,12 +35,12 @@ const VALID_AREAS_OF_RESEARCH = [
 
 const normalizeAreaOfResearch = (area: string): string => {
   if (!area) return "Other";
-  
+
   // Check if the area exactly matches one of the valid areas (case-insensitive)
   const normalizedArea = VALID_AREAS_OF_RESEARCH.find(
-    validArea => validArea.toLowerCase() === area.toLowerCase()
+    (validArea) => validArea.toLowerCase() === area.toLowerCase()
   );
-  
+
   return normalizedArea || "Other";
 };
 
@@ -81,7 +80,6 @@ export default function NetworkingScreen() {
         candidate.university?.toLowerCase().includes(searchLower) ||
         candidate.areaOfResearch?.toLowerCase().includes(searchLower) ||
         candidate.country?.toLowerCase().includes(searchLower) ||
-        candidate.phone?.includes(trimmedQuery) ||
         candidate.id?.toLowerCase().includes(searchLower)
       );
     });
@@ -93,22 +91,23 @@ export default function NetworkingScreen() {
     setSearchQuery(query);
   };
 
-  const openWhatsApp = async (phone: string, name: string) => {
-    const message = encodeURIComponent(
-      `Hello ${name}, I am attending MET-I-CON 2026. I would like to connect with you for networking.`
+  const sendEmail = async (email: string, name: string) => {
+    const subject = encodeURIComponent("MET-I-CON 2026 Networking");
+    const body = encodeURIComponent(
+      `Hello ${name},\n\nI am attending MET-I-CON 2026. I would like to connect with you for networking.\n\nBest regards`
     );
-    const whatsappUrl = `https://wa.me/${phone}?text=${message}`;
+    const emailUrl = `mailto:${email}?subject=${subject}&body=${body}`;
 
     try {
-      const canOpen = await Linking.canOpenURL(whatsappUrl);
+      const canOpen = await Linking.canOpenURL(emailUrl);
       if (canOpen) {
-        await Linking.openURL(whatsappUrl);
+        await Linking.openURL(emailUrl);
       } else {
-        Alert.alert("Error", "WhatsApp is not installed on your device");
+        Alert.alert("Error", "Unable to open email client");
       }
     } catch (error) {
-      Alert.alert("Error", "Unable to open WhatsApp");
-      console.error("WhatsApp error:", error);
+      Alert.alert("Error", "Unable to send email");
+      console.error("Email error:", error);
     }
   };
 
@@ -190,11 +189,11 @@ export default function NetworkingScreen() {
 
       {/* Action Button */}
       <TouchableOpacity
-        style={styles.whatsappButton}
-        onPress={() => openWhatsApp(candidate.phone, candidate.name)}
+        style={styles.emailButton}
+        onPress={() => sendEmail(candidate.email, candidate.name)}
       >
-        <MaterialIcons name="chat" size={20} color="#FFFFFF" />
-        <Text style={styles.whatsappButtonText}>Connect via WhatsApp</Text>
+        <MaterialIcons name="email" size={20} color="#FFFFFF" />
+        <Text style={styles.emailButtonText}>Send Email</Text>
       </TouchableOpacity>
     </View>
   );
@@ -227,7 +226,7 @@ export default function NetworkingScreen() {
         <MaterialIcons name="people" size={32} color="#EF4444" />
         <Text style={styles.headerTitle}>Networking Hub</Text>
         <Text style={styles.headerSubtitle}>
-          Connect with fellow participants via WhatsApp
+          Connect with fellow participants via Email
         </Text>
       </View>
 
@@ -468,23 +467,23 @@ const styles = StyleSheet.create({
     color: "#92400E",
     fontWeight: "500",
   },
-  whatsappButton: {
+  emailButton: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#25D366",
+    backgroundColor: "#EF4444",
     marginHorizontal: 16,
     marginBottom: 16,
     paddingVertical: 12,
     borderRadius: 10,
     gap: 8,
     elevation: 2,
-    shadowColor: "#25D366",
+    shadowColor: "#EF4444",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.3,
     shadowRadius: 4,
   },
-  whatsappButtonText: {
+  emailButtonText: {
     color: "#FFFFFF",
     fontSize: 14,
     fontWeight: "600",

@@ -9,6 +9,7 @@ const eventImages = [
   require("@/assets/images/college1.jpeg"),
   require("@/assets/images/college2.jpeg"),
   require("@/assets/images/college3.jpeg"),
+  require("@/assets/images/souvenir.jpeg"),
 ];
 
 export default function EventCarousel() {

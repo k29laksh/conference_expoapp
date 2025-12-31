@@ -13,27 +13,20 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function ResourcesScreen() {
-  const handleSouvenir = () => {
-    // Check if user is logged in (implement your auth logic)
-    const isLoggedIn = false; // Replace with actual auth check
+  const handleSouvenir = async () => {
+    try {
+      const brochureUrl =
+        "";
 
-    if (!isLoggedIn) {
-      Alert.alert(
-        "Login Required",
-        "Please login as a delegate to access the souvenir.",
-        [{ text: "OK" }]
-      );
-      return;
+      await WebBrowser.openBrowserAsync(brochureUrl);
+    } catch (error) {
+      console.error("Error opening brochure:", error);
+      Alert.alert("Error", "Unable to open brochure. Please try again.");
     }
-
-    // Replace with actual souvenir PDF URL
-    Linking.openURL("https://example.com/souvenir.pdf");
   };
 
   const handleBrochure = async () => {
     try {
-      // GitHub raw URL for the PDF
-      // Replace with your actual GitHub raw URL after uploading
       const brochureUrl =
         "https://drive.google.com/file/d/10-VudCZuqVpshShvPQR_oPrNDg99WGiA/view?usp=sharing";
 
@@ -44,15 +37,25 @@ export default function ResourcesScreen() {
     }
   };
 
-  const handleBooklet = () => {
-    // Replace with actual booklet PDF URL
-    Linking.openURL("https://example.com/booklet.pdf");
+  const handleBooklet = async () => {
+    try {
+      const accommodationUrl =
+        "https://drive.google.com/file/d/1XC3uY_wfbnqQlA2dNtWtFZWFUslYVpbg/view?usp=sharing";
+
+      await WebBrowser.openBrowserAsync(accommodationUrl);
+    } catch (error) {
+      console.error("Error opening Conference booklet:", error);
+      Alert.alert(
+        "Error",
+        "Unable to open Conference booklet. Please try again."
+      );
+    }
   };
 
   const handleAccommodation = async () => {
     try {
       const accommodationUrl =
-        "https://drive.google.com/file/d/1eNWCSSISTQ_wowcLtmv_9TOzAGdCBNfb/view?usp=sharing";
+        "https://drive.google.com/file/d/1dLO0pj1pQST7Lst91ZTWDVXQwv4NsbCJ/view?usp=sharing";
 
       await WebBrowser.openBrowserAsync(accommodationUrl);
     } catch (error) {
@@ -131,7 +134,7 @@ export default function ResourcesScreen() {
               </Text>
               <View style={styles.badgeContainer}>
                 <MaterialIcons name="lock" size={14} color="#666" />
-                <Text style={styles.badgeText}>Delegates Only</Text>
+                <Text style={styles.badgeText}>Public Access</Text>
               </View>
             </View>
             <MaterialIcons name="arrow-forward" size={24} color="#666" />
