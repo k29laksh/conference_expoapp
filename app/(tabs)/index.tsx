@@ -218,11 +218,8 @@ export default function HomeScreen() {
         {/* Programs Offered Detail */}
         <View style={styles.programsDetailSection}>
           <Text style={styles.sectionTitle}>Programs Offered:</Text>
-
           <Text style={styles.programDetail}>
-            D. Pharmacy | B. Pharmacy | M. Pharmacy (Pharmaceutics, Quality
-            Assurance, Pharmaceutical Chemistry, Pharmacology, Pharmaceutical
-            Regulatory Affairs) | Ph.D. in Pharmacy.
+            D. Pharmacy | B. Pharmacy | Pharm D | M. Pharmacy (Pharmaceutics, Quality Assurance, Pharmaceutical Chemistry, Pharmacology, Pharmaceutical Regulatory Affairs) | Research & Ph.D. in Pharmaceutical Sciences
           </Text>
         </View>
         <View style={styles.programsDetailSection}>
